@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Salonica Armwrestling Cup 2026 | Επίσημη Σελίδα</title>
-    <meta name="description" content="Επίσημη σελίδα του Salonica Armwrestling Cup 2026. Προπονητική ημερίδα χειροπάλης από τον Σύλλογο Μακεδόνων.">
+    <title>Salonica Armwrestling Cup 2026 | Official Page</title>
+    <meta name="description" content="Official page of Salonica Armwrestling Cup 2026. Armwrestling training event organized by Makedonon Athletic Club.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,11 +135,11 @@
                 
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center space-x-1">
-                    <a href="#overview" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Πληροφορίες</a>
-                    <a href="#categories" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Κατηγορίες</a>
-                    <a href="#weighing" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Ζύγιση</a>
-                    <a href="#fees" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Συμμετοχή</a>
-                    <a href="#contact" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Επικοινωνία</a>
+                    <a href="#overview" data-i18n="navOverview" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Πληροφορίες</a>
+                    <a href="#categories" data-i18n="navCategories" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Κατηγορίες</a>
+                    <a href="#weighing" data-i18n="navWeighing" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Ζύγιση</a>
+                    <a href="#fees" data-i18n="navFees" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Συμμετοχή</a>
+                    <a href="#contact" data-i18n="navContact" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Επικοινωνία</a>
                 </nav>
                 
                 <!-- Facebook Button (Desktop) -->
@@ -149,6 +149,12 @@
                     </svg>
                     <span class="hidden xl:inline">Facebook</span>
                 </a>
+                
+                <!-- Language Switcher -->
+                <div class="flex items-center space-x-1 ml-2 sm:ml-4 border-l border-white/20 pl-2 sm:pl-4">
+                    <button onclick="setLanguage('el')" id="lang-el" class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-brand-gold text-brand-blueDark font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:scale-110">EL</button>
+                    <button onclick="setLanguage('en')" id="lang-en" class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/10 text-white font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:bg-white/20">EN</button>
+                </div>
                 
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Menu">
@@ -171,12 +177,12 @@
                     </button>
                 </div>
                 <nav class="flex flex-col space-y-4">
-                    <a href="#overview" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Πληροφορίες</a>
-                    <a href="#categories" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Κατηγορίες</a>
-                    <a href="#weighing" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Ζύγιση</a>
-                    <a href="#fees" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Συμμετοχή</a>
-                    <a href="#contact" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Επικοινωνία</a>
-                    <a href="https://www.facebook.com/events/950607031468231" target="_blank" class="py-3 px-4 btn-gold text-brand-blueDark rounded-lg font-semibold text-center mt-4">Facebook Event</a>
+                    <a href="#overview" data-i18n="navOverview" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Πληροφορίες</a>
+                    <a href="#categories" data-i18n="navCategories" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Κατηγορίες</a>
+                    <a href="#weighing" data-i18n="navWeighing" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Ζύγιση</a>
+                    <a href="#fees" data-i18n="navFees" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Συμμετοχή</a>
+                    <a href="#contact" data-i18n="navContact" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Επικοινωνία</a>
+                    <a href="https://www.facebook.com/events/950607031468231" target="_blank" data-i18n="footerEvent" class="py-3 px-4 btn-gold text-brand-blueDark rounded-lg font-semibold text-center mt-4">Facebook Event</a>
                 </nav>
             </div>
         </div>
@@ -204,14 +210,14 @@
                 <div class="text-center lg:text-left">
                     <div class="flex items-center justify-center lg:justify-start space-x-3 sm:space-x-4 mb-6 sm:mb-8">
                         <div class="h-px w-10 sm:w-16 gold-gradient"></div>
-                        <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Τουρνουά Χειροπάλης</span>
+                        <span data-i18n="heroSubtitle" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Τουρνουά Χειροπάλης</span>
                     </div>
                     <h1 class="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.15] sm:leading-[1.2] mb-3 sm:mb-4 tracking-tight">
                         Salonica
                         <span class="block gold-text">Armwrestling</span>
                         <span class="block text-white">Cup 2026</span>
                     </h1>
-                    <p class="text-lg sm:text-xl text-blue-200 mt-4 sm:mt-6 font-light tracking-wide">Προπονητική Ημερίδα Χειροπάλης</p>
+                    <p data-i18n="heroTraining" class="text-lg sm:text-xl text-blue-200 mt-4 sm:mt-6 font-light tracking-wide">Προπονητική Ημερίδα Χειροπάλης</p>
                     
                     <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-10 justify-center lg:justify-start">
                         <a href="https://www.facebook.com/events/950607031468231" target="_blank" class="inline-flex items-center justify-center space-x-2 btn-gold text-brand-blueDark px-6 sm:px-8 py-3 sm:py-4 font-semibold tracking-wide rounded-lg text-sm sm:text-base">
@@ -221,7 +227,7 @@
                             <span>Facebook Event</span>
                         </a>
                         <a href="https://www.asmakedonon.gr/p/blog-page_81.html" target="_blank" class="inline-flex items-center justify-center space-x-2 bg-white/10 backdrop-blur text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold tracking-wide border border-white/20 hover:bg-white/20 transition-all duration-300 rounded-lg text-sm sm:text-base">
-                            <span>Σύλλογος Μακεδόνων</span>
+                            <span data-i18n="heroClubBtn">Σύλλογος Μακεδόνων</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                             </svg>
@@ -238,8 +244,8 @@
                                 </svg>
                             </div>
                             <div class="min-w-0">
-                                <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-0.5 sm:mb-1">Ημερομηνία</p>
-                                <p class="text-base sm:text-2xl font-heading font-semibold text-white truncate">Κυριακή 22 Φεβρουαρίου 2026</p>
+                                <p data-i18n="heroDate" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-0.5 sm:mb-1">Ημερομηνία</p>
+                                <p data-i18n="heroDateVal" class="text-base sm:text-2xl font-heading font-semibold text-white truncate">Κυριακή 22 Φεβρουαρίου 2026</p>
                             </div>
                         </div>
                     </div>
@@ -253,9 +259,9 @@
                                 </svg>
                             </div>
                             <div class="min-w-0">
-                                <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-0.5 sm:mb-1">Τόπος</p>
-                                <p class="text-sm sm:text-xl font-heading font-semibold text-white leading-tight">Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας</p>
-                                <p class="text-blue-200 text-xs sm:text-sm mt-1 truncate">Παλαιών Πατρών Γερμανού 1, Ευκαρπία 564 29</p>
+                                <p data-i18n="heroLocation" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-0.5 sm:mb-1">Τόπος</p>
+                                <p data-i18n="heroVenueShort" class="text-sm sm:text-xl font-heading font-semibold text-white leading-tight">Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας</p>
+                                <p data-i18n="heroAddressShort" class="text-blue-200 text-xs sm:text-sm mt-1 truncate">Παλαιών Πατρών Γερμανού 1, Ευκαρπία 564 29</p>
                             </div>
                         </div>
                     </div>
@@ -268,7 +274,7 @@
                                 </svg>
                             </div>
                             <div class="min-w-0">
-                                <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-0.5 sm:mb-1">Επικοινωνία</p>
+                                <p data-i18n="heroContact" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-0.5 sm:mb-1">Επικοινωνία</p>
                                 <p class="text-lg sm:text-2xl font-heading font-semibold text-white">+30 694 530 8111</p>
                                 <p class="text-blue-200 text-xs sm:text-sm mt-1">Κυριάκος Ευαγγελούδης</p>
                             </div>
@@ -284,16 +290,16 @@
         <div class="absolute top-0 left-0 w-full h-1 gold-gradient"></div>
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 sm:mb-16">
-                <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Πληροφορίες Διοργάνωσης</span>
+                <span data-i18n="overviewLabel" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Πληροφορίες Διοργάνωσης</span>
                 <div class="divider-gold w-16 sm:w-24 mx-auto mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Σχετικά με το Τουρνουά</h2>
+                <h2 data-i18n="overviewTitle" class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Σχετικά με το Τουρνουά</h2>
             </div>
             
             <div class="prose prose-base sm:prose-lg max-w-none text-brand-gray leading-relaxed text-center px-2 sm:px-0">
-                <p class="text-base sm:text-xl mb-6 sm:mb-8 font-light">
+                <p data-i18n="overviewText1" class="text-base sm:text-xl mb-6 sm:mb-8 font-light">
                     Το <strong class="text-brand-blue">Salonica Armwrestling Cup 2026</strong> και η προπονητική ημερίδα χειροπάλης διοργανώνονται από τον <strong class="text-brand-blue">Αθλητικό Σύλλογο Μακεδόνων</strong> στη Θεσσαλονίκη.
                 </p>
-                <p class="mb-6 sm:mb-8">
+                <p data-i18n="overviewText2" class="mb-6 sm:mb-8">
                     Η διοργάνωση είναι ανοικτή σε αθλητές από όλη την Ελλάδα, με πολλαπλές κατηγορίες που καλύπτουν όλες τις ηλικιακές ομάδες και επίπεδα εμπειρίας. Οι αγώνες διεξάγονται για <strong>δεξί και αριστερό χέρι</strong>, με διαχωρισμό σε κατηγορίες βάρους και ηλικίας.
                 </p>
             </div>
@@ -307,8 +313,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-heading text-lg sm:text-2xl font-bold text-brand-black mb-2 sm:mb-3">Απαραίτητο Έγγραφο</h3>
-                            <p class="text-brand-gray leading-relaxed text-sm sm:text-base">Κάθε αθλητής πρέπει να προσκομίσει ένα έγγραφο που να πιστοποιεί την ημερομηνία γέννησής του (Ταυτότητα, Πιστοποιητικό γέννησης κ.λπ.) κατά τη διαδικασία της ζύγισης.</p>
+                            <h3 data-i18n="overviewDoc" class="font-heading text-lg sm:text-2xl font-bold text-brand-black mb-2 sm:mb-3">Απαραίτητο Έγγραφο</h3>
+                            <p data-i18n="overviewDocText" class="text-brand-gray leading-relaxed text-sm sm:text-base">Κάθε αθλητής πρέπει να προσκομίσει ένα έγγραφο που να πιστοποιεί την ημερομηνία γέννησής του (Ταυτότητα, Πιστοποιητικό γέννησης κ.λπ.) κατά τη διαδικασία της ζύγισης.</p>
                         </div>
                     </div>
                 </div>
@@ -324,21 +330,21 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center">
                 <div class="order-2 lg:order-1">
-                    <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Διοργανωτής</span>
+                    <span data-i18n="organizerLabel" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Διοργανωτής</span>
                     <div class="divider-gold w-12 sm:w-16 mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                    <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight mb-6 sm:mb-8">Αθλητικός Σύλλογος Μακεδόνων</h2>
+                    <h2 data-i18n="organizerTitle" class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight mb-6 sm:mb-8">Αθλητικός Σύλλογος Μακεδόνων</h2>
                     
                     <div class="space-y-4 sm:space-y-6 text-brand-gray leading-relaxed text-sm sm:text-base">
-                        <p>
+                        <p data-i18n="organizerText1">
                             Ο Αθλητικός Σύλλογος Μακεδόνων ιδρύθηκε το <span class="gold-text font-semibold">2000</span> και αποτελεί έναν από τους σημαντικότερους συλλόγους χειροπάλης στην Ελλάδα.
                         </p>
-                        <p>
+                        <p data-i18n="organizerText2">
                             Με πολυετή εμπειρία στη διοργάνωση αθλητικών events, ο σύλλογος προωθεί το άθλημα της χειροπάλης σε όλη τη χώρα, διασφαλίζοντας την τήρηση των κανονισμών και την ομαλή διεξαγωγή των αγώνων.
                         </p>
                     </div>
                     
                     <a href="https://www.asmakedonon.gr/p/blog-page_81.html" target="_blank" class="inline-flex items-center space-x-2 sm:space-x-3 mt-6 sm:mt-8 text-brand-blue font-semibold hover:text-brand-gold transition-colors duration-300 group text-sm sm:text-base">
-                        <span>Επισκεφθείτε την ιστοσελίδα του συλλόγου</span>
+                        <span data-i18n="organizerLink">Επισκεφθείτε την ιστοσελίδα του συλλόγου</span>
                         <svg class="w-4 sm:w-5 h-4 sm:h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
@@ -364,9 +370,9 @@
     <section class="py-16 sm:py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 sm:mb-16">
-                <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Φωτογραφίες</span>
+                <span data-i18n="photosLabel" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Φωτογραφίες</span>
                 <div class="divider-gold w-16 sm:w-24 mx-auto mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Οι Εγκαταστάσεις μας</h2>
+                <h2 data-i18n="photosTitle" class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Οι Εγκαταστάσεις μας</h2>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
@@ -376,7 +382,7 @@
                     <div class="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                         <img src="armwrestling-table.jpg" alt="Τραπέζι Χειροπάλης" class="w-full h-48 sm:h-80 object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-blue/90 to-transparent p-4 sm:p-6">
-                            <p class="text-white font-heading font-semibold text-sm sm:text-lg">Τραπέζι Χειροπάλης</p>
+                            <p data-i18n="tableTitle" class="text-white font-heading font-semibold text-sm sm:text-lg">Τραπέζι Χειροπάλης</p>
                         </div>
                     </div>
                 </div>
@@ -387,7 +393,7 @@
                     <div class="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                         <img src="facility-1.jpg" alt="Κλειστό Γυμναστήριο - Θέαση από τις κερκίδες" class="w-full h-48 sm:h-64 object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-blue/90 to-transparent p-3 sm:p-4">
-                            <p class="text-white font-heading font-semibold text-xs sm:text-sm">Κλειστό Γυμναστήριο</p>
+                            <p data-i18n="facility1" class="text-white font-heading font-semibold text-xs sm:text-sm">Κλειστό Γυμναστήριο</p>
                         </div>
                     </div>
                 </div>
@@ -398,7 +404,7 @@
                     <div class="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                         <img src="facility-2.jpg" alt="Κλειστό Γυμναστήριο - Κερκίδες" class="w-full h-48 sm:h-64 object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-blue/90 to-transparent p-3 sm:p-4">
-                            <p class="text-white font-heading font-semibold text-xs sm:text-sm">Κερκίδες Θεατών</p>
+                            <p data-i18n="facility2" class="text-white font-heading font-semibold text-xs sm:text-sm">Κερκίδες Θεατών</p>
                         </div>
                     </div>
                 </div>
@@ -409,7 +415,7 @@
                     <div class="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                         <img src="facility-3.jpg" alt="Κλειστό Γυμναστήριο - Γενική άποψη" class="w-full h-48 sm:h-64 object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-blue/90 to-transparent p-4 sm:p-6">
-                            <p class="text-white font-heading font-semibold text-sm sm:text-lg">Χώρος Διεξαγωγής Αγώνων</p>
+                            <p data-i18n="facility3" class="text-white font-heading font-semibold text-sm sm:text-lg">Χώρος Διεξαγωγής Αγώνων</p>
                         </div>
                     </div>
                 </div>
@@ -421,10 +427,10 @@
     <section id="categories" class="py-16 sm:py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 sm:mb-16">
-                <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Αγωνιστικές Κατηγορίες</span>
+                <span data-i18n="categoriesLabel" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Αγωνιστικές Κατηγορίες</span>
                 <div class="divider-gold w-16 sm:w-24 mx-auto mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight mb-3 sm:mb-4">Κατηγορίες Αγώνων</h2>
-                <p class="text-brand-gray text-base sm:text-lg">Για δεξί και αριστερό χέρι</p>
+                <h2 data-i18n="categoriesTitle" class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight mb-3 sm:mb-4">Κατηγορίες Αγώνων</h2>
+                <p data-i18n="categoriesSubtitle" class="text-brand-gray text-base sm:text-lg">Για δεξί και αριστερό χέρι</p>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
@@ -435,11 +441,11 @@
                         <div class="w-12 sm:w-16 h-12 sm:h-16 blue-gradient flex items-center justify-center rounded-lg sm:rounded-xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-brand-gold font-heading text-xl sm:text-2xl font-bold">Π</span>
                         </div>
-                        <h3 class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Παίδων</h3>
-                        <p class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Έως 15 ετών</p>
+                        <h3 data-i18n="catPaidon" class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Παίδων</h3>
+                        <p data-i18n="catPaidonAge" class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Έως 15 ετών</p>
                         <div class="gold-gradient p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
-                            <p class="font-heading text-lg sm:text-xl font-bold text-brand-blueDark">OPEN</p>
-                            <p class="text-brand-blueDark/70 text-xs sm:text-sm">Χωρίς διαχωρισμό βάρους</p>
+                            <p data-i18n="catOpen" class="font-heading text-lg sm:text-xl font-bold text-brand-blueDark">OPEN</p>
+                            <p data-i18n="catOpenDesc" class="text-brand-blueDark/70 text-xs sm:text-sm">Χωρίς διαχωρισμό βάρους</p>
                         </div>
                     </div>
                 </div>
@@ -451,8 +457,8 @@
                         <div class="w-12 sm:w-16 h-12 sm:h-16 blue-gradient flex items-center justify-center rounded-lg sm:rounded-xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-brand-gold font-heading text-xl sm:text-2xl font-bold">Ε</span>
                         </div>
-                        <h3 class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Εφήβων</h3>
-                        <p class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Έως 18 ετών</p>
+                        <h3 data-i18n="catEfivon" class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Εφήβων</h3>
+                        <p data-i18n="catEfivonAge" class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Έως 18 ετών</p>
                         <div class="space-y-2 sm:space-y-3">
                             <div class="bg-white p-3 sm:p-4 rounded-lg sm:rounded-xl border border-gray-200 text-center">
                                 <p class="font-heading text-base sm:text-lg font-bold text-brand-blue">-80Kg</p>
@@ -471,8 +477,8 @@
                         <div class="w-12 sm:w-16 h-12 sm:h-16 blue-gradient flex items-center justify-center rounded-lg sm:rounded-xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-brand-gold font-heading text-xl sm:text-2xl font-bold">Α</span>
                         </div>
-                        <h3 class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Αρχαρίων</h3>
-                        <p class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Όλες οι ηλικίες</p>
+                        <h3 data-i18n="catArcharion" class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Αρχαρίων</h3>
+                        <p data-i18n="catArcharionAge" class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Όλες οι ηλικίες</p>
                         <div class="space-y-2 sm:space-y-3">
                             <div class="bg-white p-2 sm:p-3 rounded-lg sm:rounded-xl border border-gray-200 text-center">
                                 <p class="font-heading font-bold text-brand-blue text-sm sm:text-base">-75Kg</p>
@@ -494,11 +500,11 @@
                         <div class="w-12 sm:w-16 h-12 sm:h-16 blue-gradient flex items-center justify-center rounded-lg sm:rounded-xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-brand-gold font-heading text-xl sm:text-2xl font-bold">Μ</span>
                         </div>
-                        <h3 class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Master</h3>
-                        <p class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Άνω των 40 ετών</p>
+                        <h3 data-i18n="catMaster" class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Master</h3>
+                        <p data-i18n="catMasterAge" class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Άνω των 40 ετών</p>
                         <div class="gold-gradient p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
-                            <p class="font-heading text-lg sm:text-xl font-bold text-brand-blueDark">OPEN</p>
-                            <p class="text-brand-blueDark/70 text-xs sm:text-sm">Χωρίς διαχωρισμό βάρους</p>
+                            <p data-i18n="catOpen" class="font-heading text-lg sm:text-xl font-bold text-brand-blueDark">OPEN</p>
+                            <p data-i18n="catOpenDesc" class="text-brand-blueDark/70 text-xs sm:text-sm">Χωρίς διαχωρισμό βάρους</p>
                         </div>
                     </div>
                 </div>
@@ -510,11 +516,11 @@
                         <div class="w-12 sm:w-16 h-12 sm:h-16 blue-gradient flex items-center justify-center rounded-lg sm:rounded-xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-brand-gold font-heading text-xl sm:text-2xl font-bold">Γ</span>
                         </div>
-                        <h3 class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Γυναικών</h3>
-                        <p class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Όλες οι ηλικίες</p>
+                        <h3 data-i18n="catGynaikon" class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Γυναικών</h3>
+                        <p data-i18n="catGynaikonAge" class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Όλες οι ηλικίες</p>
                         <div class="gold-gradient p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
-                            <p class="font-heading text-lg sm:text-xl font-bold text-brand-blueDark">OPEN</p>
-                            <p class="text-brand-blueDark/70 text-xs sm:text-sm">Χωρίς διαχωρισμό βάρους</p>
+                            <p data-i18n="catOpen" class="font-heading text-lg sm:text-xl font-bold text-brand-blueDark">OPEN</p>
+                            <p data-i18n="catOpenDesc" class="text-brand-blueDark/70 text-xs sm:text-sm">Χωρίς διαχωρισμό βάρους</p>
                         </div>
                     </div>
                 </div>
@@ -526,8 +532,8 @@
                         <div class="w-12 sm:w-16 h-12 sm:h-16 blue-gradient flex items-center justify-center rounded-lg sm:rounded-xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-brand-gold font-heading text-lg sm:text-xl font-bold">ΑΝ</span>
                         </div>
-                        <h3 class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Ανδρών</h3>
-                        <p class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Επαγγελματική κατηγορία</p>
+                        <h3 data-i18n="catAndron" class="font-heading text-xl sm:text-2xl font-bold text-brand-black mb-1 sm:mb-2">Ανδρών</h3>
+                        <p data-i18n="catAndronAge" class="text-brand-gray text-sm sm:text-base mb-4 sm:mb-6">Επαγγελματική κατηγορία</p>
                         <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
                             <div class="bg-white p-1.5 sm:p-2 rounded-lg border border-gray-200 text-center">
                                 <p class="font-heading text-xs sm:text-sm font-bold text-brand-blue">-63Kg</p>
@@ -561,9 +567,9 @@
     <section class="py-16 sm:py-24 bg-brand-light relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 sm:mb-16">
-                <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Χορηγοί</span>
+                <span data-i18n="sponsorsLabel" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Χορηγοί</span>
                 <div class="divider-gold w-16 sm:w-24 mx-auto mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Οι Χορηγοί μας</h2>
+                <h2 data-i18n="sponsorsTitle" class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Οι Χορηγοί μας</h2>
             </div>
             
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 mb-8 sm:mb-12">
@@ -595,7 +601,7 @@
             
             <!-- Communication Sponsor -->
             <div class="text-center">
-                <span class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold mb-3 sm:mb-4 block">Χορηγός Επικοινωνίας</span>
+                <span data-i18n="commSponsor" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold mb-3 sm:mb-4 block">Χορηγός Επικοινωνίας</span>
                 <div class="bg-brand-black p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg card-hover flex items-center justify-center border border-gray-100 h-24 sm:h-32 max-w-xs mx-auto">
                     <img src="logo-ufight.png" alt="Ufight.gr" class="max-h-16 sm:max-h-20 w-auto object-contain">
                 </div>
@@ -612,9 +618,9 @@
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-10 sm:mb-16">
-                <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Διαδικασία Ζύγισης</span>
+                <span data-i18n="weighingLabel" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Διαδικασία Ζύγισης</span>
                 <div class="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight">Ημερομηνίες και Ώρες Ζύγισης</h2>
+                <h2 data-i18n="weighingTitle" class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight">Ημερομηνίες και Ώρες Ζύγισης</h2>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 mb-8 sm:mb-12">
@@ -624,17 +630,17 @@
                             <span class="text-brand-blueDark font-heading text-2xl sm:text-3xl font-bold">Σ</span>
                         </div>
                         <div>
-                            <p class="text-blue-200 text-xs sm:text-sm tracking-wider">Σάββατο</p>
-                            <p class="text-xl sm:text-3xl font-heading font-bold">21 Φεβρουαρίου 2026</p>
+                            <p data-i18n="weighingSat" class="text-blue-200 text-xs sm:text-sm tracking-wider">Σάββατο</p>
+                            <p data-i18n="weighingDateSat" class="text-xl sm:text-3xl font-heading font-bold">21 Φεβρουαρίου 2026</p>
                         </div>
                     </div>
                     <div class="bg-white/10 p-5 sm:p-8 rounded-xl sm:rounded-2xl text-center mb-4">
-                        <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-2 sm:mb-3">Ώρες Ζύγισης</p>
+                        <p data-i18n="weighingHours" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-2 sm:mb-3">Ώρες Ζύγισης</p>
                         <p class="text-3xl sm:text-5xl font-heading font-bold gold-text">17:00 - 20:00</p>
                     </div>
                     <div class="gold-gradient p-4 sm:p-6 rounded-xl sm:rounded-2xl">
-                        <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-blueDark mb-2 sm:mb-3 text-center">Σεμινάριο</p>
-                        <p class="text-brand-blueDark text-sm sm:text-base text-center mb-2">Παγκόσμιος & Πανευρωπαϊκός Πρωταθλητής</p>
+                        <p data-i18n="weighingSeminar" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-blueDark mb-2 sm:mb-3 text-center">Σεμινάριο</p>
+                        <p data-i18n="weighingChampion" class="text-brand-blueDark text-sm sm:text-base text-center mb-2">Παγκόσμιος & Πανευρωπαϊκός Πρωταθλητής</p>
                         <p class="text-brand-blueDark font-heading text-lg sm:text-2xl font-bold text-center mb-3">Plamen Dimitrov</p>
                         <div class="flex items-center justify-center space-x-4">
                             <span class="text-brand-blueDark font-semibold">20:00</span>
@@ -650,17 +656,17 @@
                             <span class="text-brand-blueDark font-heading text-2xl sm:text-3xl font-bold">Κ</span>
                         </div>
                         <div>
-                            <p class="text-blue-200 text-xs sm:text-sm tracking-wider">Κυριακή</p>
+                            <p data-i18n="weighingSun" class="text-blue-200 text-xs sm:text-sm tracking-wider">Κυριακή</p>
                             <p class="text-xl sm:text-3xl font-heading font-bold">22 Φεβρουαρίου 2026</p>
                         </div>
                     </div>
                     <div class="bg-white/10 p-5 sm:p-8 rounded-xl sm:rounded-2xl text-center mb-4">
-                        <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-2 sm:mb-3">Ώρες Ζύγισης</p>
+                        <p data-i18n="weighingHours" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-2 sm:mb-3">Ώρες Ζύγισης</p>
                         <p class="text-3xl sm:text-5xl font-heading font-bold gold-text">09:00 - 12:30</p>
-                        <p class="text-brand-gold mt-2 sm:mt-3 font-semibold tracking-wide text-sm sm:text-base">Με ανοχή ενός κιλού</p>
+                        <p data-i18n="weighingTolerance" class="text-brand-gold mt-2 sm:mt-3 font-semibold tracking-wide text-sm sm:text-base">Με ανοχή ενός κιλού</p>
                     </div>
                     <div class="gold-gradient p-4 sm:p-6 rounded-xl sm:rounded-2xl text-center">
-                        <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-blueDark mb-1 sm:mb-2">Ώρα Έναρξης Αγώνων</p>
+                        <p data-i18n="weighingStart" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-blueDark mb-1 sm:mb-2">Ώρα Έναρξης Αγώνων</p>
                         <p class="text-2xl sm:text-4xl font-heading font-bold text-brand-blueDark">13:00</p>
                     </div>
                 </div>
@@ -674,22 +680,22 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="font-heading text-xl sm:text-3xl font-bold mb-3 sm:mb-5">Απαραίτητα Έγγραφα</h3>
-                        <p class="text-blue-100 leading-relaxed text-sm sm:text-lg mb-4 sm:mb-6">
+                        <h3 data-i18n="docsTitle" class="font-heading text-xl sm:text-3xl font-bold mb-3 sm:mb-5">Απαραίτητα Έγγραφα</h3>
+                        <p data-i18n="docsText" class="text-blue-100 leading-relaxed text-sm sm:text-lg mb-4 sm:mb-6">
                             Ο κάθε αθλητής πρέπει να προσκομίσει κατά τη ζύγιση ένα επίσημο έγγραφο που να πιστοποιεί την ημερομηνία γέννησής του.
                         </p>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
                             <div class="bg-white/10 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
-                                <p class="text-white font-medium text-xs sm:text-sm">Αστυνομική Ταυτότητα</p>
+                                <p data-i18n="docID" class="text-white font-medium text-xs sm:text-sm">Αστυνομική Ταυτότητα</p>
                             </div>
                             <div class="bg-white/10 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
-                                <p class="text-white font-medium text-xs sm:text-sm">Πιστοποιητικό Γέννησης</p>
+                                <p data-i18n="docBirth" class="text-white font-medium text-xs sm:text-sm">Πιστοποιητικό Γέννησης</p>
                             </div>
                             <div class="bg-white/10 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
-                                <p class="text-white font-medium text-xs sm:text-sm">Διαβατήριο</p>
+                                <p data-i18n="docPassport" class="text-white font-medium text-xs sm:text-sm">Διαβατήριο</p>
                             </div>
                             <div class="bg-white/10 p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
-                                <p class="text-white font-medium text-xs sm:text-sm">Άλλο επίσημο έγγραφο</p>
+                                <p data-i18n="docOther" class="text-white font-medium text-xs sm:text-sm">Άλλο επίσημο έγγραφο</p>
                             </div>
                         </div>
                     </div>
@@ -702,9 +708,9 @@
     <section class="py-16 sm:py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 sm:mb-16">
-                <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Σεμινάριο</span>
+                <span data-i18n="seminarLabel" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Σεμινάριο</span>
                 <div class="divider-gold w-16 sm:w-24 mx-auto mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Σεμινάριο με τον Plamen Dimitrov</h2>
+                <h2 data-i18n="seminarTitle" class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Σεμινάριο με τον Plamen Dimitrov</h2>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16 items-center">
@@ -718,33 +724,33 @@
                 <div class="order-1 lg:order-2">
                     <div class="bg-gradient-to-r from-brand-blue to-brand-blueDark p-1 rounded-xl sm:rounded-2xl mb-6 sm:mb-8">
                         <div class="bg-white p-5 sm:p-6 rounded-lg sm:rounded-xl">
-                            <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-2">Παγκόσμιος & Πανευρωπαϊκός Πρωταθλητής</p>
+                            <p data-i18n="seminarChampion" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-2">Παγκόσμιος & Πανευρωπαϊκός Πρωταθλητής</p>
                             <p class="font-heading text-2xl sm:text-4xl font-bold text-brand-black">Plamen Dimitrov</p>
                         </div>
                     </div>
                     
                     <div class="space-y-4 sm:space-y-6 text-brand-gray leading-relaxed text-sm sm:text-base mb-6 sm:mb-8">
-                        <p>
+                        <p data-i18n="seminarText1">
                             Ο <strong class="text-brand-blue">Plamen Dimitrov</strong> είναι ένας από τους κορυφαίους αθλητές χειροπάλης παγκοσμίως. Με πολυετή εμπειρία σε διεθνείς διοργανώσεις, έχει κατακτήσει τίτλους σε Παγκόσμια και Πανευρωπαϊκά πρωταθλήματα.
                         </p>
-                        <p>
+                        <p data-i18n="seminarText2">
                             Το σεμινάριό του απευθύνεται σε όλους τους αθλητές που θέλουν να βελτιώσουν την τεχνική τους, να μάθουν προχωρημένες τακτικές και να αποκτήσουν πολύτιμες γνώσεις από έναν από τους καλύτερους αθλητές του αθλήματος.
                         </p>
                     </div>
                     
                     <div class="grid grid-cols-2 gap-3 sm:gap-4">
                         <div class="bg-brand-light p-4 sm:p-6 rounded-xl sm:rounded-2xl text-center">
-                            <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] uppercase text-brand-gray mb-1">Ημερομηνία</p>
-                            <p class="font-heading text-lg sm:text-xl font-bold text-brand-black">Σάββατο 21/02</p>
+                            <p data-i18n="seminarDate" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] uppercase text-brand-gray mb-1">Ημερομηνία</p>
+                            <p data-i18n="seminarDateVal" class="font-heading text-lg sm:text-xl font-bold text-brand-black">Σάββατο 21/02</p>
                         </div>
                         <div class="bg-brand-light p-4 sm:p-6 rounded-xl sm:rounded-2xl text-center">
-                            <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] uppercase text-brand-gray mb-1">Ώρα</p>
+                            <p data-i18n="seminarTime" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] uppercase text-brand-gray mb-1">Ώρα</p>
                             <p class="font-heading text-lg sm:text-xl font-bold text-brand-black">20:00</p>
                         </div>
                     </div>
                     
                     <div class="mt-4 sm:mt-6 gold-gradient p-4 sm:p-6 rounded-xl sm:rounded-2xl text-center">
-                        <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] uppercase text-brand-blueDark mb-1">Κόστος Συμμετοχής</p>
+                        <p data-i18n="seminarCost" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] uppercase text-brand-blueDark mb-1">Κόστος Συμμετοχής</p>
                         <p class="font-heading text-3xl sm:text-4xl font-bold text-brand-blueDark">20€</p>
                     </div>
                 </div>
@@ -756,32 +762,32 @@
     <section id="fees" class="py-16 sm:py-24 bg-brand-light relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 sm:mb-16">
-                <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Κόστος Συμμετοχής</span>
+                <span data-i18n="feesLabel" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Κόστος Συμμετοχής</span>
                 <div class="divider-gold w-16 sm:w-24 mx-auto mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Παράβολα Συμμετοχής</h2>
+                <h2 data-i18n="feesTitle" class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight">Παράβολα Συμμετοχής</h2>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8">
                 <div class="bg-white rounded-xl sm:rounded-3xl overflow-hidden shadow-xl card-hover">
                     <div class="h-2 sm:h-3 gold-gradient"></div>
                     <div class="p-5 sm:p-10">
-                        <h3 class="font-heading text-lg sm:text-2xl font-bold text-brand-black mb-6 sm:mb-8">Άνδρες, Γυναίκες, Αρχάριοι, Master</h3>
+                        <h3 data-i18n="feesGroup1" class="font-heading text-lg sm:text-2xl font-bold text-brand-black mb-6 sm:mb-8">Άνδρες, Γυναίκες, Αρχάριοι, Master</h3>
                         <div class="space-y-4 sm:space-y-6">
                             <div class="flex justify-between items-center p-4 sm:p-6 bg-brand-light rounded-xl sm:rounded-2xl">
                                 <div>
-                                    <p class="font-heading text-base sm:text-lg font-bold text-brand-black">Ένα χέρι</p>
-                                    <p class="text-brand-gray text-xs sm:text-sm">Δεξί ή αριστερό</p>
+                                    <p data-i18n="feesOneHand" class="font-heading text-base sm:text-lg font-bold text-brand-black">Ένα χέρι</p>
+                                    <p data-i18n="feesOneHandDesc" class="text-brand-gray text-xs sm:text-sm">Δεξί ή αριστερό</p>
                                 </div>
                                 <p class="text-2xl sm:text-4xl font-heading font-bold text-brand-blue">20€</p>
                             </div>
                             <div class="flex justify-between items-center p-4 sm:p-6 gold-gradient rounded-xl sm:rounded-2xl">
                                 <div>
-                                    <p class="font-heading text-base sm:text-lg font-bold text-brand-blueDark">Και τα δύο χέρια</p>
-                                    <p class="text-brand-blueDark/70 text-xs sm:text-sm">Δεξί και αριστερό</p>
+                                    <p data-i18n="feesBothHands" class="font-heading text-base sm:text-lg font-bold text-brand-blueDark">Και τα δύο χέρια</p>
+                                    <p data-i18n="feesBothHandsDesc" class="text-brand-blueDark/70 text-xs sm:text-sm">Δεξί και αριστερό</p>
                                 </div>
                                 <div class="text-right">
                                     <p class="text-2xl sm:text-4xl font-heading font-bold text-brand-blueDark">15€</p>
-                                    <p class="text-brand-blueDark/70 text-xs">ανά χέρι</p>
+                                    <p data-i18n="feesPerHand" class="text-brand-blueDark/70 text-xs">ανά χέρι</p>
                                 </div>
                             </div>
                         </div>
@@ -791,23 +797,23 @@
                 <div class="bg-white rounded-xl sm:rounded-3xl overflow-hidden shadow-xl card-hover">
                     <div class="h-2 sm:h-3 gold-gradient"></div>
                     <div class="p-5 sm:p-10">
-                        <h3 class="font-heading text-lg sm:text-2xl font-bold text-brand-black mb-6 sm:mb-8">Εφήβων</h3>
+                        <h3 data-i18n="feesGroup2" class="font-heading text-lg sm:text-2xl font-bold text-brand-black mb-6 sm:mb-8">Εφήβων</h3>
                         <div class="space-y-4 sm:space-y-6">
                             <div class="flex justify-between items-center p-4 sm:p-6 bg-brand-light rounded-xl sm:rounded-2xl">
                                 <div>
-                                    <p class="font-heading text-base sm:text-lg font-bold text-brand-black">Ένα χέρι</p>
-                                    <p class="text-brand-gray text-xs sm:text-sm">Δεξί ή αριστερό</p>
+                                    <p data-i18n="feesOneHandJuniors" class="font-heading text-base sm:text-lg font-bold text-brand-black">Ένα χέρι</p>
+                                    <p data-i18n="feesOneHandJuniorsDesc" class="text-brand-gray text-xs sm:text-sm">Δεξί ή αριστερό</p>
                                 </div>
                                 <p class="text-2xl sm:text-4xl font-heading font-bold text-brand-blue">15€</p>
                             </div>
                             <div class="flex justify-between items-center p-4 sm:p-6 gold-gradient rounded-xl sm:rounded-2xl">
                                 <div>
-                                    <p class="font-heading text-base sm:text-lg font-bold text-brand-blueDark">Και τα δύο χέρια</p>
-                                    <p class="text-brand-blueDark/70 text-xs sm:text-sm">Δεξί και αριστερό</p>
+                                    <p data-i18n="feesBothHandsJuniors" class="font-heading text-base sm:text-lg font-bold text-brand-blueDark">Και τα δύο χέρια</p>
+                                    <p data-i18n="feesBothHandsJuniorsDesc" class="text-brand-blueDark/70 text-xs sm:text-sm">Δεξί και αριστερό</p>
                                 </div>
                                 <div class="text-right">
                                     <p class="text-2xl sm:text-4xl font-heading font-bold text-brand-blueDark">10€</p>
-                                    <p class="text-brand-blueDark/70 text-xs">ανά χέρι</p>
+                                    <p data-i18n="feesPerHandJuniors" class="text-brand-blueDark/70 text-xs">ανά χέρι</p>
                                 </div>
                             </div>
                         </div>
@@ -822,7 +828,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <p class="text-brand-gray text-sm sm:text-lg">Η πληρωμή του παραβόλου γίνεται κατά τη ζύγιση στον χώρο των αγώνων.</p>
+                    <p data-i18n="feesNote" class="text-brand-gray text-sm sm:text-lg">Η πληρωμή του παραβόλου γίνεται κατά τη ζύγιση στον χώρο των αγώνων.</p>
                 </div>
             </div>
         </div>
@@ -843,26 +849,26 @@
                             referrerpolicy="no-referrer-when-downgrade"
                             title="Χώρος Διεξαγωγής"
                         ></iframe>
-                        <a href="https://maps.app.goo.gl/Q3vam5Ywp9feczBd9" target="_blank" class="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 bg-white px-3 sm:px-4 py-2 rounded-lg shadow-lg text-brand-blue font-semibold text-xs sm:text-sm hover:bg-brand-gold hover:text-brand-blueDark transition-colors z-10">
+                        <a href="https://maps.app.goo.gl/Q3vam5Ywp9feczBd9" target="_blank" data-i18n="openMaps" class="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 bg-white px-3 sm:px-4 py-2 rounded-lg shadow-lg text-brand-blue font-semibold text-xs sm:text-sm hover:bg-brand-gold hover:text-brand-blueDark transition-colors z-10">
                             Άνοιγμα στο Google Maps
                         </a>
                     </div>
                 </div>
                 
                 <div class="order-1 lg:order-2">
-                    <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Τόπος Διεξαγωγής</span>
+                    <span data-i18n="venueLabel" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Τόπος Διεξαγωγής</span>
                     <div class="divider-gold w-12 sm:w-16 mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                    <h2 class="font-heading text-xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight mb-6 sm:mb-8">Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας</h2>
+                    <h2 data-i18n="venueTitle" class="font-heading text-xl sm:text-4xl md:text-5xl font-bold text-brand-black tracking-tight mb-6 sm:mb-8">Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας</h2>
                     
                     <div class="bg-gradient-to-r from-brand-blue to-brand-blueDark p-1 rounded-xl sm:rounded-2xl mb-6 sm:mb-8">
                         <div class="bg-white p-4 sm:p-6 rounded-lg sm:rounded-xl">
-                            <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-1 sm:mb-2">Διεύθυνση</p>
-                            <p class="font-heading text-base sm:text-xl font-bold text-brand-black">Παλαιών Πατρών Γερμανού 1</p>
-                            <p class="text-brand-gray mt-1 sm:mt-2 text-sm sm:text-base">Ευκαρπία 564 29, Θεσσαλονίκη</p>
+                            <p data-i18n="venueAddress" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-1 sm:mb-2">Διεύθυνση</p>
+                            <p data-i18n="venueStreet" class="font-heading text-base sm:text-xl font-bold text-brand-black">Παλαιών Πατρών Γερμανού 1</p>
+                            <p data-i18n="venueCity" class="text-brand-gray mt-1 sm:mt-2 text-sm sm:text-base">Ευκαρπία 564 29, Θεσσαλονίκη</p>
                         </div>
                     </div>
                     
-                    <p class="text-brand-gray leading-relaxed text-sm sm:text-lg">
+                    <p data-i18n="venueText" class="text-brand-gray leading-relaxed text-sm sm:text-lg">
                         Ο χώρος διεξαγωγής έχει επιλεγεί για να πληρεί όλες τις προδιαγραφές ασφαλείας και λειτουργικότητας για τη διεξαγωγή επαγγελματικών αγώνων χειροπάλης, με επαρκή χώρο για αθλητές, κριτές και θεατές.
                     </p>
                 </div>
@@ -878,9 +884,9 @@
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-10 sm:mb-16">
-                <span class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Επικοινωνία</span>
+                <span data-i18n="navContact" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-brand-gold">Επικοινωνία</span>
                 <div class="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto mt-3 sm:mt-4 mb-4 sm:mb-6"></div>
-                <h2 class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight">Στοιχεία Επικοινωνίας</h2>
+                <h2 data-i18n="contactTitle" class="font-heading text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight">Στοιχεία Επικοινωνίας</h2>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
@@ -890,7 +896,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                         </svg>
                     </div>
-                    <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-blue-200 mb-2 sm:mb-3">Τηλέφωνο</p>
+                    <p data-i18n="contactPhone" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-blue-200 mb-2 sm:mb-3">Τηλέφωνο</p>
                     <p class="text-xl sm:text-3xl font-heading font-bold">+30 694 530 8111</p>
                     <p class="text-brand-gold mt-2 sm:mt-3 text-sm font-semibold">Κυριάκος Ευαγγελούδης</p>
                 </div>
@@ -902,9 +908,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
                     </div>
-                    <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-blue-200 mb-2 sm:mb-3">Τόπος</p>
-                    <p class="text-base sm:text-xl font-heading font-bold">Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας</p>
-                    <p class="text-blue-200 mt-2 sm:mt-3 text-xs sm:text-sm">Παλαιών Πατρών Γερμανού 1, Ευκαρπία 564 29</p>
+                    <p data-i18n="contactLocation" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-blue-200 mb-2 sm:mb-3">Τόπος</p>
+                    <p data-i18n="contactVenue" class="text-base sm:text-xl font-heading font-bold">Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας</p>
+                    <p data-i18n="contactAddress" class="text-blue-200 mt-2 sm:mt-3 text-xs sm:text-sm">Παλαιών Πατρών Γερμανού 1, Ευκαρπία 564 29</p>
                 </div>
                 
                 <div class="bg-white/5 backdrop-blur-xl p-6 sm:p-10 rounded-xl sm:rounded-3xl border border-white/10 text-center card-hover sm:col-span-2 lg:col-span-1">
@@ -913,8 +919,8 @@
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
                     </div>
-                    <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-blue-200 mb-2 sm:mb-3">Facebook</p>
-                    <a href="https://www.facebook.com/events/950607031468231" target="_blank" class="text-lg sm:text-xl font-heading font-bold gold-text hover:underline">Δείτε το Event</a>
+                    <p data-i18n="contactFb" class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-blue-200 mb-2 sm:mb-3">Facebook</p>
+                    <a href="https://www.facebook.com/events/950607031468231" target="_blank" data-i18n="contactFbBtn" class="text-lg sm:text-xl font-heading font-bold gold-text hover:underline">Δείτε το Event</a>
                     <p class="text-blue-200 mt-2 sm:mt-3 text-xs sm:text-sm">Salonica Armwrestling Cup 2026</p>
                 </div>
             </div>
@@ -940,19 +946,19 @@
                     </p>
                 </div>
                 <div>
-                    <p class="text-xs sm:text-sm font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-4 sm:mb-6">Σύνδεσμοι</p>
+                    <p data-i18n="footerLinks" class="text-xs sm:text-sm font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold mb-4 sm:mb-6">Σύνδεσμοι</p>
                     <ul class="space-y-2 sm:space-y-3 text-blue-200 text-sm">
-                        <li><a href="#overview" class="hover:text-brand-gold transition-colors duration-300">Πληροφορίες</a></li>
-                        <li><a href="#categories" class="hover:text-brand-gold transition-colors duration-300">Κατηγορίες</a></li>
-                        <li><a href="#weighing" class="hover:text-brand-gold transition-colors duration-300">Ζύγιση</a></li>
-                        <li><a href="#fees" class="hover:text-brand-gold transition-colors duration-300">Συμμετοχή</a></li>
-                        <li><a href="https://www.asmakedonon.gr/p/blog-page_81.html" target="_blank" class="hover:text-brand-gold transition-colors duration-300">Σύλλογος Μακεδόνων</a></li>
-                        <li><a href="https://www.facebook.com/events/950607031468231" target="_blank" class="hover:text-brand-gold transition-colors duration-300">Facebook Event</a></li>
+                        <li><a href="#overview" data-i18n="footerInfo" class="hover:text-brand-gold transition-colors duration-300">Πληροφορίες</a></li>
+                        <li><a href="#categories" data-i18n="footerCategories" class="hover:text-brand-gold transition-colors duration-300">Κατηγορίες</a></li>
+                        <li><a href="#weighing" data-i18n="footerWeighing" class="hover:text-brand-gold transition-colors duration-300">Ζύγιση</a></li>
+                        <li><a href="#fees" data-i18n="footerFees" class="hover:text-brand-gold transition-colors duration-300">Συμμετοχή</a></li>
+                        <li><a href="https://www.asmakedonon.gr/p/blog-page_81.html" target="_blank" data-i18n="footerClub" class="hover:text-brand-gold transition-colors duration-300">Σύλλογος Μακεδόνων</a></li>
+                        <li><a href="https://www.facebook.com/events/950607031468231" target="_blank" data-i18n="footerEvent" class="hover:text-brand-gold transition-colors duration-300">Facebook Event</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-blue-700 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
-                <a href="https://www.facebook.com/profile.php?id=61580885484641" target="_blank" class="text-blue-300 text-xs sm:text-sm text-center sm:text-left hover:text-brand-gold transition-colors duration-300">
+                <a href="https://www.facebook.com/profile.php?id=61580885484641" target="_blank" data-i18n="footerCopyright" class="text-blue-300 text-xs sm:text-sm text-center sm:text-left hover:text-brand-gold transition-colors duration-300">
                     &copy; 2026 Χειροπάλη Θεσσαλονίκης
                 </a>
                 <p class="text-blue-400 text-[10px] sm:text-xs font-heading font-semibold tracking-wider">
@@ -991,7 +997,293 @@
                 link.addEventListener('click', closeMenu);
             });
         });
+
+        // Language Translations
+        const translations = {
+            el: {
+                navOverview: "Πληροφορίες",
+                navCategories: "Κατηγορίες",
+                navWeighing: "Ζύγιση",
+                navFees: "Συμμετοχή",
+                navContact: "Επικοινωνία",
+                overviewLabel: "Πληροφορίες Διοργάνωσης",
+                heroSubtitle: "Τουρνουά Χειροπάλης",
+                heroTraining: "Προπονητική Ημερίδα Χειροπάλης",
+                heroClubBtn: "Σύλλογος Μακεδόνων",
+                heroDate: "Ημερομηνία",
+                heroDateVal: "Κυριακή 22 Φεβρουαρίου 2026",
+                heroLocation: "Τόπος",
+                heroVenueName: "Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας",
+                heroVenueShort: "Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας",
+                heroAddress: "Παλαιών Πατρών Γερμανού 1, Ευκαρπία 564 29",
+                heroAddressShort: "Παλαιών Πατρών Γερμανού 1, Ευκαρπία 564 29",
+                heroContact: "Επικοινωνία",
+                heroContactName: "Κυριάκος Ευαγγελούδης",
+                overviewTitle: "Σχετικά με το Τουρνουά",
+                overviewText1: "Το Salonica Armwrestling Cup 2026 και η προπονητική ημερίδα χειροπάλης διοργανώνονται από τον Αθλητικό Σύλλογο Μακεδόνων στη Θεσσαλονίκη.",
+                overviewText2: "Η διοργάνωση είναι ανοικτή σε αθλητές από όλη την Ελλάδα, με πολλαπλές κατηγορίες που καλύπτουν όλες τις ηλικιακές ομάδες και επίπεδα εμπειρίας. Οι αγώνες διεξάγονται για δεξί και αριστερό χέρι, με διαχωρισμό σε κατηγορίες βάρους και ηλικίας.",
+                overviewDoc: "Απαραίτητο Έγγραφο",
+                overviewDocText: "Κάθε αθλητής πρέπει να προσκομίσει ένα έγγραφο που να πιστοποιεί την ημερομηνία γέννησής του (Ταυτότητα, Πιστοποιητικό γέννησης κ.λπ.) κατά τη διαδικασία της ζύγισης.",
+                organizerLabel: "Διοργανωτής",
+                organizerTitle: "Αθλητικός Σύλλογος Μακεδόνων",
+                organizerText1: "Ο Αθλητικός Σύλλογος Μακεδόνων ιδρύθηκε το 2000 και αποτελεί έναν από τους σημαντικότερους συλλόγους χειροπάλης στην Ελλάδα.",
+                organizerText2: "Με πολυετή εμπειρία στη διοργάνωση αθλητικών events, ο σύλλογος προωθεί το άθλημα της χειροπάλης σε όλη τη χώρα, διασφαλίζοντας την τήρηση των κανονισμών και την ομαλή διεξαγωγή των αγώνων.",
+                organizerLink: "Επισκεφθείτε την ιστοσελίδα του συλλόγου",
+                categoriesLabel: "Αγωνιστικές Κατηγορίες",
+                categoriesTitle: "Κατηγορίες Αγώνων",
+                categoriesSubtitle: "Για δεξί και αριστερό χέρι",
+                catPaidon: "Παίδων",
+                catPaidonAge: "Έως 15 ετών",
+                catEfivon: "Εφήβων",
+                catEfivonAge: "Έως 18 ετών",
+                catArcharion: "Αρχαρίων",
+                catArcharionAge: "Όλες οι ηλικίες",
+                catMaster: "Master",
+                catMasterAge: "Άνω των 40 ετών",
+                catGynaikon: "Γυναικών",
+                catGynaikonAge: "Όλες οι ηλικίες",
+                catAndron: "Ανδρών",
+                catAndronAge: "Επαγγελματική κατηγορία",
+                catOpen: "OPEN",
+                catOpenDesc: "Χωρίς διαχωρισμό βάρους",
+                photosLabel: "Φωτογραφίες",
+                photosTitle: "Οι Εγκαταστάσεις μας",
+                tableTitle: "Τραπέζι Χειροπάλης",
+                facility1: "Κλειστό Γυμναστήριο",
+                facility2: "Κερκίδες Θεατών",
+                facility3: "Χώρος Διεξαγωγής Αγώνων",
+                seminarLabel: "Σεμινάριο",
+                seminarTitle: "Σεμινάριο με τον Plamen Dimitrov",
+                seminarChampion: "Παγκόσμιος & Πανευρωπαϊκός Πρωταθλητής",
+                seminarText1: "Ο Plamen Dimitrov είναι ένας από τους κορυφαίους αθλητές χειροπάλης παγκοσμίως. Με πολυετή εμπειρία σε διεθνείς διοργανώσεις, έχει κατακτήσει τίτλους σε Παγκόσμια και Πανευρωπαϊκά πρωταθλήματα.",
+                seminarText2: "Το σεμινάριό του απευθύνεται σε όλους τους αθλητές που θέλουν να βελτιώσουν την τεχνική τους, να μάθουν προχωρημένες τακτικές και να αποκτήσουν πολύτιμες γνώσεις από έναν από τους καλύτερους αθλητές του αθλήματος.",
+                seminarDate: "Ημερομηνία",
+                seminarDateVal: "Σάββατο 21/02",
+                seminarTime: "Ώρα",
+                seminarCost: "Κόστος Συμμετοχής",
+                feesLabel: "Κόστος Συμμετοχής",
+                feesTitle: "Παράβολα Συμμετοχής",
+                feesGroup1: "Άνδρες, Γυναίκες, Αρχάριοι, Master",
+                feesOneHand: "Ένα χέρι",
+                feesOneHandDesc: "Δεξί ή αριστερό",
+                feesBothHands: "Και τα δύο χέρια",
+                feesBothHandsDesc: "Δεξί και αριστερό",
+                feesPerHand: "ανά χέρι",
+                feesGroup2: "Εφήβων",
+                feesOneHandJuniors: "Ένα χέρι",
+                feesOneHandJuniorsDesc: "Δεξί ή αριστερό",
+                feesBothHandsJuniors: "Και τα δύο χέρια",
+                feesBothHandsJuniorsDesc: "Δεξί και αριστερό",
+                feesPerHandJuniors: "ανά χέρι",
+                feesNote: "Η πληρωμή του παραβόλου γίνεται κατά τη ζύγιση στον χώρο των αγώνων.",
+                weighingLabel: "Διαδικασία Ζύγισης",
+                weighingTitle: "Ημερομηνίες και Ώρες Ζύγισης",
+                weighingSat: "Σάββατο",
+                weighingDateSat: "21 Φεβρουαρίου 2026",
+                weighingSun: "Κυριακή",
+                weighingDateSun: "22 Φεβρουαρίου 2026",
+                weighingHours: "Ώρες Ζύγισης",
+                weighingSeminar: "Σεμινάριο",
+                weighingChampion: "Παγκόσμιος & Πανευρωπαϊκός Πρωταθλητής",
+                weighingTolerance: "Με ανοχή ενός κιλού",
+                weighingStart: "Ώρα Έναρξης Αγώνων",
+                docsTitle: "Απαραίτητα Έγγραφα",
+                docsText: "Ο κάθε αθλητής πρέπει να προσκομίσει κατά τη ζύγιση ένα επίσημο έγγραφο που να πιστοποιεί την ημερομηνία γέννησής του.",
+                docID: "Αστυνομική Ταυτότητα",
+                docBirth: "Πιστοποιητικό Γέννησης",
+                docPassport: "Διαβατήριο",
+                docOther: "Άλλο επίσημο έγγραφο",
+                venueLabel: "Τόπος Διεξαγωγής",
+                venueTitle: "Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας",
+                venueAddress: "Διεύθυνση",
+                venueStreet: "Παλαιών Πατρών Γερμανού 1",
+                venueCity: "Ευκαρπία 564 29, Θεσσαλονίκη",
+                venueText: "Ο χώρος διεξαγωγής έχει επιλεγεί για να πληρεί όλες τις προδιαγραφές ασφαλείας και λειτουργικότητας για τη διεξαγωγή επαγγελματικών αγώνων χειροπάλης, με επαρκή χώρο για αθλητές, κριτές και θεατές.",
+                openMaps: "Άνοιγμα στο Google Maps",
+                sponsorsLabel: "Χορηγοί",
+                sponsorsTitle: "Οι Χορηγοί μας",
+                commSponsor: "Χορηγός Επικοινωνίας",
+                contactTitle: "Στοιχεία Επικοινωνίας",
+                contactPhone: "Τηλέφωνο",
+                contactPhoneDesc: "Καλέστε για πληροφορίες",
+                contactLocation: "Τόπος",
+                contactVenue: "Κλειστό Γυμναστήριο 1ου Γυμνασίου Ευκαρπίας",
+                contactAddress: "Παλαιών Πατρών Γερμανού 1, Ευκαρπία 564 29",
+                contactFb: "Facebook",
+                contactFbBtn: "Δείτε το Event",
+                footerLinks: "Σύνδεσμοι",
+                footerDesc: "Επίσημη σελίδα του Salonica Armwrestling Cup 2026. Προπονητική ημερίδα χειροπάλης από τον Αθλητικό Σύλλογο Μακεδόνων.",
+                footerClub: "Σύλλογος Μακεδόνων",
+                footerEvent: "Facebook Event",
+                footerInfo: "Πληροφορίες",
+                footerCategories: "Κατηγορίες",
+                footerWeighing: "Ζύγιση",
+                footerFees: "Συμμετοχή",
+                footerCopyright: "© 2026 Χειροπάλη Θεσσαλονίκης"
+            },
+            en: {
+                navOverview: "Information",
+                navCategories: "Categories",
+                navWeighing: "Weigh-in",
+                navFees: "Entry Fees",
+                navContact: "Contact",
+                overviewLabel: "Event Information",
+                heroSubtitle: "Armwrestling Tournament",
+                heroTraining: "Armwrestling Training Event",
+                heroClubBtn: "Makedonon Club",
+                heroDate: "Date",
+                heroDateVal: "Sunday, February 22, 2026",
+                heroLocation: "Location",
+                heroVenueName: "Indoor Gymnasium of 1st Efkarpia High School",
+                heroVenueShort: "Indoor Gymnasium of 1st Efkarpia High School",
+                heroAddress: "Palaion Patron Germanou 1, Efkarpia 564 29",
+                heroAddressShort: "Palaion Patron Germanou 1, Efkarpia 564 29",
+                heroContact: "Contact",
+                heroContactName: "Kyriakos Evangeloudis",
+                overviewTitle: "About the Tournament",
+                overviewText1: "The Salonica Armwrestling Cup 2026 and the armwrestling training event are organized by the Makedonon Athletic Club in Thessaloniki.",
+                overviewText2: "The event is open to athletes from all over Greece, with multiple categories covering all age groups and experience levels. Competitions are held for right and left hand, with weight and age category divisions.",
+                overviewDoc: "Required Document",
+                overviewDocText: "Each athlete must present a document certifying their date of birth (ID, birth certificate, etc.) during the weigh-in process.",
+                organizerLabel: "Organizer",
+                organizerTitle: "Makedonon Athletic Club",
+                organizerText1: "The Makedonon Athletic Club was founded in 2000 and is one of the most important armwrestling clubs in Greece.",
+                organizerText2: "With years of experience in organizing sports events, the club promotes armwrestling throughout the country, ensuring compliance with regulations and smooth conduct of competitions.",
+                organizerLink: "Visit the club's website",
+                categoriesLabel: "Competition Categories",
+                categoriesTitle: "Competition Categories",
+                categoriesSubtitle: "For right and left hand",
+                catPaidon: "Children",
+                catPaidonAge: "Up to 15 years",
+                catEfivon: "Juniors",
+                catEfivonAge: "Up to 18 years",
+                catArcharion: "Beginners",
+                catArcharionAge: "All ages",
+                catMaster: "Master",
+                catMasterAge: "Over 40 years",
+                catGynaikon: "Women",
+                catGynaikonAge: "All ages",
+                catAndron: "Men",
+                catAndronAge: "Professional category",
+                catOpen: "OPEN",
+                catOpenDesc: "No weight division",
+                photosLabel: "Photos",
+                photosTitle: "Our Facilities",
+                tableTitle: "Armwrestling Table",
+                facility1: "Indoor Gymnasium",
+                facility2: "Spectator Stands",
+                facility3: "Competition Venue",
+                seminarLabel: "Seminar",
+                seminarTitle: "Seminar with Plamen Dimitrov",
+                seminarChampion: "World & European Champion",
+                seminarText1: "Plamen Dimitrov is one of the top armwrestling athletes worldwide. With years of experience in international competitions, he has won titles at World and European Championships.",
+                seminarText2: "His seminar is aimed at all athletes who want to improve their technique, learn advanced tactics, and gain valuable knowledge from one of the best athletes in the sport.",
+                seminarDate: "Date",
+                seminarDateVal: "Saturday 21/02",
+                seminarTime: "Time",
+                seminarCost: "Participation Cost",
+                feesLabel: "Entry Fees",
+                feesTitle: "Entry Fees",
+                feesGroup1: "Men, Women, Beginners, Master",
+                feesOneHand: "One hand",
+                feesOneHandDesc: "Right or left",
+                feesBothHands: "Both hands",
+                feesBothHandsDesc: "Right and left",
+                feesPerHand: "per hand",
+                feesGroup2: "Juniors",
+                feesOneHandJuniors: "One hand",
+                feesOneHandJuniorsDesc: "Right or left",
+                feesBothHandsJuniors: "Both hands",
+                feesBothHandsJuniorsDesc: "Right and left",
+                feesPerHandJuniors: "per hand",
+                feesNote: "Payment is made during weigh-in at the competition venue.",
+                weighingLabel: "Weigh-in Procedure",
+                weighingTitle: "Weigh-in Dates & Times",
+                weighingSat: "Saturday",
+                weighingDateSat: "February 21, 2026",
+                weighingSun: "Sunday",
+                weighingDateSun: "February 22, 2026",
+                weighingHours: "Weigh-in Hours",
+                weighingSeminar: "Seminar",
+                weighingChampion: "World & European Champion",
+                weighingTolerance: "With 1kg tolerance",
+                weighingStart: "Competition Start Time",
+                docsTitle: "Required Documents",
+                docsText: "Each athlete must present an official document certifying their date of birth during weigh-in.",
+                docID: "Police ID",
+                docBirth: "Birth Certificate",
+                docPassport: "Passport",
+                docOther: "Other official document",
+                venueLabel: "Venue",
+                venueTitle: "Indoor Gymnasium of 1st Efkarpia High School",
+                venueAddress: "Address",
+                venueStreet: "Palaion Patron Germanou 1",
+                venueCity: "Efkarpia 564 29, Thessaloniki",
+                venueText: "The venue has been selected to meet all safety and functionality requirements for professional armwrestling competitions, with adequate space for athletes, judges, and spectators.",
+                openMaps: "Open in Google Maps",
+                sponsorsLabel: "Sponsors",
+                sponsorsTitle: "Our Sponsors",
+                commSponsor: "Communication Sponsor",
+                contactTitle: "Contact Information",
+                contactPhone: "Phone",
+                contactPhoneDesc: "Call for information",
+                contactLocation: "Location",
+                contactVenue: "Indoor Gymnasium of 1st Efkarpia High School",
+                contactAddress: "Palaion Patron Germanou 1, Efkarpia 564 29",
+                contactFb: "Facebook",
+                contactFbBtn: "View Event",
+                footerLinks: "Links",
+                footerDesc: "Official page of Salonica Armwrestling Cup 2026. Armwrestling training event organized by Makedonon Athletic Club.",
+                footerClub: "Makedonon Club",
+                footerEvent: "Facebook Event",
+                footerInfo: "Information",
+                footerCategories: "Categories",
+                footerWeighing: "Weigh-in",
+                footerFees: "Entry Fees",
+                footerCopyright: "© 2026 Thessaloniki Armwrestling"
+            }
+        };
+
+        let currentLang = localStorage.getItem('sac2026-lang') || 'el';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('sac2026-lang', lang);
+            
+            // Update button styles
+            document.getElementById('lang-el').className = lang === 'el' 
+                ? 'w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-brand-gold text-brand-blueDark font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:scale-110'
+                : 'w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/10 text-white font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:bg-white/20';
+            
+            document.getElementById('lang-en').className = lang === 'en' 
+                ? 'w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-brand-gold text-brand-blueDark font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:scale-110'
+                : 'w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/10 text-white font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:bg-white/20';
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+            
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage(currentLang);
+        });
     </script>
+
+</body>
+</html>
+/script>
+
+</body>
+</html>
+script>
 
 </body>
 </html>
