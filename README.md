@@ -197,7 +197,7 @@ Palaion Patron Germanou 1, Efkarpia 564 29, Thessaloniki
 
 ## 📄 License
 
-© 2026 Makedonon Athletic Club  
+© 2026 Georgios-Chrysovalantis Chatzivantsidis
 All rights reserved.
 
 ---
