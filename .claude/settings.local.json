@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -lh *.xlsx)",
+      "mcp__Desktop_Commander__read_file",
+      "mcp__Desktop_Commander__start_process",
+      "mcp__weebot__python_execute",
+      "mcp__weebot__bash",
+      "Bash(unzip -l tournament_thessaloniki_2026_v9.xlsx)",
+      "Bash(unzip -p tournament_thessaloniki_2026_v9.xlsx xl/workbook.xml)",
+      "Bash(unzip -p tournament_thessaloniki_2026_v9.xlsx xl/worksheets/sheet1.xml)",
+      "Bash(python3 -c \"import openpyxl; print\\(''openpyxl available''\\)\")",
+      "Bash(python3 -c \"import pandas; print\\(''pandas available''\\)\")",
+      "Bash(python3:*)",
+      "mcp__PDF_Tools_-_Analyze__Extract__Fill__Compare__read_pdf_content",
+      "mcp__Desktop_Commander__write_file",
+      "mcp__Kapture_Browser_Automation__new_tab"
+    ]
+  }
+}
