@@ -1,0 +1,2704 @@
+{
+  "metadata": {
+    "extracted_at": "2026-03-11T18:48:27.665535",
+    "source_file": "/mnt/user-data/uploads/tournament_thessaloniki_2026_v9.xlsx",
+    "source_file_mtime": 1773254904.255789,
+    "results_count": 178,
+    "athletes_count": 85,
+    "teams_count": 8,
+    "autonomous_count": 21
+  },
+  "results": [
+    {
+      "athlete": "Αναστάσιος Μακρίδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Left -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Left",
+      "weight": "-80 kg",
+      "placement": 1,
+      "points": 10
+    },
+    {
+      "athlete": "Gabriel Stoev",
+      "country": "Bulgaria",
+      "category": "Junior U-18 Men Left -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Left",
+      "weight": "-80 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Lokomotive 96"
+    },
+    {
+      "athlete": "Βασίλειος Φιλικίδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Left -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Left",
+      "weight": "-80 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Εμμανουήλ Μακρίδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Left -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Left",
+      "weight": "-80 kg",
+      "placement": 4,
+      "points": 4
+    },
+    {
+      "athlete": "Χρήστος Ταξιάρχης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Left -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Left",
+      "weight": "-80 kg",
+      "placement": 5,
+      "points": 3
+    },
+    {
+      "athlete": "Αναστάσιος Γεωργιάδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Left -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Left",
+      "weight": "-80 kg",
+      "placement": 6,
+      "points": 2
+    },
+    {
+      "athlete": "Αντώνης Παναγκασίδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Left +80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Left",
+      "weight": "+80 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Μιχαήλ Άγγελος Μελιανίδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Left +80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Left",
+      "weight": "+80 kg",
+      "placement": 2,
+      "points": 7
+    },
+    {
+      "athlete": "Παναγιώτης Φωτόπουλος",
+      "country": "Greece",
+      "category": "Junior U-18 Men Left +80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Left",
+      "weight": "+80 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Πέτρος Καραΐσκος",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-75 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Νίκος Τσελέπης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-75 kg",
+      "placement": 2,
+      "points": 7
+    },
+    {
+      "athlete": "Χρυσόστομος Παπαγεωργίου",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-75 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Αρκάδιος Τσιτσόνης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-75 kg",
+      "placement": 4,
+      "points": 4
+    },
+    {
+      "athlete": "Δημήτριος Τσακμακίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-75 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Ιωάννης Καραγιαννίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-75 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Χρήστος Ταξιάρχης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-75 kg",
+      "placement": 7,
+      "points": 1
+    },
+    {
+      "athlete": "Αλέξανδρος Πατούκας",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-75 kg",
+      "placement": 8,
+      "points": 0,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Ελευθέριος Βόσσος",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-75 kg",
+      "placement": 9,
+      "points": 0,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Ανέστης Βασιλειάδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-95 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Ελευθέριος Τσαγκαρίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-95 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Άγγελος Τούντας",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-95 kg",
+      "placement": 3,
+      "points": 5
+    },
+    {
+      "athlete": "Φώτης Δημητρίου",
+      "country": "Cyprus",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-95 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Μιχαήλ Άγγελος Μελιανίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-95 kg",
+      "placement": 5,
+      "points": 3
+    },
+    {
+      "athlete": "Milto Carciu",
+      "country": "Albania",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left -95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "-95 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Θεόδωρος Κούρτογλου",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "+95 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Χρήστος Σινάνης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "+95 kg",
+      "placement": 2,
+      "points": 7
+    },
+    {
+      "athlete": "Ισαάκ Καραμιχαηλίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "+95 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Κωνσταντίνος Τουμανίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "+95 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Κωνσταντίνος Σκαπουλάρος",
+      "country": "Cyprus",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "+95 kg",
+      "placement": 5,
+      "points": 3
+    },
+    {
+      "athlete": "Γεώργιος Χρυσοβαλάντης Χατζηβαντσίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Left +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Left",
+      "weight": "+95 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Zdravko Petrov",
+      "country": "Bulgaria",
+      "category": "Senior Men Left 63 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "63 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Zahari Zahariev",
+      "country": "Bulgaria",
+      "category": "Senior Men Left 63 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "63 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Lokomotive 96"
+    },
+    {
+      "athlete": "Mitko Staykov",
+      "country": "Bulgaria",
+      "category": "Senior Men Left 63 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "63 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Βαλέριος Ριζίδης",
+      "country": "Greece",
+      "category": "Senior Men Left 63 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "63 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Βασίλειος Φιλικίδης",
+      "country": "Greece",
+      "category": "Senior Men Left 70 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "70 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Zdravko Petrov",
+      "country": "Bulgaria",
+      "category": "Senior Men Left 70 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "70 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Δημήτρης Ναβάλ",
+      "country": "Greece",
+      "category": "Senior Men Left 70 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "70 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Αλέξανδρος Πατούκας",
+      "country": "Greece",
+      "category": "Senior Men Left 70 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "70 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Νίκος Μίντσης",
+      "country": "Greece",
+      "category": "Senior Men Left 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "78 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Κωνσταντίνος Αντωνιάδης",
+      "country": "Greece",
+      "category": "Senior Men Left 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "78 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Αλέξανδρος Ζαφειρόπουλος",
+      "country": "Greece",
+      "category": "Senior Men Left 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "78 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Ευαγγέλου Κωνσταντίνος",
+      "country": "Greece",
+      "category": "Senior Men Left 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "78 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Εμμανουήλ Μακρίδης",
+      "country": "Greece",
+      "category": "Senior Men Left 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "78 kg",
+      "placement": 5,
+      "points": 3
+    },
+    {
+      "athlete": "Αλέξανδρος Διαμαντίδης",
+      "country": "Greece",
+      "category": "Senior Men Left 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "78 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Γιώργος Νικητάρας",
+      "country": "Greece",
+      "category": "Senior Men Left 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "78 kg",
+      "placement": 7,
+      "points": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Πέτρος Καραΐσκος",
+      "country": "Greece",
+      "category": "Senior Men Left 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "78 kg",
+      "placement": 8,
+      "points": 0,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Αντώνης Παναγκασίδης",
+      "country": "Greece",
+      "category": "Senior Men Left 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "86 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Σωκράτης Κανιός",
+      "country": "Greece",
+      "category": "Senior Men Left 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "86 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Κυριάκος Ευαγγελούδης",
+      "country": "Greece",
+      "category": "Senior Men Left 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "86 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Φώτης Δημητρίου",
+      "country": "Cyprus",
+      "category": "Senior Men Left 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "86 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Παναγιώτης Τσακίρης",
+      "country": "Greece",
+      "category": "Senior Men Left 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "86 kg",
+      "placement": 5,
+      "points": 3
+    },
+    {
+      "athlete": "Σωκράτης Σούτογλου",
+      "country": "Greece",
+      "category": "Senior Men Left 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "86 kg",
+      "placement": 6,
+      "points": 2
+    },
+    {
+      "athlete": "Αλέξανδρος Ζαφειρόπουλος",
+      "country": "Greece",
+      "category": "Senior Men Left 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "86 kg",
+      "placement": 7,
+      "points": 1,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Χρήστος Ζαμπλαράς",
+      "country": "Greece",
+      "category": "Senior Men Left 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "95 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Mihail Pavlov",
+      "country": "Bulgaria",
+      "category": "Senior Men Left 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "95 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Δημήτριος Πιπερούδης",
+      "country": "Greece",
+      "category": "Senior Men Left 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "95 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Ανδρέας Χατζηλουκάς",
+      "country": "Cyprus",
+      "category": "Senior Men Left 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "95 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Ευάγγελος Μισιάς",
+      "country": "Greece",
+      "category": "Senior Men Left 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "95 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Επιφάνιος Επιφανίου",
+      "country": "Cyprus",
+      "category": "Senior Men Left 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "95 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Ιωάννης Βόσσος",
+      "country": "Greece",
+      "category": "Senior Men Left 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "95 kg",
+      "placement": 7,
+      "points": 1,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Petar Ivanov",
+      "country": "Bulgaria",
+      "category": "Senior Men Left 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "105 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Lokomotive 96"
+    },
+    {
+      "athlete": "Γεώργιος Αθανασιάδης",
+      "country": "Greece",
+      "category": "Senior Men Left 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "105 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Ηλίας Μπατσινίλας",
+      "country": "Greece",
+      "category": "Senior Men Left 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "105 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Σπύρος Χαλαστάρας",
+      "country": "Greece",
+      "category": "Senior Men Left 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "105 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Emanuil Manasiev",
+      "country": "Bulgaria",
+      "category": "Senior Men Left 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "105 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Επιφάνιος Επιφανίου",
+      "country": "Cyprus",
+      "category": "Senior Men Left 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "105 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Detelin Yonchev",
+      "country": "Bulgaria",
+      "category": "Senior Men Left +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "+105 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Χρήστος Μιχαηλίδης",
+      "country": "Greece",
+      "category": "Senior Men Left +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "+105 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Πιλάτος Κουνατίδης",
+      "country": "Greece",
+      "category": "Senior Men Left +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "+105 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Μάριος Παπαδόπουλος",
+      "country": "Cyprus",
+      "category": "Senior Men Left +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "+105 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Σωτήρης Σακαντέμης",
+      "country": "Greece",
+      "category": "Senior Men Left +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "+105 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Δημήτριος Φωκάς",
+      "country": "Greece",
+      "category": "Senior Men Left +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "+105 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Βασίλης Πέτρου",
+      "country": "Greece",
+      "category": "Masters Men Left Open",
+      "ageGroup": "Masters",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 1,
+      "points": 10,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Emanuil Manasiev",
+      "country": "Bulgaria",
+      "category": "Masters Men Left Open",
+      "ageGroup": "Masters",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 2,
+      "points": 7,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Σπύρος Χαλαστάρας",
+      "country": "Greece",
+      "category": "Masters Men Left Open",
+      "ageGroup": "Masters",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 3,
+      "points": 5,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Pradeep Nishantha Rajapaksha",
+      "country": "Sri Lanka",
+      "category": "Masters Men Left Open",
+      "ageGroup": "Masters",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 4,
+      "points": 4,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Gabriel Stoev",
+      "country": "Bulgaria",
+      "category": "Junior U-18 Men Right -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Right",
+      "weight": "-80 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Lokomotive 96"
+    },
+    {
+      "athlete": "Βασίλειος Φιλικίδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Right -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Right",
+      "weight": "-80 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Εμμανουήλ Μακρίδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Right -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Right",
+      "weight": "-80 kg",
+      "placement": 3,
+      "points": 5
+    },
+    {
+      "athlete": "Χρήστος Ταξιάρχης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Right -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Right",
+      "weight": "-80 kg",
+      "placement": 4,
+      "points": 4
+    },
+    {
+      "athlete": "Χρήστος Δημητρίου",
+      "country": "Greece",
+      "category": "Junior U-18 Men Right -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Right",
+      "weight": "-80 kg",
+      "placement": 5,
+      "points": 3
+    },
+    {
+      "athlete": "Αναστάσιος Γεωργιάδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Right -80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Right",
+      "weight": "-80 kg",
+      "placement": 6,
+      "points": 2
+    },
+    {
+      "athlete": "Αντώνης Παναγκασίδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Right +80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Right",
+      "weight": "+80 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Μιχαήλ Άγγελος Μελιανίδης",
+      "country": "Greece",
+      "category": "Junior U-18 Men Right +80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Right",
+      "weight": "+80 kg",
+      "placement": 2,
+      "points": 7
+    },
+    {
+      "athlete": "Παναγιώτης Φωτόπουλος",
+      "country": "Greece",
+      "category": "Junior U-18 Men Right +80 kg",
+      "ageGroup": "Junior U-18",
+      "hand": "Right",
+      "weight": "+80 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Πέτρος Καραΐσκος",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Παναγιώτης Γραβάλης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Χρυσόστομος Παπαγεωργίου",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Αλέξανδρος Πατούκας",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Στράτης Σπυρίδων Αιδονίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 5,
+      "points": 3
+    },
+    {
+      "athlete": "Χρήστος Δημητρίου",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 6,
+      "points": 2
+    },
+    {
+      "athlete": "Ιωάννης Τσαλουκίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 7,
+      "points": 1
+    },
+    {
+      "athlete": "Ιωάννης Γατσέλης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 8,
+      "points": 0
+    },
+    {
+      "athlete": "Αρκάδιος Τσιτσόνης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 9,
+      "points": 0
+    },
+    {
+      "athlete": "Ελευθέριος Βόσσος",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 10,
+      "points": 0,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Νίκος Τσελέπης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 11,
+      "points": 0
+    },
+    {
+      "athlete": "Δημήτριος Τσακμακίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 12,
+      "points": 0,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Χρήστος Ταξιάρχης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 13,
+      "points": 0
+    },
+    {
+      "athlete": "Ιωάννης Καραγιαννίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right -75 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "-75 kg",
+      "placement": 14,
+      "points": 0,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Μιχαήλ Άγγελος Μελιανίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right 95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 1,
+      "points": 10
+    },
+    {
+      "athlete": "Ανέστης Βασιλειάδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right 95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Φώτης Δημητρίου",
+      "country": "Cyprus",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right 95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Κωνσταντίνος Κογκετσίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right 95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Ελευθέριος Τσαγκαρίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right 95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Άγγελος Τούντας",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right 95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 6,
+      "points": 2
+    },
+    {
+      "athlete": "Milto Carciu",
+      "country": "Albania",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right 95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 7,
+      "points": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Χαράλαμπος Κυμπρίκτσης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right 95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 8,
+      "points": 0
+    },
+    {
+      "athlete": "Θεόδωρος Κούρτογλου",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "+95 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Ισαάκ Καραμιχαηλίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "+95 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Νικόλαος Βόσσος",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "+95 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Κωνσταντίνος Τουμανίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "+95 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Χρήστος Σινάνης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "+95 kg",
+      "placement": 5,
+      "points": 3
+    },
+    {
+      "athlete": "Φώτης Δημητρίου",
+      "country": "Cyprus",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "+95 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Κωνσταντίνος Σκαπουλάρος",
+      "country": "Cyprus",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "+95 kg",
+      "placement": 7,
+      "points": 1
+    },
+    {
+      "athlete": "Γεώργιος Χρυσοβαλάντης Χατζηβαντσίδης",
+      "country": "Greece",
+      "category": "ΑΡΧΑΡΙΟΙ Men Right +95 kg",
+      "ageGroup": "ΑΡΧΑΡΙΟΙ",
+      "hand": "Right",
+      "weight": "+95 kg",
+      "placement": 8,
+      "points": 0,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Zahari Zahariev",
+      "country": "Bulgaria",
+      "category": "Senior Men Right 63 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "63 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Lokomotive 96"
+    },
+    {
+      "athlete": "Zdravko Petrov",
+      "country": "Bulgaria",
+      "category": "Senior Men Right 63 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "63 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Mitko Staykov",
+      "country": "Bulgaria",
+      "category": "Senior Men Right 63 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "63 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Αναστάσιος Στεφανίδης",
+      "country": "Greece",
+      "category": "Senior Men Right 63 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "63 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Βασίλειος Φιλικίδης",
+      "country": "Greece",
+      "category": "Senior Men Right 70 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "70 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Δημήτρης Ναβάλ",
+      "country": "Greece",
+      "category": "Senior Men Right 70 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "70 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Mitko Staykov",
+      "country": "Bulgaria",
+      "category": "Senior Men Right 70 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "70 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Νίκος Αθανάσαρος",
+      "country": "Greece",
+      "category": "Senior Men Right 70 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "70 kg",
+      "placement": 4,
+      "points": 4
+    },
+    {
+      "athlete": "Αλέξανδρος Πατούκας",
+      "country": "Greece",
+      "category": "Senior Men Right 70 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "70 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Νίκος Μίντσης",
+      "country": "Greece",
+      "category": "Senior Men Right 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "78 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Κωνσταντίνος Αντωνιάδης",
+      "country": "Greece",
+      "category": "Senior Men Right 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "78 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Αλέξανδρος Ζαφειρόπουλος",
+      "country": "Greece",
+      "category": "Senior Men Right 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "78 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Ευαγγέλου Κωνσταντίνος",
+      "country": "Greece",
+      "category": "Senior Men Right 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "78 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Αλέξανδρος Διαμαντίδης",
+      "country": "Greece",
+      "category": "Senior Men Right 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "78 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Πέτρος Καραΐσκος",
+      "country": "Greece",
+      "category": "Senior Men Right 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "78 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Γιώργος Νικητάρας",
+      "country": "Greece",
+      "category": "Senior Men Right 78 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "78 kg",
+      "placement": 7,
+      "points": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Αντώνης Παναγκασίδης",
+      "country": "Greece",
+      "category": "Senior Men Right 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "86 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Σωκράτης Κανιός",
+      "country": "Greece",
+      "category": "Senior Men Right 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "86 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Κυριάκος Ευαγγελούδης",
+      "country": "Greece",
+      "category": "Senior Men Right 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "86 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Αλέξανδρος Ζαφειρόπουλος",
+      "country": "Greece",
+      "category": "Senior Men Right 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "86 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "S.O.A.T"
+    },
+    {
+      "athlete": "Παναγιώτης Τσακίρης",
+      "country": "Greece",
+      "category": "Senior Men Right 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "86 kg",
+      "placement": 5,
+      "points": 3
+    },
+    {
+      "athlete": "Φώτης Δημητρίου",
+      "country": "Cyprus",
+      "category": "Senior Men Right 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "86 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Σωκράτης Σούτογλου",
+      "country": "Greece",
+      "category": "Senior Men Right 86 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "86 kg",
+      "placement": 7,
+      "points": 1
+    },
+    {
+      "athlete": "Mihail Pavlov",
+      "country": "Bulgaria",
+      "category": "Senior Men Right 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Παναγιώτης Σακαρίδης",
+      "country": "Greece",
+      "category": "Senior Men Right 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Ανδρέας Χατζηλουκάς",
+      "country": "Cyprus",
+      "category": "Senior Men Right 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Ευάγγελος Μισιάς",
+      "country": "Greece",
+      "category": "Senior Men Right 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Δημήτριος Πιπερούδης",
+      "country": "Greece",
+      "category": "Senior Men Right 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Ιωάννης Βόσσος",
+      "country": "Greece",
+      "category": "Senior Men Right 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Επιφάνιος Επιφανίου",
+      "country": "Cyprus",
+      "category": "Senior Men Right 95 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "95 kg",
+      "placement": 7,
+      "points": 1,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Ηλίας Μπατσινίλας",
+      "country": "Greece",
+      "category": "Senior Men Right 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "105 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Γεώργιος Αθανασιάδης",
+      "country": "Greece",
+      "category": "Senior Men Right 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "105 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Emanuil Manasiev",
+      "country": "Bulgaria",
+      "category": "Senior Men Right 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "105 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Petar Ivanov",
+      "country": "Bulgaria",
+      "category": "Senior Men Right 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "105 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Lokomotive 96"
+    },
+    {
+      "athlete": "Σπύρος Χαλαστάρας",
+      "country": "Greece",
+      "category": "Senior Men Right 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "105 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Κωνσταντίνος Φλώρος",
+      "country": "Greece",
+      "category": "Senior Men Right 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "105 kg",
+      "placement": 6,
+      "points": 2
+    },
+    {
+      "athlete": "Σωκράτης Κανιός",
+      "country": "Greece",
+      "category": "Senior Men Right 105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "105 kg",
+      "placement": 7,
+      "points": 1,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Μάριος Παπαδόπουλος",
+      "country": "Cyprus",
+      "category": "Senior Men Right +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "+105 kg",
+      "placement": 1,
+      "points": 10,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Detelin Yonchev",
+      "country": "Bulgaria",
+      "category": "Senior Men Right +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "+105 kg",
+      "placement": 2,
+      "points": 7,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Θεόδωρος Μιχαηλίδης",
+      "country": "Greece",
+      "category": "Senior Men Right +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "+105 kg",
+      "placement": 3,
+      "points": 5,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Δημήτριος Φωκάς",
+      "country": "Greece",
+      "category": "Senior Men Right +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "+105 kg",
+      "placement": 4,
+      "points": 4,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Σωτήρης Σακαντέμης",
+      "country": "Greece",
+      "category": "Senior Men Right +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "+105 kg",
+      "placement": 5,
+      "points": 3,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Πιλάτος Κουνατίδης",
+      "country": "Greece",
+      "category": "Senior Men Right +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "+105 kg",
+      "placement": 6,
+      "points": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Δημήτρης Νικοπολίδης",
+      "country": "Greece",
+      "category": "Senior Men Right +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "+105 kg",
+      "placement": 7,
+      "points": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Χρήστος Μιχαηλίδης",
+      "country": "Greece",
+      "category": "Senior Men Right +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "+105 kg",
+      "placement": 8,
+      "points": 0,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Επιφάνιος Επιφανίου",
+      "country": "Cyprus",
+      "category": "Senior Men Right +105 kg",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "+105 kg",
+      "placement": 9,
+      "points": 0,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "athlete": "Emanuil Manasiev",
+      "country": "Bulgaria",
+      "category": "Masters Men Right Open",
+      "ageGroup": "Masters",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 1,
+      "points": 10,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Σπύρος Χαλαστάρας",
+      "country": "Greece",
+      "category": "Masters Men Right Open",
+      "ageGroup": "Masters",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 2,
+      "points": 7,
+      "team": "Greek Armbenders"
+    },
+    {
+      "athlete": "Pradeep Nishantha Rajapaksha",
+      "country": "Sri Lanka",
+      "category": "Masters Men Right Open",
+      "ageGroup": "Masters",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 3,
+      "points": 5,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "athlete": "Ζίζο Τιγκισβίλι",
+      "country": "Greece",
+      "category": "Senior Women Right Open",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 1,
+      "points": 10,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Mihaela Krumova",
+      "country": "Bulgaria",
+      "category": "Senior Women Right Open",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 2,
+      "points": 7,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Δέσποινα Κοντοπούλου",
+      "country": "Greece",
+      "category": "Senior Women Right Open",
+      "ageGroup": "Senior",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 3,
+      "points": 5,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Stefani Decheva",
+      "country": "Bulgaria",
+      "category": "Senior Women Left Open",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 1,
+      "points": 10,
+      "team": "Lokomotive 96"
+    },
+    {
+      "athlete": "Ζίζο Τιγκισβίλι",
+      "country": "Greece",
+      "category": "Senior Women Left Open",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 2,
+      "points": 7,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Mihaela Krumova",
+      "country": "Bulgaria",
+      "category": "Senior Women Left Open",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 3,
+      "points": 5,
+      "team": "CSKA"
+    },
+    {
+      "athlete": "Δέσποινα Κοντοπούλου",
+      "country": "Greece",
+      "category": "Senior Women Left Open",
+      "ageGroup": "Senior",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 4,
+      "points": 4,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Ελευθέριος Βόσσος",
+      "country": "Greece",
+      "category": "Junior Boys U-15 Left",
+      "ageGroup": "Junior U-15",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 1,
+      "points": 10,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Σταύρος Ιακωβίδης",
+      "country": "Greece",
+      "category": "Junior Boys U-15 Left",
+      "ageGroup": "Junior U-15",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 2,
+      "points": 7,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Γεώργιος Ταξιάρχης",
+      "country": "Greece",
+      "category": "Junior Boys U-15 Left",
+      "ageGroup": "Junior U-15",
+      "hand": "Left",
+      "weight": "Open",
+      "placement": 3,
+      "points": 5
+    },
+    {
+      "athlete": "Ελευθέριος Βόσσος",
+      "country": "Greece",
+      "category": "Junior Boys U-15 Right",
+      "ageGroup": "Junior U-15",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 1,
+      "points": 10,
+      "team": "Let's Go"
+    },
+    {
+      "athlete": "Γεώργιος Ταρασίδης",
+      "country": "Greece",
+      "category": "Junior Boys U-15 Right",
+      "ageGroup": "Junior U-15",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 2,
+      "points": 7,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "athlete": "Γεώργιος Ταξιάρχης",
+      "country": "Greece",
+      "category": "Junior Boys U-15 Right",
+      "ageGroup": "Junior U-15",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 3,
+      "points": 5
+    },
+    {
+      "athlete": "Παναγιώτης Πετκόγλου",
+      "country": "Greece",
+      "category": "Junior Boys U-15 Right",
+      "ageGroup": "Junior U-15",
+      "hand": "Right",
+      "weight": "Open",
+      "placement": 4,
+      "points": 4
+    }
+  ],
+  "athletes": [
+    {
+      "rank": 1,
+      "name": "Αντώνης Παναγκασίδης",
+      "country": "Greece",
+      "totalPoints": 40,
+      "categoriesCount": 4,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 2,
+      "name": "Βασίλειος Φιλικίδης",
+      "country": "Greece",
+      "totalPoints": 32,
+      "categoriesCount": 4,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "rank": 3,
+      "name": "Μιχαήλ Άγγελος Μελιανίδης",
+      "country": "Greece",
+      "totalPoints": 27,
+      "categoriesCount": 4
+    },
+    {
+      "rank": 4,
+      "name": "Emanuil Manasiev",
+      "country": "Bulgaria",
+      "totalPoints": 25,
+      "categoriesCount": 4,
+      "team": "CSKA"
+    },
+    {
+      "rank": 5,
+      "name": "Zdravko Petrov",
+      "country": "Bulgaria",
+      "totalPoints": 24,
+      "categoriesCount": 3,
+      "team": "CSKA"
+    },
+    {
+      "rank": 6,
+      "name": "Πέτρος Καραΐσκος",
+      "country": "Greece",
+      "totalPoints": 22,
+      "categoriesCount": 4,
+      "team": "S.O.A.T"
+    },
+    {
+      "rank": 7,
+      "name": "Gabriel Stoev",
+      "country": "Bulgaria",
+      "totalPoints": 17,
+      "categoriesCount": 2,
+      "team": "Lokomotive 96"
+    },
+    {
+      "rank": 8,
+      "name": "Ελευθέριος Βόσσος",
+      "country": "Greece",
+      "totalPoints": 20,
+      "categoriesCount": 4,
+      "team": "Let's Go"
+    },
+    {
+      "rank": 9,
+      "name": "Θεόδωρος Κούρτογλου",
+      "country": "Greece",
+      "totalPoints": 20,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 10,
+      "name": "Νίκος Μίντσης",
+      "country": "Greece",
+      "totalPoints": 20,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 11,
+      "name": "Σπύρος Χαλαστάρας",
+      "country": "Greece",
+      "totalPoints": 19,
+      "categoriesCount": 4,
+      "team": "Greek Armbenders"
+    },
+    {
+      "rank": 12,
+      "name": "Ανέστης Βασιλειάδης",
+      "country": "Greece",
+      "totalPoints": 17,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 13,
+      "name": "Φώτης Δημητρίου",
+      "country": "Cyprus",
+      "totalPoints": 17,
+      "categoriesCount": 5,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "rank": 14,
+      "name": "Zahari Zahariev",
+      "country": "Bulgaria",
+      "totalPoints": 17,
+      "categoriesCount": 2,
+      "team": "Lokomotive 96"
+    },
+    {
+      "rank": 15,
+      "name": "Mihail Pavlov",
+      "country": "Bulgaria",
+      "totalPoints": 17,
+      "categoriesCount": 2,
+      "team": "CSKA"
+    },
+    {
+      "rank": 16,
+      "name": "Detelin Yonchev",
+      "country": "Bulgaria",
+      "totalPoints": 17,
+      "categoriesCount": 2,
+      "team": "CSKA"
+    },
+    {
+      "rank": 17,
+      "name": "Ζίζο Τιγκισβίλι",
+      "country": "Greece",
+      "totalPoints": 17,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 18,
+      "name": "Mitko Staykov",
+      "country": "Bulgaria",
+      "totalPoints": 15,
+      "categoriesCount": 3,
+      "team": "CSKA"
+    },
+    {
+      "rank": 19,
+      "name": "Αλέξανδρος Ζαφειρόπουλος",
+      "country": "Greece",
+      "totalPoints": 15,
+      "categoriesCount": 4,
+      "team": "S.O.A.T"
+    },
+    {
+      "rank": 20,
+      "name": "Σωκράτης Κάνιος",
+      "country": "Greece",
+      "totalPoints": 15,
+      "categoriesCount": 3,
+      "team": "Greek Armbenders"
+    },
+    {
+      "rank": 21,
+      "name": "Ηλίας Μπατσινίλας",
+      "country": "Greece",
+      "totalPoints": 15,
+      "categoriesCount": 2,
+      "team": "Greek Armbenders"
+    },
+    {
+      "rank": 22,
+      "name": "Κωνσταντίνος Αντωνιάδης",
+      "country": "Greece",
+      "totalPoints": 14,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 23,
+      "name": "Petar Ivanov",
+      "country": "Bulgaria",
+      "totalPoints": 14,
+      "categoriesCount": 2,
+      "team": "Lokomotive 96"
+    },
+    {
+      "rank": 24,
+      "name": "Γεώργιος Αθανασιάδης",
+      "country": "Greece",
+      "totalPoints": 14,
+      "categoriesCount": 2,
+      "team": "Let's Go"
+    },
+    {
+      "rank": 25,
+      "name": "Μάριος Παπαδόπουλος",
+      "country": "Cyprus",
+      "totalPoints": 14,
+      "categoriesCount": 2,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "rank": 26,
+      "name": "Εμμανουήλ Μακρίδης",
+      "country": "Greece",
+      "totalPoints": 12,
+      "categoriesCount": 3
+    },
+    {
+      "rank": 27,
+      "name": "Ισαάκ Καραμιχαηλίδης",
+      "country": "Greece",
+      "totalPoints": 12,
+      "categoriesCount": 2,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "rank": 28,
+      "name": "Δημήτρης Ναβάλ",
+      "country": "Greece",
+      "totalPoints": 12,
+      "categoriesCount": 2,
+      "team": "Let's Go"
+    },
+    {
+      "rank": 29,
+      "name": "Mihaela Krumova",
+      "country": "Bulgaria",
+      "totalPoints": 12,
+      "categoriesCount": 2,
+      "team": "CSKA"
+    },
+    {
+      "rank": 30,
+      "name": "Αλέξανδρος Πατούκας",
+      "country": "Greece",
+      "totalPoints": 11,
+      "categoriesCount": 4,
+      "team": "S.O.A.T"
+    },
+    {
+      "rank": 31,
+      "name": "Παναγιώτης Φωτόπουλος",
+      "country": "Greece",
+      "totalPoints": 10,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 32,
+      "name": "Χρυσόστομος Παπαγεωργίου",
+      "country": "Greece",
+      "totalPoints": 10,
+      "categoriesCount": 2,
+      "team": "S.O.A.T"
+    },
+    {
+      "rank": 33,
+      "name": "Ελευθέριος Τσαγκαρίδης",
+      "country": "Greece",
+      "totalPoints": 10,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 34,
+      "name": "Χρήστος Σινάνης",
+      "country": "Greece",
+      "totalPoints": 10,
+      "categoriesCount": 2
+    },
+    {
+      "rank": 35,
+      "name": "Κυριάκος Ευαγγελούδης",
+      "country": "Greece",
+      "totalPoints": 10,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 36,
+      "name": "Χρήστος Ζαμπλαράς",
+      "country": "Greece",
+      "totalPoints": 10,
+      "categoriesCount": 1,
+      "team": "Let's Go"
+    },
+    {
+      "rank": 37,
+      "name": "Βασίλης Πέτρου",
+      "country": "Greece",
+      "totalPoints": 10,
+      "categoriesCount": 1,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "rank": 38,
+      "name": "Stefani Decheva",
+      "country": "Bulgaria",
+      "totalPoints": 10,
+      "categoriesCount": 1,
+      "team": "Lokomotive 96"
+    },
+    {
+      "rank": 39,
+      "name": "Γεώργιος Ταξιάρχης",
+      "country": "Greece",
+      "totalPoints": 10,
+      "categoriesCount": 2
+    },
+    {
+      "rank": 40,
+      "name": "Ανδρέας Χατζηλουκάς",
+      "country": "Cyprus",
+      "totalPoints": 9,
+      "categoriesCount": 2,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "rank": 41,
+      "name": "Pradeep Nishantha Rajapaksha",
+      "country": "Sri Lanka",
+      "totalPoints": 9,
+      "categoriesCount": 2,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "rank": 42,
+      "name": "Δέσποινα Κοντοπούλου",
+      "country": "Greece",
+      "totalPoints": 9,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 43,
+      "name": "Χρήστος Ταξιάρχης",
+      "country": "Greece",
+      "totalPoints": 8,
+      "categoriesCount": 4
+    },
+    {
+      "rank": 44,
+      "name": "Κωνσταντίνος Τουμανίδης",
+      "country": "Greece",
+      "totalPoints": 8,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 45,
+      "name": "Ευαγγέλου Κωνσταντίνος",
+      "country": "Greece",
+      "totalPoints": 8,
+      "categoriesCount": 2,
+      "team": "Let's Go"
+    },
+    {
+      "rank": 46,
+      "name": "Δημήτριος Πιπερούδης",
+      "country": "Greece",
+      "totalPoints": 8,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 47,
+      "name": "Αναστάσιος Μακρίδης",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 1
+    },
+    {
+      "rank": 48,
+      "name": "Νίκος Τσελέπης",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 2
+    },
+    {
+      "rank": 49,
+      "name": "Άγγελος Τούντας",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 2
+    },
+    {
+      "rank": 50,
+      "name": "Ευάγγελος Μισιάς",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 51,
+      "name": "Χρήστος Μιχαηλίδης",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 2,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "rank": 52,
+      "name": "Πιλάτος Κουνατίδης",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 53,
+      "name": "Παναγιώτης Γραβάλης",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 54,
+      "name": "Παναγιώτης Σακαρίδης",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 55,
+      "name": "Σταύρος Ιακωβίδης",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 56,
+      "name": "Γεώργιος Ταρασίδης",
+      "country": "Greece",
+      "totalPoints": 7,
+      "categoriesCount": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 57,
+      "name": "Παναγιώτης Τσακίρης",
+      "country": "Greece",
+      "totalPoints": 6,
+      "categoriesCount": 2
+    },
+    {
+      "rank": 58,
+      "name": "Σωτήρης Σακαντέμης",
+      "country": "Greece",
+      "totalPoints": 6,
+      "categoriesCount": 2,
+      "team": "Greek Armbenders"
+    },
+    {
+      "rank": 59,
+      "name": "Δημήτριος Φωκάς",
+      "country": "Greece",
+      "totalPoints": 6,
+      "categoriesCount": 2,
+      "team": "Let's Go"
+    },
+    {
+      "rank": 60,
+      "name": "Αλέξανδρος Διαμαντίδης",
+      "country": "Greece",
+      "totalPoints": 5,
+      "categoriesCount": 2,
+      "team": "Let's Go"
+    },
+    {
+      "rank": 61,
+      "name": "Epifaneios Epifaneioy",
+      "country": "Cyprus",
+      "totalPoints": 5,
+      "categoriesCount": 4,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "rank": 62,
+      "name": "Χρήστος Δημητρίου",
+      "country": "Greece",
+      "totalPoints": 5,
+      "categoriesCount": 2
+    },
+    {
+      "rank": 63,
+      "name": "Νικόλαος Βόσσος",
+      "country": "Greece",
+      "totalPoints": 5,
+      "categoriesCount": 1,
+      "team": "Let's Go"
+    },
+    {
+      "rank": 64,
+      "name": "Θεόδωρος Μιχαηλίδης",
+      "country": "Greece",
+      "totalPoints": 5,
+      "categoriesCount": 1,
+      "team": "Ασπρόπυργος"
+    },
+    {
+      "rank": 65,
+      "name": "Αναστάσιος Γεωργιάδης",
+      "country": "Greece",
+      "totalPoints": 4,
+      "categoriesCount": 2
+    },
+    {
+      "rank": 66,
+      "name": "Αρκάδιος Τσιτσόνης",
+      "country": "Greece",
+      "totalPoints": 4,
+      "categoriesCount": 2
+    },
+    {
+      "rank": 67,
+      "name": "Κωνσταντίνος Σκαπουλάρος",
+      "country": "Cyprus",
+      "totalPoints": 4,
+      "categoriesCount": 2,
+      "team": "Cyprus Armwrestling"
+    },
+    {
+      "rank": 68,
+      "name": "Βαλέριος Ριζίδης",
+      "country": "Greece",
+      "totalPoints": 4,
+      "categoriesCount": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 69,
+      "name": "Κωνσταντίνος Κογκετσίδης",
+      "country": "Greece",
+      "totalPoints": 4,
+      "categoriesCount": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 70,
+      "name": "Αναστάσιος Στεφανίδης",
+      "country": "Greece",
+      "totalPoints": 4,
+      "categoriesCount": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 71,
+      "name": "Νίκος Αθανάσαρος",
+      "country": "Greece",
+      "totalPoints": 4,
+      "categoriesCount": 1
+    },
+    {
+      "rank": 72,
+      "name": "Παναγιώτης Πετκόγλου",
+      "country": "Greece",
+      "totalPoints": 4,
+      "categoriesCount": 1
+    },
+    {
+      "rank": 73,
+      "name": "Δημήτριος Τσακμακίδης",
+      "country": "Greece",
+      "totalPoints": 3,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 74,
+      "name": "Milto Carciu",
+      "country": "Albania",
+      "totalPoints": 3,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 75,
+      "name": "Σωκράτης Σούτογλου",
+      "country": "Greece",
+      "totalPoints": 3,
+      "categoriesCount": 2
+    },
+    {
+      "rank": 76,
+      "name": "Ιωάννης Βόσσος",
+      "country": "Greece",
+      "totalPoints": 3,
+      "categoriesCount": 2,
+      "team": "Let's Go"
+    },
+    {
+      "rank": 77,
+      "name": "Στράτης Σπυρίδων Αιδονίδης",
+      "country": "Greece",
+      "totalPoints": 3,
+      "categoriesCount": 1
+    },
+    {
+      "rank": 78,
+      "name": "Ιωάννης Καραγιαννίδης",
+      "country": "Greece",
+      "totalPoints": 2,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 79,
+      "name": "Γεώργιος Χρυσοβαλάντης Χατζηβαντσίδης",
+      "country": "Greece",
+      "totalPoints": 2,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 80,
+      "name": "Γιώργος Νικηταράς",
+      "country": "Greece",
+      "totalPoints": 2,
+      "categoriesCount": 2,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 81,
+      "name": "Κωνσταντίνος Φλώρος",
+      "country": "Greece",
+      "totalPoints": 2,
+      "categoriesCount": 1
+    },
+    {
+      "rank": 82,
+      "name": "Ιωάννης Τσαλουκίδης",
+      "country": "Greece",
+      "totalPoints": 1,
+      "categoriesCount": 1
+    },
+    {
+      "rank": 83,
+      "name": "Δημήτρης Νικοπολίδης",
+      "country": "Greece",
+      "totalPoints": 1,
+      "categoriesCount": 1,
+      "team": "Salonica Armwrestling"
+    },
+    {
+      "rank": 84,
+      "name": "Ιωάννης Γατσέλης",
+      "country": "Greece",
+      "totalPoints": 0,
+      "categoriesCount": 1
+    },
+    {
+      "rank": 85,
+      "name": "Χαράλαμπος Κυμπρίκτσης",
+      "country": "Greece",
+      "totalPoints": 0,
+      "categoriesCount": 1
+    }
+  ],
+  "teams": [
+    {
+      "rank": 1,
+      "name": "Salonica Armwrestling",
+      "athleteCount": 27,
+      "totalPoints": 253,
+      "goldMedals": 10,
+      "silverMedals": 10,
+      "bronzeMedals": 7,
+      "participations": 48
+    },
+    {
+      "rank": 2,
+      "name": "CSKA",
+      "athleteCount": 6,
+      "totalPoints": 110,
+      "goldMedals": 4,
+      "silverMedals": 6,
+      "bronzeMedals": 5,
+      "participations": 16
+    },
+    {
+      "rank": 3,
+      "name": "Let's Go",
+      "athleteCount": 9,
+      "totalPoints": 83,
+      "goldMedals": 3,
+      "silverMedals": 3,
+      "bronzeMedals": 2,
+      "participations": 18
+    },
+    {
+      "rank": 4,
+      "name": "Ασπρόπυργος",
+      "athleteCount": 5,
+      "totalPoints": 63,
+      "goldMedals": 3,
+      "silverMedals": 2,
+      "bronzeMedals": 3,
+      "participations": 10
+    },
+    {
+      "rank": 5,
+      "name": "Lokomotive 96",
+      "athleteCount": 4,
+      "totalPoints": 58,
+      "goldMedals": 5,
+      "silverMedals": 1,
+      "bronzeMedals": 0,
+      "participations": 7
+    },
+    {
+      "rank": 7,
+      "name": "Cyprus Armwrestling",
+      "athleteCount": 5,
+      "totalPoints": 57,
+      "goldMedals": 1,
+      "silverMedals": 1,
+      "bronzeMedals": 3,
+      "participations": 15
+    },
+    {
+      "rank": 6,
+      "name": "S.O.A.T",
+      "athleteCount": 4,
+      "totalPoints": 58,
+      "goldMedals": 2,
+      "silverMedals": 0,
+      "bronzeMedals": 4,
+      "participations": 14
+    },
+    {
+      "rank": 8,
+      "name": "Greek Armbenders",
+      "athleteCount": 4,
+      "totalPoints": 55,
+      "goldMedals": 1,
+      "silverMedals": 3,
+      "bronzeMedals": 2,
+      "participations": 11
+    }
+  ],
+  "autonomousAthletes": [
+    "Αναστάσιος Γεωργιάδης",
+    "Αναστάσιος Μακρίδης",
+    "Αρκάδιος Τσιτσόνης",
+    "Γεώργιος Ταξιάρχης",
+    "Εμμανουήλ Μακρίδης",
+    "Ιωάννης Γατσέλης",
+    "Ιωάννης Τσαλουκίδης",
+    "Κωνσταντίνος Φλώρος",
+    "Άγγελος Τούντας",
+    "Μιχαήλ Άγγελος Μελιανίδης",
+    "Νίκος Αθανάσαρος",
+    "Νίκος Τσελέπης",
+    "Παναγιώτης Πετκόγλου",
+    "Παναγιώτης Τσακίρης",
+    "Στράτης Σπυρίδων Αιδονίδης",
+    "Σωκράτης Σούτογλου",
+    "Χαράλαμπος Κυμπρίκτσης",
+    "Χρήστος Δημητρίου",
+    "Χρήστος Σινάνης",
+    "Χρήστος Ταξιάρχης",
+    "Κωνσταντίνος Σκαπουλάρος"
+  ],
+  "validation": {
+    "errors": [],
+    "warnings": [],
+    "isValid": true
+  }
+}
