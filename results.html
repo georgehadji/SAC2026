@@ -168,6 +168,15 @@
             grid-template-columns: 1fr;
             gap: 16px;
         }
+        .btn-gold {
+            background: linear-gradient(135deg, #c9a227 0%, #e0bc4a 50%, #a0821f 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background: linear-gradient(135deg, #e0bc4a 0%, #c9a227 50%, #a0821f 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(201, 162, 39, 0.5);
+        }
         .mobile-menu {
             transform: translateX(100%);
             transition: transform 0.3s ease;
@@ -187,33 +196,34 @@
     </div>
 
     <!-- Header -->
-    <header class="blue-gradient text-white sticky top-0 z-40 shadow-lg">
+    <header class="blue-gradient text-white sticky top-0 z-50 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
-                <!-- Logo/Brand -->
-                <div class="flex items-center gap-3">
-                    <div>
-                        <h2 class="text-sm sm:text-base font-heading font-bold">SAC 2026</h2>
-                        <p class="text-xs text-blue-200">Armwrestling</p>
+                <!-- Logo & Brand -->
+                <div class="flex items-center space-x-2 sm:space-x-4">
+                    <a href="index.html"><img src="logo-makedonon-new.png" alt="Αθλητικός Σύλλογος Μακεδόνων" class="h-10 sm:h-14 w-auto"></a>
+                    <div class="hidden sm:block border-l border-white/20 pl-3 sm:pl-4">
+                        <p class="text-[10px] sm:text-xs font-heading font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-brand-gold">Salonica Cup 2026</p>
+                        <p class="text-[8px] sm:text-[10px] text-blue-200 tracking-wider">Armwrestling Tournament</p>
                     </div>
                 </div>
                 
                 <!-- Desktop Navigation -->
-                <nav class="hidden lg:flex items-center gap-2">
-                    <a href="index.html" class="px-4 py-2 hover:bg-white/10 rounded-lg transition-colors text-sm">Πληροφορίες</a>
-                    <a href="index.html#categories" class="px-4 py-2 hover:bg-white/10 rounded-lg transition-colors text-sm">Κατηγορίες</a>
-                    <a href="results.html" class="px-4 py-2 bg-white/10 text-brand-gold rounded-lg font-semibold text-sm">Αποτελέσματα</a>
-                    <a href="index.html#contact" class="px-4 py-2 hover:bg-white/10 rounded-lg transition-colors text-sm">Επικοινωνία</a>
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="index.html#overview" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Πληροφορίες</a>
+                    <a href="index.html#categories" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Κατηγορίες</a>
+                    <a href="results.html" class="px-3 xl:px-4 py-2 text-sm text-brand-gold font-semibold border-b-2 border-brand-gold">Αποτελέσματα</a>
+                    <a href="index.html#contact" class="px-3 xl:px-4 py-2 text-sm text-blue-100 hover:text-brand-gold transition-all duration-300 border-b-2 border-transparent hover:border-brand-gold">Επικοινωνία</a>
                 </nav>
                 
-                <!-- Language & Mobile Menu Toggle -->
-                <div class="flex items-center gap-2">
-                    <button onclick="setLanguage('el')" class="px-2 py-1 rounded hover:bg-white/10 transition text-xs font-semibold">ΕΛ</button>
-                    <button onclick="setLanguage('en')" class="px-2 py-1 rounded hover:bg-white/10 transition text-xs font-semibold">EN</button>
-                    <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Menu">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-                    </button>
+                <!-- Language Selector & Mobile Menu Toggle -->
+                <div class="flex items-center space-x-1 ml-2 sm:ml-4 border-l border-white/20 pl-2 sm:pl-4">
+                    <button onclick="setLanguage('el')" id="lang-el" class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-brand-gold text-brand-blueDark font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:scale-110">EL</button>
+                    <button onclick="setLanguage('en')" id="lang-en" class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/10 text-white font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:bg-white/20">EN</button>
                 </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
             </div>
         </div>
         
@@ -227,10 +237,11 @@
                     </button>
                 </div>
                 <nav class="flex flex-col space-y-4">
-                    <a href="index.html" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Πληροφορίες</a>
+                    <a href="index.html#overview" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Πληροφορίες</a>
                     <a href="index.html#categories" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Κατηγορίες</a>
                     <a href="results.html" class="py-3 px-4 bg-white/10 text-brand-gold font-semibold rounded-lg mobile-link">Αποτελέσματα</a>
                     <a href="index.html#contact" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Επικοινωνία</a>
+                    <a href="https://www.facebook.com/events/950607031468231" target="_blank" rel="noopener noreferrer" class="py-3 px-4 btn-gold text-brand-blueDark rounded-lg font-semibold text-center mt-4">Facebook Event</a>
                 </nav>
             </div>
         </div>
@@ -397,6 +408,51 @@
         });
     });
 
+    // ═══════════════════════════════════════════════════════════════════
+    // MOBILE MENU FUNCTIONALITY
+    // ═══════════════════════════════════════════════════════════════════
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('show');
+                menuOverlay.classList.remove('hidden');
+            });
+        }
+
+        if (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('show');
+                menuOverlay.classList.add('hidden');
+            });
+        }
+
+        if (menuOverlay) {
+            menuOverlay.addEventListener('click', () => {
+                mobileMenu.classList.remove('show');
+                menuOverlay.classList.add('hidden');
+            });
+        }
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('show');
+                menuOverlay.classList.add('hidden');
+            });
+        });
+
+        console.log('🔄 Initializing results page...');
+        loadTournamentData();
+        setLanguage(currentLanguage);
+        updateLanguageButtonState();
+    });
+    
     // ═══════════════════════════════════════════════════════════════════
     // LOAD DATA FROM JSON FILE
     // ═══════════════════════════════════════════════════════════════════
@@ -627,13 +683,29 @@
     function setLanguage(lang) {
         currentLanguage = lang;
         localStorage.setItem('sac2026-lang', lang);
+        updateLanguageButtonState();
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        console.log('🔄 Initializing results page...');
-        loadTournamentData();
-        setLanguage(currentLanguage);
-    });
+    function updateLanguageButtonState() {
+        const langElBtn = document.getElementById('lang-el');
+        const langEnBtn = document.getElementById('lang-en');
+        
+        if (langElBtn && langEnBtn) {
+            if (currentLanguage === 'el') {
+                langElBtn.classList.add('bg-brand-gold', 'text-brand-blueDark');
+                langElBtn.classList.remove('bg-white/10', 'text-white');
+                langEnBtn.classList.remove('bg-brand-gold', 'text-brand-blueDark');
+                langEnBtn.classList.add('bg-white/10', 'text-white');
+            } else {
+                langEnBtn.classList.add('bg-brand-gold', 'text-brand-blueDark');
+                langEnBtn.classList.remove('bg-white/10', 'text-white');
+                langElBtn.classList.remove('bg-brand-gold', 'text-brand-blueDark');
+                langElBtn.classList.add('bg-white/10', 'text-white');
+            }
+        }
+    }
+
+
     </script>
 </body>
 </html>
