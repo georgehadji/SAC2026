@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
+    <!-- Character Encoding & Viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Αποτελέσματα - Salonica Armwrestling Cup 2026</title>
-    <meta name="description" content="Αποτελέσματα του Salonica Armwrestling Cup 2026. Κατάταξη αθλητών και ομάδων.">
     
+    <!-- Basic SEO -->
+    <title>Αποτελέσματα | Salonica Armwrestling Cup 2026</title>
+    <meta name="description" content="Αποτελέσματα αγώνων, βαθμολογία αθλητών και ομάδων - Salonica Armwrestling Cup 2026.">
+    <meta name="keywords" content="armwrestling, αρμρεσλινγ, Θεσσαλονίκη, αποτελέσματα, SAC2026, Salonica">
+    <meta name="author" content="Salonica Armwrestling Cup 2026">
+    <meta name="theme-color" content="#0a4a7a">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sac2026.vercel.app/results.html">
+    <meta property="og:title" content="Αποτελέσματα | Salonica Armwrestling Cup 2026">
+    <meta property="og:description" content="Αποτελέσματα αγώνων, βαθμολογία αθλητών και ομάδων - Salonica Armwrestling Cup 2026.">
+    <meta property="og:image" content="https://htj32e6h3vrgk.ok.kimi.link/share-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:locale" content="el_GR">
+    <meta property="og:site_name" content="Salonica Armwrestling Cup 2026">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sac2026.vercel.app/results.html">
+    <meta name="twitter:title" content="Αποτελέσματα | Salonica Armwrestling Cup 2026">
+    <meta name="twitter:description" content="Αποτελέσματα αγώνων, βαθμολογία αθλητών και ομάδων - Salonica Armwrestling Cup 2026.">
+    <meta name="twitter:image" content="https://htj32e6h3vrgk.ok.kimi.link/share-image.jpg">
+    
+    <!-- Canonical URL -->
+    <meta property="canonical" content="https://sac2026.vercel.app/results.html">
+    
+    <!-- Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Greek:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -36,6 +67,8 @@
             }
         }
     </script>
+    
+    <!-- Styles -->
     <style>
         body {
             font-family: 'Noto Sans Greek', 'Inter', sans-serif;
@@ -109,26 +142,6 @@
             align-items: center;
             gap: 8px;
         }
-        .category-header {
-            background: linear-gradient(135deg, #0a4a7a 0%, #063354 100%);
-            color: white;
-            padding: 12px;
-            font-weight: 600;
-            font-size: 14px;
-            margin-top: 8px;
-            border-radius: 6px;
-            text-align: left;
-        }
-        .category-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #0a4a7a 0%, #c9a227 50%, #0a4a7a 100%);
-            margin: 16px 0;
-        }
-        .results-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-        }
         .category-section {
             background: white;
             border-radius: 8px;
@@ -145,8 +158,10 @@
         .category-results {
             overflow-x: auto;
         }
-        .category-results table {
-            margin: 0;
+        .results-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
         }
     </style>
 </head>
