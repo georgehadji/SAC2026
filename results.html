@@ -49,33 +49,8 @@
         .gold-gradient {
             background: linear-gradient(135deg, #c9a227 0%, #e0bc4a 50%, #a0821f 100%);
         }
-        .gold-text {
-            background: linear-gradient(135deg, #c9a227 0%, #e0bc4a 50%, #a0821f 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
         .blue-gradient {
             background: linear-gradient(135deg, #0a4a7a 0%, #063354 100%);
-        }
-        .card-hover {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-        .btn-gold {
-            background: linear-gradient(135deg, #c9a227 0%, #e0bc4a 50%, #a0821f 100%);
-            transition: all 0.3s ease;
-        }
-        .btn-gold:hover {
-            background: linear-gradient(135deg, #e0bc4a 0%, #c9a227 50%, #a0821f 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px -10px rgba(201, 162, 39, 0.5);
-        }
-        .btn-gold:active {
-            transform: translateY(0);
         }
         .tab-content {
             display: none;
@@ -113,6 +88,24 @@
         }
         tr:hover {
             background-color: #f9fafb;
+        }
+        select {
+            padding: 10px 12px;
+            border: 2px solid #0a4a7a;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: white;
+            color: #0a4a7a;
+            cursor: pointer;
+            font-family: 'Noto Sans Greek', 'Inter', sans-serif;
+        }
+        select:hover {
+            border-color: #c9a227;
+        }
+        select:focus {
+            outline: none;
+            border-color: #c9a227;
+            box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.1);
         }
     </style>
 </head>
@@ -159,6 +152,17 @@
 
             <!-- Results Tab -->
             <div id="results" class="tab-content active">
+                <!-- Category Filter -->
+                <div class="mb-6 p-4 bg-white rounded-lg shadow">
+                    <label class="block text-sm font-semibold text-brand-blue mb-3">
+                        Επιλέξ Κατηγορία:
+                    </label>
+                    <select id="categoryFilter" onchange="filterByCategory(this.value)">
+                        <option value="">-- Όλες οι Κατηγορίες --</option>
+                    </select>
+                </div>
+
+                <!-- Results Table -->
                 <div class="bg-white rounded-lg shadow overflow-x-auto">
                     <table>
                         <thead>
@@ -247,6 +251,7 @@
     
     let tournamentData = null;
     let currentLanguage = localStorage.getItem('sac2026-lang') || 'el';
+    let selectedCategory = '';
 
     // Load data from JSON file
     async function loadTournamentData() {
@@ -261,6 +266,8 @@
             console.log(`   Results: ${tournamentData.results.length}`);
             console.log(`   Athletes: ${tournamentData.athletes.length}`);
             console.log(`   Teams: ${tournamentData.teams.length}`);
+            
+            populateCategoryFilter();
             renderAllData();
         } catch (error) {
             console.error('❌ Error loading tournament data:', error);
@@ -275,6 +282,37 @@
         document.getElementById('athletesTableBody').innerHTML = errorRow;
         document.getElementById('teamsTableBody').innerHTML = errorRow8;
         document.getElementById('loadingIndicator').style.display = 'none';
+    }
+
+    // ═══════════════════════════════════════════════════════════════════
+    // CATEGORY FILTER
+    // ═══════════════════════════════════════════════════════════════════
+    
+    function populateCategoryFilter() {
+        if (!tournamentData || !tournamentData.results) return;
+        
+        // Get unique categories, sorted
+        const categories = [...new Set(tournamentData.results.map(r => r.category))].sort();
+        
+        const select = document.getElementById('categoryFilter');
+        
+        // Clear existing options (except the first one)
+        while (select.options.length > 1) {
+            select.remove(1);
+        }
+        
+        // Add categories
+        categories.forEach(category => {
+            const option = document.createElement('option');
+            option.value = category;
+            option.textContent = category;
+            select.appendChild(option);
+        });
+    }
+
+    function filterByCategory(category) {
+        selectedCategory = category;
+        renderResults();
     }
 
     // ═══════════════════════════════════════════════════════════════════
@@ -294,7 +332,18 @@
         const tbody = document.getElementById('resultsTableBody');
         tbody.innerHTML = '';
         
-        tournamentData.results.forEach(result => {
+        // Filter by category if selected
+        let resultsToShow = tournamentData.results;
+        if (selectedCategory) {
+            resultsToShow = resultsToShow.filter(r => r.category === selectedCategory);
+        }
+        
+        if (resultsToShow.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="6" class="text-center py-8 text-gray-500">Κανένα αποτέλεσμα για αυτή την κατηγορία</td></tr>';
+            return;
+        }
+        
+        resultsToShow.forEach(result => {
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td class="font-semibold text-brand-blue">${result.athlete}</td>
