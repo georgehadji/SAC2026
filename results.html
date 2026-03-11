@@ -1,527 +1,114 @@
-<!DOCTYPE html>
-<html lang="el">
-<head>
-    <!-- Character Encoding & Viewport -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    
-    <!-- Basic SEO -->
-    <title>Αποτελέσματα | Salonica Armwrestling Cup 2026</title>
-    <meta name="description" content="Αποτελέσματα αγώνων, βαθμολογία αθλητών και ομάδων - Salonica Armwrestling Cup 2026.">
-    <meta name="keywords" content="armwrestling, αρμρεσλινγ, Θεσσαλονίκη, αποτελέσματα, SAC2026, Salonica">
-    <meta name="author" content="Salonica Armwrestling Cup 2026">
-    <meta name="theme-color" content="#0a4a7a">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sac2026.vercel.app/results.html">
-    <meta property="og:title" content="Αποτελέσματα | Salonica Armwrestling Cup 2026">
-    <meta property="og:description" content="Αποτελέσματα αγώνων, βαθμολογία αθλητών και ομάδων - Salonica Armwrestling Cup 2026.">
-    <meta property="og:image" content="https://htj32e6h3vrgk.ok.kimi.link/share-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:locale" content="el_GR">
-    <meta property="og:site_name" content="Salonica Armwrestling Cup 2026">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://sac2026.vercel.app/results.html">
-    <meta name="twitter:title" content="Αποτελέσματα | Salonica Armwrestling Cup 2026">
-    <meta name="twitter:description" content="Αποτελέσματα αγώνων, βαθμολογία αθλητών και ομάδων - Salonica Armwrestling Cup 2026.">
-    <meta name="twitter:image" content="https://htj32e6h3vrgk.ok.kimi.link/share-image.jpg">
-    
-    <!-- Canonical URL -->
-    <meta property="canonical" content="https://sac2026.vercel.app/results.html">
-    
-    <!-- Fonts -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Greek:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Noto Sans Greek', 'Inter', 'sans-serif'],
-                        heading: ['Inter', 'Noto Sans Greek', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            blue: '#0a4a7a',
-                            blueDark: '#063354',
-                            blueLight: '#1269a8',
-                            gold: '#c9a227',
-                            goldLight: '#e0bc4a',
-                            goldDark: '#a0821f',
-                            black: '#0a0a0a',
-                            gray: '#4a5568',
-                            light: '#f7fafc',
-                            white: '#ffffff',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <!-- Styles -->
-    <style>
-        body {
-            font-family: 'Noto Sans Greek', 'Inter', sans-serif;
-            color: #0a0a0a;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        .font-heading {
-            font-family: 'Inter', 'Noto Sans Greek', sans-serif;
-        }
-        .blue-gradient {
-            background: linear-gradient(135deg, #0a4a7a 0%, #063354 100%);
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .tab-button {
-            padding: 12px 16px;
-            cursor: pointer;
-            border-bottom: 3px solid transparent;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-        .tab-button.active {
-            border-bottom-color: #c9a227;
-            color: #c9a227;
-        }
-        .tab-button:hover {
-            color: #c9a227;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        th {
-            background-color: #f3f4f6;
-            font-weight: 600;
-            color: #0a4a7a;
-        }
-        tr:hover {
-            background-color: #f9fafb;
-        }
-        select {
-            padding: 10px 12px;
-            border: 2px solid #0a4a7a;
-            border-radius: 6px;
-            font-size: 14px;
-            background-color: white;
-            color: #0a4a7a;
-            cursor: pointer;
-            font-family: 'Noto Sans Greek', 'Inter', sans-serif;
-        }
-        select:hover {
-            border-color: #c9a227;
-        }
-        select:focus {
-            outline: none;
-            border-color: #c9a227;
-            box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.1);
-        }
-        .placement-medal {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .category-section {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-        .category-title {
-            background: linear-gradient(135deg, #0a4a7a 0%, #063354 100%);
-            color: white;
-            padding: 12px 16px;
-            font-weight: 600;
-            font-size: 15px;
-        }
-        .category-results {
-            overflow-x: auto;
-        }
-        .results-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-        }
-    </style>
-</head>
-<body class="bg-gray-50">
-    <!-- Loading indicator -->
-    <div id="loadingIndicator" class="fixed inset-0 bg-white flex items-center justify-center z-50">
-        <div class="text-center">
-            <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-brand-gold"></div>
-            <p class="mt-4 text-brand-blue font-semibold">Φόρτωση αποτελεσμάτων...</p>
-        </div>
-    </div>
+21:08:13 [orchestrator.output_writer] INFO: Wrote summary.json
+21:08:13 [orchestrator.output_writer] INFO: Wrote README.md
+21:08:13 [orchestrator.project_assembler] INFO: Created directory structure with domain/application/infrastructure layers
+21:08:13 [orchestrator.project_assembler] INFO: Generated 6 module files across layers
+21:08:13 [orchestrator.project_assembler] INFO: Generated configuration layer with Pydantic Settings
+21:08:13 [orchestrator.project_assembler] INFO: Generated main.py with proper error handling and observability
+21:08:13 [orchestrator.project_assembler] INFO: Generated comprehensive pyproject.toml with all tool configurations
+21:08:13 [orchestrator.project_assembler] INFO: Generated comprehensive Makefile
+21:08:13 [orchestrator.project_assembler] INFO: Generated Dockerfile (multi-stage) and .dockerignore
+21:08:13 [orchestrator.project_assembler] INFO: Generated GitHub Actions CI/CD workflow
+21:08:13 [orchestrator.project_assembler] INFO: Generated .env.example
+21:08:13 [orchestrator.project_assembler] INFO: Generated test structure with pytest fixtures
+21:08:13 [orchestrator.project_assembler] INFO: Generated documentation structure
+21:08:13 [orchestrator.project_assembler] INFO: Generated .pre-commit-config.yaml
+21:08:13 [orchestrator.project_assembler] INFO: Generated exception hierarchy
+21:08:13 [orchestrator.project_assembler] INFO: Generated structured logging utilities
+21:08:13 [orchestrator.output_writer] INFO: Project Assembler: created 31 integrated files
+21:08:13 [orchestrator.output_writer] INFO: Output written to: E:\Documents\Vibe-Coding\Ai Orchestrator\outputs\rag_document_assistant
 
-    <!-- Header -->
-    <header class="blue-gradient text-white py-8 sticky top-0 z-40 shadow-lg">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center">
-                <div>
-                    <h1 class="text-2xl sm:text-3xl font-heading font-bold">Salonica Armwrestling Cup 2026</h1>
-                    <p class="text-blue-200 mt-2">Αποτελέσματα Αγώνων</p>
-                </div>
-                <div class="flex gap-3">
-                    <button onclick="setLanguage('el')" class="px-3 py-2 rounded bg-blue-500 hover:bg-brand-gold text-white transition text-sm font-semibold">ΕΛ</button>
-                    <button onclick="setLanguage('en')" class="px-3 py-2 rounded bg-blue-500 hover:bg-brand-gold text-white transition text-sm font-semibold">EN</button>
-                </div>
-            </div>
-        </div>
-    </header>
+Output written to: E:\Documents\Vibe-Coding\Ai Orchestrator\outputs\rag_document_assistant
 
-    <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <!-- Tabs -->
-        <div class="mb-8">
-            <div class="flex flex-wrap gap-2 border-b border-gray-200 mb-6">
-                <button class="tab-button active" onclick="switchTab('results')">
-                    Αποτελέσματα
-                </button>
-                <button class="tab-button" onclick="switchTab('athletes')">
-                    Κατάταξη Αθλητών
-                </button>
-                <button class="tab-button" onclick="switchTab('teams')">
-                    Κατάταξη Ομάδων
-                </button>
-            </div>
+📁 Organizing project output...
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO: ============================================================
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO: 📁 Organizing project output...
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO: ============================================================
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO: 📂 Moving task files to tasks/...
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✅ Moved 8 task files
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO: 📄 Detected 38 source files
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO: 🧪 Checking for missing tests...
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_config.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_exceptions.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_logging.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_001.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_002.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_004.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_005.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_006.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_007.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_main.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_001_code_generation.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_002_code_generation.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_004_code_generation.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_005_code_generation.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_006_code_generation.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Generated: test_task_007_code_generation.py
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO:   ✅ Generated 16 test files
+21:08:13 [orchestrator.orchestrator.output_organizer] INFO: 🚀 Running tests...
+21:08:47 [orchestrator.orchestrator.output_organizer] INFO:   ✅ Tests: 0/36 passed
+21:08:47 [orchestrator.orchestrator.output_organizer] INFO: ============================================================
+21:08:47 [orchestrator.orchestrator.output_organizer] INFO: 🔧 Iterative Test Fixing
+21:08:47 [orchestrator.orchestrator.output_organizer] INFO: ============================================================
+21:08:47 [orchestrator.orchestrator.output_organizer] INFO: Initial: 0/36 passed (0.0%)
+ℹ️  No tests found to run
+21:08:49 [orchestrator.orchestrator.output_organizer] INFO: 🔄 Re-running tests after fixes...
+21:08:49 [orchestrator.orchestrator.output_organizer] INFO: 🚀 Running tests...
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:   ✅ Tests: 0/36 passed
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO: ⚠️  Test fixing completed with partial succeess
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO: 📂 Organizing test files...
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:   ✅ Organized 0 test files
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO: ============================================================
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO: 📊 Organization Summary
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO: ============================================================
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:   📁 Task files moved: 8
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:   ✨ Tests generated: 16
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_config.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_exceptions.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_logging.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_001.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_002.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_004.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_005.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_006.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_007.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_main.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_001_code_generation.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_002_code_generation.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_004_code_generation.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_005_code_generation.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_006_code_generation.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      - test_task_007_code_generation.py
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:   🧪 Tests run: 36
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      ✅ Passed: 0
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      ❌ Failed: 36
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:      📈 Coverage: 0.0%
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO:   📂 Test files organized: 0
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO: ============================================================
+21:09:19 [orchestrator.orchestrator.output_organizer] INFO: 📄 Report saved: E:\Documents\Vibe-Coding\Ai Orchestrator\outputs\rag_document_assistant\organization_report.json
+  ✅ Tasks moved: 8
+  ✅ Tests: 0/36 passed
 
-            <!-- Results Tab -->
-            <div id="results" class="tab-content active">
-                <!-- Category Filter -->
-                <div class="mb-6 p-4 bg-white rounded-lg shadow">
-                    <label class="block text-sm font-semibold text-brand-blue mb-3">
-                        Επιλέξ Κατηγορία:
-                    </label>
-                    <select id="categoryFilter" onchange="filterByCategory(this.value)">
-                        <option value="">-- Όλες οι Κατηγορίες --</option>
-                    </select>
-                </div>
+🧪 Running final test validation...
+C:\Users\tesse\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py:88: RuntimeWarning: The executor did not finishing joining its threads within 300 seconds.
+  self._context.run(self._callback, *self._args)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\Documents\Vibe-Coding\Ai Orchestrator\orchestrator\__main__.py", line 6, in <module>
+    main()
+  File "E:\Documents\Vibe-Coding\Ai Orchestrator\orchestrator\cli.py", line 1514, in main
+    asyncio.run(_async_file_project(args))
+  File "C:\Users\tesse\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\tesse\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tesse\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "E:\Documents\Vibe-Coding\Ai Orchestrator\orchestrator\cli.py", line 667, in _async_file_project
+    tests_passed = await run_project_tests(
+                         ^^^^^^^^^^^^^^^^^^
+TypeError: run_project_tests() got an unexpected keyword argument 'output_dir'
 
-                <!-- Results grouped by category -->
-                <div id="resultsContainer" class="results-container">
-                    <div class="text-center py-8 text-gray-500">Φόρτωση δεδομένων...</div>
-                </div>
-            </div>
-
-            <!-- Athletes Tab -->
-            <div id="athletes" class="tab-content">
-                <div class="bg-white rounded-lg shadow overflow-x-auto">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Αθλητής</th>
-                                <th>Ομάδα</th>
-                                <th>Χώρα</th>
-                                <th>Συνολικοί Πόντοι</th>
-                                <th>Κατηγορίες</th>
-                            </tr>
-                        </thead>
-                        <tbody id="athletesTableBody">
-                            <tr>
-                                <td colspan="6" class="text-center py-8 text-gray-500">Φόρτωση δεδομένων...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Teams Tab -->
-            <div id="teams" class="tab-content">
-                <div class="bg-white rounded-lg shadow overflow-x-auto">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Ομάδα</th>
-                                <th>Αθλητές</th>
-                                <th>Συνολικοί Πόντοι</th>
-                                <th>Χρυσά</th>
-                                <th>Αργυρά</th>
-                                <th>Χάλκινα</th>
-                                <th>Συμμετοχές</th>
-                            </tr>
-                        </thead>
-                        <tbody id="teamsTableBody">
-                            <tr>
-                                <td colspan="8" class="text-center py-8 text-gray-500">Φόρτωση δεδομένων...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="blue-gradient text-white mt-16 pt-12 pb-8">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="border-t border-blue-700 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
-                <p class="text-blue-300 text-xs sm:text-sm">© 2026 Salonica Armwrestling Cup</p>
-                <p class="text-blue-400 text-[10px] sm:text-xs font-heading font-semibold tracking-wider">SALONICA ARMWRESTLING CUP 2026</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-    // ═══════════════════════════════════════════════════════════════════
-    // LOAD DATA FROM JSON FILE
-    // ═══════════════════════════════════════════════════════════════════
-    
-    let tournamentData = null;
-    let currentLanguage = localStorage.getItem('sac2026-lang') || 'el';
-    let selectedCategory = '';
-
-    async function loadTournamentData() {
-        try {
-            console.log('🔄 Attempting to load tournament_data_export.json...');
-            const response = await fetch('tournament_data_export.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            tournamentData = await response.json();
-            console.log('✅ Tournament data loaded successfully!');
-            
-            populateCategoryFilter();
-            renderAllData();
-        } catch (error) {
-            console.error('❌ Error loading tournament data:', error);
-            showErrorMessage('⚠️ Δεν ήταν δυνατόν να φορτωθούν τα δεδομένα.');
-        }
-    }
-
-    function showErrorMessage(message) {
-        const errorRow = `<tr><td colspan="5" class="text-center py-8 text-red-600 font-semibold">${message}</td></tr>`;
-        const errorRow8 = `<tr><td colspan="8" class="text-center py-8 text-red-600 font-semibold">${message}</td></tr>`;
-        document.getElementById('athletesTableBody').innerHTML = errorRow;
-        document.getElementById('teamsTableBody').innerHTML = errorRow8;
-        document.getElementById('resultsContainer').innerHTML = `<div class="text-center py-8 text-red-600">${message}</div>`;
-        document.getElementById('loadingIndicator').style.display = 'none';
-    }
-
-    // ═══════════════════════════════════════════════════════════════════
-    // CATEGORY FILTER
-    // ═══════════════════════════════════════════════════════════════════
-    
-    function populateCategoryFilter() {
-        if (!tournamentData || !tournamentData.results) return;
-        
-        const categories = [...new Set(tournamentData.results.map(r => r.category))].sort();
-        const select = document.getElementById('categoryFilter');
-        
-        while (select.options.length > 1) {
-            select.remove(1);
-        }
-        
-        categories.forEach(category => {
-            const option = document.createElement('option');
-            option.value = category;
-            option.textContent = category;
-            select.appendChild(option);
-        });
-    }
-
-    function filterByCategory(category) {
-        selectedCategory = category;
-        renderResults();
-    }
-
-    // ═══════════════════════════════════════════════════════════════════
-    // GET MEDAL EMOJI
-    // ═══════════════════════════════════════════════════════════════════
-    
-    function getMedalEmoji(placement) {
-        switch(placement) {
-            case 1: return '🥇';
-            case 2: return '🥈';
-            case 3: return '🥉';
-            default: return '';
-        }
-    }
-
-    // ═══════════════════════════════════════════════════════════════════
-    // RENDER FUNCTIONS
-    // ═══════════════════════════════════════════════════════════════════
-    
-    function renderAllData() {
-        renderResults();
-        renderAthletes();
-        renderTeams();
-        document.getElementById('loadingIndicator').style.display = 'none';
-    }
-
-    function renderResults() {
-        if (!tournamentData || !tournamentData.results) return;
-        
-        const container = document.getElementById('resultsContainer');
-        container.innerHTML = '';
-        
-        let resultsToShow = tournamentData.results;
-        if (selectedCategory) {
-            resultsToShow = resultsToShow.filter(r => r.category === selectedCategory);
-        }
-        
-        if (resultsToShow.length === 0) {
-            container.innerHTML = '<div class="text-center py-8 text-gray-500">Κανένα αποτέλεσμα για αυτή την κατηγορία</div>';
-            return;
-        }
-        
-        // Group by category
-        const grouped = {};
-        resultsToShow.forEach(result => {
-            if (!grouped[result.category]) {
-                grouped[result.category] = [];
-            }
-            grouped[result.category].push(result);
-        });
-        
-        // Render each category section
-        Object.keys(grouped).sort().forEach(category => {
-            const section = document.createElement('div');
-            section.className = 'category-section';
-            
-            const title = document.createElement('div');
-            title.className = 'category-title';
-            title.textContent = category;
-            section.appendChild(title);
-            
-            const tableWrapper = document.createElement('div');
-            tableWrapper.className = 'category-results';
-            
-            const table = document.createElement('table');
-            
-            const thead = document.createElement('thead');
-            const headerRow = document.createElement('tr');
-            headerRow.innerHTML = `
-                <th>Θέση</th>
-                <th>Αθλητής</th>
-                <th>Ομάδα</th>
-                <th>Χώρα</th>
-                <th>Πόντοι</th>
-            `;
-            thead.appendChild(headerRow);
-            table.appendChild(thead);
-            
-            const tbody = document.createElement('tbody');
-            grouped[category].forEach(result => {
-                const row = document.createElement('tr');
-                const medal = getMedalEmoji(result.placement);
-                const placementDisplay = medal ? 
-                    `<div class="placement-medal"><span style="font-size: 24px;">${medal}</span><span class="font-bold text-lg text-brand-blue">#${result.placement}</span></div>` :
-                    `<span class="font-bold">#${result.placement}</span>`;
-                
-                row.innerHTML = `
-                    <td>${placementDisplay}</td>
-                    <td class="font-semibold text-brand-blue">${result.athlete}</td>
-                    <td>${result.team || '-'}</td>
-                    <td>${result.country}</td>
-                    <td class="font-bold text-brand-gold">${result.points}</td>
-                `;
-                tbody.appendChild(row);
-            });
-            table.appendChild(tbody);
-            
-            tableWrapper.appendChild(table);
-            section.appendChild(tableWrapper);
-            container.appendChild(section);
-        });
-    }
-
-    function renderAthletes() {
-        if (!tournamentData || !tournamentData.athletes) return;
-        
-        const tbody = document.getElementById('athletesTableBody');
-        tbody.innerHTML = '';
-        
-        tournamentData.athletes.forEach(athlete => {
-            const row = document.createElement('tr');
-            const medalEmoji = athlete.rank === 1 ? '🥇' : athlete.rank === 2 ? '🥈' : athlete.rank === 3 ? '🥉' : '';
-            row.innerHTML = `
-                <td class="font-bold text-brand-gold">${medalEmoji} ${athlete.rank}</td>
-                <td class="font-semibold text-brand-blue">${athlete.name}</td>
-                <td>${athlete.team || '-'}</td>
-                <td>${athlete.country}</td>
-                <td class="font-bold text-brand-gold">${athlete.totalPoints}</td>
-                <td class="text-center">${athlete.categoriesCount}</td>
-            `;
-            tbody.appendChild(row);
-        });
-    }
-
-    function renderTeams() {
-        if (!tournamentData || !tournamentData.teams) return;
-        
-        const tbody = document.getElementById('teamsTableBody');
-        tbody.innerHTML = '';
-        
-        tournamentData.teams.forEach(team => {
-            const row = document.createElement('tr');
-            const medalEmoji = team.rank === 1 ? '🥇' : team.rank === 2 ? '🥈' : team.rank === 3 ? '🥉' : '';
-            row.innerHTML = `
-                <td class="font-bold text-brand-gold">${medalEmoji} ${team.rank}</td>
-                <td class="font-semibold text-brand-blue">${team.name}</td>
-                <td class="text-center">${team.athleteCount}</td>
-                <td class="font-bold text-brand-gold">${team.totalPoints}</td>
-                <td class="text-center font-bold text-yellow-600">🥇 ${team.goldMedals}</td>
-                <td class="text-center font-bold text-gray-400">🥈 ${team.silverMedals}</td>
-                <td class="text-center font-bold text-orange-600">🥉 ${team.bronzeMedals}</td>
-                <td class="text-center font-semibold">${team.participations}</td>
-            `;
-            tbody.appendChild(row);
-        });
-    }
-
-    // ═══════════════════════════════════════════════════════════════════
-    // TAB SWITCHING
-    // ═══════════════════════════════════════════════════════════════════
-    
-    function switchTab(tabName) {
-        document.querySelectorAll('.tab-content').forEach(tab => {
-            tab.classList.remove('active');
-        });
-        document.querySelectorAll('.tab-button').forEach(btn => {
-            btn.classList.remove('active');
-        });
-        
-        document.getElementById(tabName).classList.add('active');
-        event.target.classList.add('active');
-    }
-
-    // ═══════════════════════════════════════════════════════════════════
-    // INITIALIZATION
-    // ═══════════════════════════════════════════════════════════════════
-    
-    function setLanguage(lang) {
-        currentLanguage = lang;
-        localStorage.setItem('sac2026-lang', lang);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        console.log('🔄 Initializing results page...');
-        loadTournamentData();
-        setLanguage(currentLanguage);
-    });
-    </script>
-</body>
-</html>
