@@ -116,7 +116,7 @@
                     <a href="index.html#categories" data-i18n="navCategories" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Κατηγορίες</a>
                     <a href="results.html" data-i18n="navResults" class="py-3 px-4 bg-white/10 text-brand-gold font-semibold rounded-lg mobile-link">Αποτελέσματα</a>
                     <a href="index.html#contact" data-i18n="navContact" class="py-3 px-4 text-white hover:bg-white/10 rounded-lg transition-colors mobile-link">Επικοινωνία</a>
-                    <a href="https://www.facebook.com/events/950607031468231" target="_blank" data-i18n="footerEvent" class="py-3 px-4 btn-gold text-brand-blueDark rounded-lg font-semibold text-center mt-4">Facebook Event</a>
+                    <a href="https://www.facebook.com/events/950607031468231" target="_blank" rel="noopener noreferrer" data-i18n="footerEvent" class="py-3 px-4 btn-gold text-brand-blueDark rounded-lg font-semibold text-center mt-4">Facebook Event</a>
                 </nav>
             </div>
         </div>
@@ -224,13 +224,13 @@
                         <li><a href="index.html#overview" data-i18n="footerInfo" class="hover:text-brand-gold transition-colors duration-300">Πληροφορίες</a></li>
                         <li><a href="index.html#categories" data-i18n="footerCategories" class="hover:text-brand-gold transition-colors duration-300">Κατηγορίες</a></li>
                         <li><a href="results.html" data-i18n="navResults" class="text-brand-gold hover:text-brand-goldLight transition-colors duration-300">Αποτελέσματα</a></li>
-                        <li><a href="https://www.asmakedonon.gr/p/blog-page_81.html" target="_blank" data-i18n="footerClub" class="hover:text-brand-gold transition-colors duration-300">Σύλλογος Μακεδόνων</a></li>
-                        <li><a href="https://www.facebook.com/events/950607031468231" target="_blank" data-i18n="footerEvent" class="hover:text-brand-gold transition-colors duration-300">Facebook Event</a></li>
+                        <li><a href="https://www.asmakedonon.gr/p/blog-page_81.html" target="_blank" rel="noopener noreferrer" data-i18n="footerClub" class="hover:text-brand-gold transition-colors duration-300">Σύλλογος Μακεδόνων</a></li>
+                        <li><a href="https://www.facebook.com/events/950607031468231" target="_blank" rel="noopener noreferrer" data-i18n="footerEvent" class="hover:text-brand-gold transition-colors duration-300">Facebook Event</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-blue-700 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
-                <a href="https://www.facebook.com/profile.php?id=61580885484641" target="_blank" data-i18n="footerCopyright" class="text-blue-300 text-xs sm:text-sm hover:text-brand-gold transition-colors duration-300">© 2026 Χειροπάλη Θεσσαλονίκης</a>
+                <a href="https://www.facebook.com/profile.php?id=61580885484641" target="_blank" rel="noopener noreferrer" data-i18n="footerCopyright" class="text-blue-300 text-xs sm:text-sm hover:text-brand-gold transition-colors duration-300">© 2026 Χειροπάλη Θεσσαλονίκης</a>
                 <p class="text-blue-400 text-[10px] sm:text-xs font-heading font-semibold tracking-wider">SALONICA ARMWRESTLING CUP 2026</p>
             </div>
         </div>
@@ -240,509 +240,952 @@
     // ── DATA ─────────────────────────────────────────────────────────────────
     // [athlete, team, country, category, ageGroup, hand, weight, place, points]
     const resultsData = [
-      ["Gabriel Stoev","Lokomotive 96","Bulgaria","Junior U-18 Men Left -80 kg","Junior U-18","Left","-80 kg",1,10],
-      ["Αναστάσιος Μακρίδης","","Greece","Junior U-18 Men Left -80 kg","Junior U-18","Left","-80 kg",2,7],
-      ["Βασίλειος Φιλικίδης","Ασπρόπυργος","Greece","Junior U-18 Men Left -80 kg","Junior U-18","Left","-80 kg",3,5],
-      ["Εμμανουήλ Μακρίδης","","Greece","Junior U-18 Men Left -80 kg","Junior U-18","Left","-80 kg",4,4],
-      ["Χρήστος Ταξιάρχης","","Greece","Junior U-18 Men Left -80 kg","Junior U-18","Left","-80 kg",5,3],
-      ["Αναστάσιος Γεωργιάδης","","Greece","Junior U-18 Men Left -80 kg","Junior U-18","Left","-80 kg",6,2],
-      ["Αντώνης Παναγκασίδης","Salonica Armwrestling","Greece","Junior U-18 Men Left +80 kg","Junior U-18","Left","+80 kg",1,10],
-      ["Μιχαήλ Άγγελος Μελιανίδης","","Greece","Junior U-18 Men Left +80 kg","Junior U-18","Left","+80 kg",2,7],
-      ["Παναγιώτης Φωτόπουλος","Salonica Armwrestling","Greece","Junior U-18 Men Left +80 kg","Junior U-18","Left","+80 kg",3,5],
-      ["Πέτρος Καραΐσκος","S.O.A.T","Greece","ΑΡΧΑΡΙΟΙ Men Left -75 kg","ΑΡΧΑΡΙΟΙ","Left","-75 kg",1,10],
-      ["Νίκος Τσελέπης","","Greece","ΑΡΧΑΡΙΟΙ Men Left -75 kg","ΑΡΧΑΡΙΟΙ","Left","-75 kg",2,7],
-      ["Χρυσόστομος Παπαγεωργίου","S.O.A.T","Greece","ΑΡΧΑΡΙΟΙ Men Left -75 kg","ΑΡΧΑΡΙΟΙ","Left","-75 kg",3,5],
-      ["Αρκάδιος Τσιτσόνης","","Greece","ΑΡΧΑΡΙΟΙ Men Left -75 kg","ΑΡΧΑΡΙΟΙ","Left","-75 kg",4,4],
-      ["Δημήτριος Τσακμακίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Left -75 kg","ΑΡΧΑΡΙΟΙ","Left","-75 kg",5,3],
-      ["Ιωάννης Καραγιαννίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Left -75 kg","ΑΡΧΑΡΙΟΙ","Left","-75 kg",6,2],
-      ["Χρήστος Ταξιάρχης","","Greece","ΑΡΧΑΡΙΟΙ Men Left -75 kg","ΑΡΧΑΡΙΟΙ","Left","-75 kg",7,1],
-      ["Αλέξανδρος Πατούκας","S.O.A.T","Greece","ΑΡΧΑΡΙΟΙ Men Left -75 kg","ΑΡΧΑΡΙΟΙ","Left","-75 kg",8,0],
-      ["Ελευθέριος Βόσσος","Let's Go","Greece","ΑΡΧΑΡΙΟΙ Men Left -75 kg","ΑΡΧΑΡΙΟΙ","Left","-75 kg",9,0],
-      ["Ανέστης Βασιλειάδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Left -95 kg","ΑΡΧΑΡΙΟΙ","Left","-95 kg",1,10],
-      ["Ελευθέριος Τσαγκαρίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Left -95 kg","ΑΡΧΑΡΙΟΙ","Left","-95 kg",2,7],
-      ["Άγγελος Τούντας","","Greece","ΑΡΧΑΡΙΟΙ Men Left -95 kg","ΑΡΧΑΡΙΟΙ","Left","-95 kg",3,5],
-      ["Φώτης Δημητρίου","Cyprus Armwrestling","Cyprus","ΑΡΧΑΡΙΟΙ Men Left -95 kg","ΑΡΧΑΡΙΟΙ","Left","-95 kg",4,4],
-      ["Μιχαήλ Άγγελος Μελιανίδης","","Greece","ΑΡΧΑΡΙΟΙ Men Left -95 kg","ΑΡΧΑΡΙΟΙ","Left","-95 kg",5,3],
-      ["Milto Carciu","Salonica Armwrestling","Albania","ΑΡΧΑΡΙΟΙ Men Left -95 kg","ΑΡΧΑΡΙΟΙ","Left","-95 kg",6,2],
-      ["Θεόδωρος Κούρτογλου","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Left +95 kg","ΑΡΧΑΡΙΟΙ","Left","+95 kg",1,10],
-      ["Χρήστος Σινάνης","","Greece","ΑΡΧΑΡΙΟΙ Men Left +95 kg","ΑΡΧΑΡΙΟΙ","Left","+95 kg",2,7],
-      ["Ισαάκ Καραμιχαηλίδης","Cyprus Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Left +95 kg","ΑΡΧΑΡΙΟΙ","Left","+95 kg",3,5],
-      ["Κωνσταντίνος Τουμανίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Left +95 kg","ΑΡΧΑΡΙΟΙ","Left","+95 kg",4,4],
-      ["Κωνσταντίνος Σκαπουλάρος","","Cyprus","ΑΡΧΑΡΙΟΙ Men Left +95 kg","ΑΡΧΑΡΙΟΙ","Left","+95 kg",5,3],
-      ["Γεώργιος Χρυσοβαλάντης Χατζηβαντσίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Left +95 kg","ΑΡΧΑΡΙΟΙ","Left","+95 kg",6,2],
-    ];
-    resultsData.push(
-      ["Zdravko Petrov","CSKA","Bulgaria","Senior Men Left 63 kg","Senior","Left","63 kg",1,10],
-      ["Zahari Zahariev","Lokomotive 96","Bulgaria","Senior Men Left 63 kg","Senior","Left","63 kg",2,7],
-      ["Mitko Staykov","CSKA","Bulgaria","Senior Men Left 63 kg","Senior","Left","63 kg",3,5],
-      ["Βαλέριος Ριζίδης","Salonica Armwrestling","Greece","Senior Men Left 63 kg","Senior","Left","63 kg",4,4],
-      ["Βασίλειος Φιλικίδης","Ασπρόπυργος","Greece","Senior Men Left 70 kg","Senior","Left","70 kg",1,10],
-      ["Zdravko Petrov","CSKA","Bulgaria","Senior Men Left 70 kg","Senior","Left","70 kg",2,7],
-      ["Δημήτρης Ναβάλ","Let's Go","Greece","Senior Men Left 70 kg","Senior","Left","70 kg",3,5],
-      ["Αλέξανδρος Πατούκας","S.O.A.T","Greece","Senior Men Left 70 kg","Senior","Left","70 kg",4,4],
-      ["Νίκος Μίντσης","Salonica Armwrestling","Greece","Senior Men Left 78 kg","Senior","Left","78 kg",1,10],
-      ["Κωνσταντίνος Αντωνιάδης","Salonica Armwrestling","Greece","Senior Men Left 78 kg","Senior","Left","78 kg",2,7],
-      ["Αλέξανδρος Ζαφειρόπουλος","S.O.A.T","Greece","Senior Men Left 78 kg","Senior","Left","78 kg",3,5],
-      ["Ευαγγέλου Κωνσταντίνος","Let's Go","Greece","Senior Men Left 78 kg","Senior","Left","78 kg",4,4],
-      ["Εμμανουήλ Μακρίδης","","Greece","Senior Men Left 78 kg","Senior","Left","78 kg",5,3],
-      ["Αλέξανδρος Διαμαντίδης","Let's Go","Greece","Senior Men Left 78 kg","Senior","Left","78 kg",6,2],
-      ["Γιώργος Νικηταράς","Salonica Armwrestling","Greece","Senior Men Left 78 kg","Senior","Left","78 kg",7,1],
-      ["Πέτρος Καραΐσκος","S.O.A.T","Greece","Senior Men Left 78 kg","Senior","Left","78 kg",8,0],
-      ["Αντώνης Παναγκασίδης","Salonica Armwrestling","Greece","Senior Men Left 86 kg","Senior","Left","86 kg",1,10],
-      ["Σωκράτης Κάνιος","Greek Armbenders","Greece","Senior Men Left 86 kg","Senior","Left","86 kg",2,7],
-      ["Κυριάκος Ευαγγελούδης","Salonica Armwrestling","Greece","Senior Men Left 86 kg","Senior","Left","86 kg",3,5],
-      ["Φώτης Δημητρίου","Cyprus Armwrestling","Cyprus","Senior Men Left 86 kg","Senior","Left","86 kg",4,4],
-      ["Παναγιώτης Τσακίρης","","Greece","Senior Men Left 86 kg","Senior","Left","86 kg",5,3],
-      ["Σωκράτης Σούτογλου","","Greece","Senior Men Left 86 kg","Senior","Left","86 kg",6,2],
-      ["Αλέξανδρος Ζαφειρόπουλος","S.O.A.T","Greece","Senior Men Left 86 kg","Senior","Left","86 kg",7,1],
-      ["Χρήστος Ζαμπλαράς","Let's Go","Greece","Senior Men Left 95 kg","Senior","Left","95 kg",1,10],
-      ["Mihail Pavlov","CSKA","Bulgaria","Senior Men Left 95 kg","Senior","Left","95 kg",2,7],
-      ["Δημήτριος Πιπερούδης","Salonica Armwrestling","Greece","Senior Men Left 95 kg","Senior","Left","95 kg",3,5],
-      ["Ανδρέας Χατζηλουκάς","Cyprus Armwrestling","Cyprus","Senior Men Left 95 kg","Senior","Left","95 kg",4,4],
-      ["Ευάγγελος Μισιάς","Salonica Armwrestling","Greece","Senior Men Left 95 kg","Senior","Left","95 kg",5,3],
-      ["Epifaneios Epifaneioy","Cyprus Armwrestling","Cyprus","Senior Men Left 95 kg","Senior","Left","95 kg",6,2],
-      ["Ιωάννης Βόσσος","Let's Go","Greece","Senior Men Left 95 kg","Senior","Left","95 kg",7,1],
-      ["Petar Ivanov","Lokomotive 96","Bulgaria","Senior Men Left 105 kg","Senior","Left","105 kg",1,10],
-      ["Γεώργιος Αθανασιάδης","Let's Go","Greece","Senior Men Left 105 kg","Senior","Left","105 kg",2,7],
-    );
-    resultsData.push(
-      ["Ηλίας Μπατσινίλας","Greek Armbenders","Greece","Senior Men Left 105 kg","Senior","Left","105 kg",3,5],
-      ["Σπύρος Χαλαστάρας","Greek Armbenders","Greece","Senior Men Left 105 kg","Senior","Left","105 kg",4,4],
-      ["Emanuil Manasiev","CSKA","Bulgaria","Senior Men Left 105 kg","Senior","Left","105 kg",5,3],
-      ["Epifaneios Epifaneioy","Cyprus Armwrestling","Cyprus","Senior Men Left 105 kg","Senior","Left","105 kg",6,2],
-      ["Detelin Yonchev","CSKA","Bulgaria","Senior Men Left +105 kg","Senior","Left","+105 kg",1,10],
-      ["Χρήστος Μιχαηλίδης","Ασπρόπυργος","Greece","Senior Men Left +105 kg","Senior","Left","+105 kg",2,7],
-      ["Πιλάτος Κουνατίδης","Salonica Armwrestling","Greece","Senior Men Left +105 kg","Senior","Left","+105 kg",3,5],
-      ["Μάριος Παπαδόπουλος","Cyprus Armwrestling","Cyprus","Senior Men Left +105 kg","Senior","Left","+105 kg",4,4],
-      ["Σωτήρης Σακαντέμης","Greek Armbenders","Greece","Senior Men Left +105 kg","Senior","Left","+105 kg",5,3],
-      ["Δημήτριος Φωκάς","Let's Go","Greece","Senior Men Left +105 kg","Senior","Left","+105 kg",6,2],
-      ["Βασίλης Πέτρου","Ασπρόπυργος","Greece","Masters Men Left Open","Masters","Left","Open",1,10],
-      ["Emanuil Manasiev","CSKA","Bulgaria","Masters Men Left Open","Masters","Left","Open",2,7],
-      ["Σπύρος Χαλαστάρας","Greek Armbenders","Greece","Masters Men Left Open","Masters","Left","Open",3,5],
-      ["Pradeep Nishantha Rajapaksha","Ασπρόπυργος","Sri Lanka","Masters Men Left Open","Masters","Left","Open",4,4],
-      ["Gabriel Stoev","Lokomotive 96","Bulgaria","Junior U-18 Men Right -80 kg","Junior U-18","Right","-80 kg",1,10],
-      ["Βασίλειος Φιλικίδης","Ασπρόπυργος","Greece","Junior U-18 Men Right -80 kg","Junior U-18","Right","-80 kg",2,7],
-      ["Εμμανουήλ Μακρίδης","","Greece","Junior U-18 Men Right -80 kg","Junior U-18","Right","-80 kg",3,5],
-      ["Χρήστος Ταξιάρχης","","Greece","Junior U-18 Men Right -80 kg","Junior U-18","Right","-80 kg",4,4],
-      ["Χρήστος Δημητρίου","","Greece","Junior U-18 Men Right -80 kg","Junior U-18","Right","-80 kg",5,3],
-      ["Αναστάσιος Γεωργιάδης","","Greece","Junior U-18 Men Right -80 kg","Junior U-18","Right","-80 kg",6,2],
-      ["Αντώνης Παναγκασίδης","Salonica Armwrestling","Greece","Junior U-18 Men Right +80 kg","Junior U-18","Right","+80 kg",1,10],
-      ["Μιχαήλ Άγγελος Μελιανίδης","","Greece","Junior U-18 Men Right +80 kg","Junior U-18","Right","+80 kg",2,7],
-      ["Παναγιώτης Φωτόπουλος","Salonica Armwrestling","Greece","Junior U-18 Men Right +80 kg","Junior U-18","Right","+80 kg",3,5],
-      ["Πέτρος Καραΐσκος","S.O.A.T","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",1,10],
-      ["Παναγιώτης Γραβάλης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",2,7],
-      ["Χρυσόστομος Παπαγεωργίου","S.O.A.T","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",3,5],
-      ["Αλέξανδρος Πατούκας","S.O.A.T","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",4,4],
-      ["Στράτης Σπυρίδων Αιδονίδης","","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",5,3],
-      ["Χρήστος Δημητρίου","","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",6,2],
-      ["Ιωάννης Τσαλουκίδης","","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",7,1],
-      ["Ιωάννης Γατσέλης","","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",8,0],
-    );
-    resultsData.push(
-      ["Αρκάδιος Τσιτσόνης","","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",9,0],
-      ["Ελευθέριος Βόσσος","Let's Go","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",10,0],
-      ["Νίκος Τσελέπης","","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",11,0],
-      ["Δημήτριος Τσακμακίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",12,0],
-      ["Χρήστος Ταξιάρχης","","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",13,0],
-      ["Ιωάννης Καραγιαννίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right -75 kg","ΑΡΧΑΡΙΟΙ","Right","-75 kg",14,0],
-      ["Μιχαήλ Άγγελος Μελιανίδης","","Greece","ΑΡΧΑΡΙΟΙ Men Right 95 kg","ΑΡΧΑΡΙΟΙ","Right","95 kg",1,10],
-      ["Ανέστης Βασιλειάδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right 95 kg","ΑΡΧΑΡΙΟΙ","Right","95 kg",2,7],
-      ["Φώτης Δημητρίου","Cyprus Armwrestling","Cyprus","ΑΡΧΑΡΙΟΙ Men Right 95 kg","ΑΡΧΑΡΙΟΙ","Right","95 kg",3,5],
-      ["Κωνσταντίνος Κογκετσίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right 95 kg","ΑΡΧΑΡΙΟΙ","Right","95 kg",4,4],
-      ["Ελευθέριος Τσαγκαρίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right 95 kg","ΑΡΧΑΡΙΟΙ","Right","95 kg",5,3],
-      ["Άγγελος Τούντας","","Greece","ΑΡΧΑΡΙΟΙ Men Right 95 kg","ΑΡΧΑΡΙΟΙ","Right","95 kg",6,2],
-      ["Milto Carciu","Salonica Armwrestling","Albania","ΑΡΧΑΡΙΟΙ Men Right 95 kg","ΑΡΧΑΡΙΟΙ","Right","95 kg",7,1],
-      ["Χαράλαμπος Κυμπρίκτσης","","Greece","ΑΡΧΑΡΙΟΙ Men Right 95 kg","ΑΡΧΑΡΙΟΙ","Right","95 kg",8,0],
-      ["Θεόδωρος Κούρτογλου","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right +95 kg","ΑΡΧΑΡΙΟΙ","Right","+95 kg",1,10],
-      ["Ισαάκ Καραμιχαηλίδης","Cyprus Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right +95 kg","ΑΡΧΑΡΙΟΙ","Right","+95 kg",2,7],
-      ["Νικόλαος Βόσσος","Let's Go","Greece","ΑΡΧΑΡΙΟΙ Men Right +95 kg","ΑΡΧΑΡΙΟΙ","Right","+95 kg",3,5],
-      ["Κωνσταντίνος Τουμανίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right +95 kg","ΑΡΧΑΡΙΟΙ","Right","+95 kg",4,4],
-      ["Χρήστος Σινάνης","","Greece","ΑΡΧΑΡΙΟΙ Men Right +95 kg","ΑΡΧΑΡΙΟΙ","Right","+95 kg",5,3],
-      ["Φώτης Δημητρίου","Cyprus Armwrestling","Cyprus","ΑΡΧΑΡΙΟΙ Men Right +95 kg","ΑΡΧΑΡΙΟΙ","Right","+95 kg",6,2],
-      ["Κωνσταντίνος Σκαπουλάρος","","Cyprus","ΑΡΧΑΡΙΟΙ Men Right +95 kg","ΑΡΧΑΡΙΟΙ","Right","+95 kg",7,1],
-      ["Γεώργιος Χρυσοβαλάντης Χατζηβαντσίδης","Salonica Armwrestling","Greece","ΑΡΧΑΡΙΟΙ Men Right +95 kg","ΑΡΧΑΡΙΟΙ","Right","+95 kg",8,0],
-      ["Zahari Zahariev","Lokomotive 96","Bulgaria","Senior Men Right 63 kg","Senior","Right","63 kg",1,10],
-      ["Zdravko Petrov","CSKA","Bulgaria","Senior Men Right 63 kg","Senior","Right","63 kg",2,7],
-      ["Mitko Staykov","CSKA","Bulgaria","Senior Men Right 63 kg","Senior","Right","63 kg",3,5],
-      ["Αναστάσιος Στεφανίδης","Salonica Armwrestling","Greece","Senior Men Right 63 kg","Senior","Right","63 kg",4,4],
-      ["Βασίλειος Φιλικίδης","Ασπρόπυργος","Greece","Senior Men Right 70 kg","Senior","Right","70 kg",1,10],
-      ["Δημήτρης Ναβάλ","Let's Go","Greece","Senior Men Right 70 kg","Senior","Right","70 kg",2,7],
-      ["Mitko Staykov","CSKA","Bulgaria","Senior Men Right 70 kg","Senior","Right","70 kg",3,5],
-      ["Νίκος Αθανάσαρος","","Greece","Senior Men Right 70 kg","Senior","Right","70 kg",4,4],
-      ["Αλέξανδρος Πατούκας","S.O.A.T","Greece","Senior Men Right 70 kg","Senior","Right","70 kg",5,3],
-    );
-    resultsData.push(
-      ["Νίκος Μίντσης","Salonica Armwrestling","Greece","Senior Men Right 78 kg","Senior","Right","78 kg",1,10],
-      ["Κωνσταντίνος Αντωνιάδης","Salonica Armwrestling","Greece","Senior Men Right 78 kg","Senior","Right","78 kg",2,7],
-      ["Αλέξανδρος Ζαφειρόπουλος","S.O.A.T","Greece","Senior Men Right 78 kg","Senior","Right","78 kg",3,5],
-      ["Ευαγγέλου Κωνσταντίνος","Let's Go","Greece","Senior Men Right 78 kg","Senior","Right","78 kg",4,4],
-      ["Αλέξανδρος Διαμαντίδης","Let's Go","Greece","Senior Men Right 78 kg","Senior","Right","78 kg",5,3],
-      ["Πέτρος Καραΐσκος","S.O.A.T","Greece","Senior Men Right 78 kg","Senior","Right","78 kg",6,2],
-      ["Γιώργος Νικηταράς","Salonica Armwrestling","Greece","Senior Men Right 78 kg","Senior","Right","78 kg",7,1],
-      ["Αντώνης Παναγκασίδης","Salonica Armwrestling","Greece","Senior Men Right 86 kg","Senior","Right","86 kg",1,10],
-      ["Σωκράτης Κάνιος","Greek Armbenders","Greece","Senior Men Right 86 kg","Senior","Right","86 kg",2,7],
-      ["Κυριάκος Ευαγγελούδης","Salonica Armwrestling","Greece","Senior Men Right 86 kg","Senior","Right","86 kg",3,5],
-      ["Αλέξανδρος Ζαφειρόπουλος","S.O.A.T","Greece","Senior Men Right 86 kg","Senior","Right","86 kg",4,4],
-      ["Παναγιώτης Τσακίρης","","Greece","Senior Men Right 86 kg","Senior","Right","86 kg",5,3],
-      ["Φώτης Δημητρίου","Cyprus Armwrestling","Cyprus","Senior Men Right 86 kg","Senior","Right","86 kg",6,2],
-      ["Σωκράτης Σούτογλου","","Greece","Senior Men Right 86 kg","Senior","Right","86 kg",7,1],
-      ["Mihail Pavlov","CSKA","Bulgaria","Senior Men Right 95 kg","Senior","Right","95 kg",1,10],
-      ["Παναγιώτης Σακαρίδης","Salonica Armwrestling","Greece","Senior Men Right 95 kg","Senior","Right","95 kg",2,7],
-      ["Ανδρέας Χατζηλουκάς","Cyprus Armwrestling","Cyprus","Senior Men Right 95 kg","Senior","Right","95 kg",3,5],
-      ["Ευάγγελος Μισιάς","Salonica Armwrestling","Greece","Senior Men Right 95 kg","Senior","Right","95 kg",4,4],
-      ["Δημήτριος Πιπερούδης","Salonica Armwrestling","Greece","Senior Men Right 95 kg","Senior","Right","95 kg",5,3],
-      ["Ιωάννης Βόσσος","Let's Go","Greece","Senior Men Right 95 kg","Senior","Right","95 kg",6,2],
-      ["Epifaneios Epifaneioy","Cyprus Armwrestling","Cyprus","Senior Men Right 95 kg","Senior","Right","95 kg",7,1],
-      ["Ηλίας Μπατσινίλας","Greek Armbenders","Greece","Senior Men Right 105 kg","Senior","Right","105 kg",1,10],
-      ["Γεώργιος Αθανασιάδης","Let's Go","Greece","Senior Men Right 105 kg","Senior","Right","105 kg",2,7],
-      ["Emanuil Manasiev","CSKA","Bulgaria","Senior Men Right 105 kg","Senior","Right","105 kg",3,5],
-      ["Petar Ivanov","Lokomotive 96","Bulgaria","Senior Men Right 105 kg","Senior","Right","105 kg",4,4],
-      ["Σπύρος Χαλαστάρας","Greek Armbenders","Greece","Senior Men Right 105 kg","Senior","Right","105 kg",5,3],
-      ["Κωνσταντίνος Φλώρος","","Greece","Senior Men Right 105 kg","Senior","Right","105 kg",6,2],
-      ["Σωκράτης Κάνιος","Greek Armbenders","Greece","Senior Men Right 105 kg","Senior","Right","105 kg",7,1],
-      ["Μάριος Παπαδόπουλος","Cyprus Armwrestling","Cyprus","Senior Men Right +105 kg","Senior","Right","+105 kg",1,10],
-      ["Detelin Yonchev","CSKA","Bulgaria","Senior Men Right +105 kg","Senior","Right","+105 kg",2,7],
-      ["Θεόδωρος Μιχαηλίδης","Ασπρόπυργος","Greece","Senior Men Right +105 kg","Senior","Right","+105 kg",3,5],
-    );
-    resultsData.push(
-      ["Δημήτριος Φωκάς","Let's Go","Greece","Senior Men Right +105 kg","Senior","Right","+105 kg",4,4],
-      ["Σωτήρης Σακαντέμης","Greek Armbenders","Greece","Senior Men Right +105 kg","Senior","Right","+105 kg",5,3],
-      ["Πιλάτος Κουνατίδης","Salonica Armwrestling","Greece","Senior Men Right +105 kg","Senior","Right","+105 kg",6,2],
-      ["Δημήτρης Νικοπολίδης","Salonica Armwrestling","Greece","Senior Men Right +105 kg","Senior","Right","+105 kg",7,1],
-      ["Χρήστος Μιχαηλίδης","Ασπρόπυργος","Greece","Senior Men Right +105 kg","Senior","Right","+105 kg",8,0],
-      ["Epifaneios Epifaneioy","Cyprus Armwrestling","Cyprus","Senior Men Right +105 kg","Senior","Right","+105 kg",9,0],
-      ["Emanuil Manasiev","CSKA","Bulgaria","Masters Men Right Open","Masters","Right","Open",1,10],
-      ["Σπύρος Χαλαστάρας","Greek Armbenders","Greece","Masters Men Right Open","Masters","Right","Open",2,7],
-      ["Pradeep Nishantha Rajapaksha","Ασπρόπυργος","Sri Lanka","Masters Men Right Open","Masters","Right","Open",3,5],
-      ["Ζίζο Τιγκισβίλι","Salonica Armwrestling","Greece","Senior Women Right Open","Senior","Right","Open",1,10],
-      ["Mihaela Krumova","CSKA","Bulgaria","Senior Women Right Open","Senior","Right","Open",2,7],
-      ["Δέσποινα Κοντοπούλου","Salonica Armwrestling","Greece","Senior Women Right Open","Senior","Right","Open",3,5],
-      ["Stefani Decheva","Lokomotive 96","Bulgaria","Senior Women Left Open","Senior","Left","Open",1,10],
-      ["Ζίζο Τιγκισβίλι","Salonica Armwrestling","Greece","Senior Women Left Open","Senior","Left","Open",2,7],
-      ["Mihaela Krumova","CSKA","Bulgaria","Senior Women Left Open","Senior","Left","Open",3,5],
-      ["Δέσποινα Κοντοπούλου","Salonica Armwrestling","Greece","Senior Women Left Open","Senior","Left","Open",4,4],
-      ["Ελευθέριος Βόσσος","Let's Go","Greece","Junior Boys U-15 Left","Junior U-15","Left","Open",1,10],
-      ["Σταύρος Ιακωβίδης","Salonica Armwrestling","Greece","Junior Boys U-15 Left","Junior U-15","Left","Open",2,7],
-      ["Γεώργιος Ταξιάρχης","","Greece","Junior Boys U-15 Left","Junior U-15","Left","Open",3,5],
-      ["Ελευθέριος Βόσσος","Let's Go","Greece","Junior Boys U-15 Right","Junior U-15","Right","Open",1,10],
-      ["Γεώργιος Ταρασίδης","Salonica Armwrestling","Greece","Junior Boys U-15 Right","Junior U-15","Right","Open",2,7],
-      ["Γεώργιος Ταξιάρχης","","Greece","Junior Boys U-15 Right","Junior U-15","Right","Open",3,5],
-      ["Παναγιώτης Πετκόγλου","","Greece","Junior Boys U-15 Right","Junior U-15","Right","Open",4,4]
-    );
-
-    // [rank, athlete, team, country, totalPoints, categories]
-    const athletesData = [
-      [1,"Αντώνης Παναγκασίδης","Salonica Armwrestling","Greece",40,4],
-      [2,"Βασίλειος Φιλικίδης","Ασπρόπυργος","Greece",32,4],
-      [3,"Μιχαήλ Άγγελος Μελιανίδης","","Greece",27,4],
-      [4,"Emanuil Manasiev","CSKA","Bulgaria",25,4],
-      [5,"Zdravko Petrov","CSKA","Bulgaria",24,3],
-      [6,"Πέτρος Καραΐσκος","S.O.A.T","Greece",22,4],
-      [7,"Gabriel Stoev","Lokomotive 96","Bulgaria",20,2],
-      [8,"Ελευθέριος Βόσσος","Let's Go","Greece",20,4],
-      [9,"Θεόδωρος Κούρτογλου","Salonica Armwrestling","Greece",20,2],
-      [10,"Νίκος Μίντσης","Salonica Armwrestling","Greece",20,2],
-    ];
-    athletesData.push(
-      [11,"Σπύρος Χαλαστάρας","Greek Armbenders","Greece",19,4],
-      [12,"Ανέστης Βασιλειάδης","Salonica Armwrestling","Greece",17,2],
-      [13,"Φώτης Δημητρίου","Cyprus Armwrestling","Cyprus",17,5],
-      [14,"Zahari Zahariev","Lokomotive 96","Bulgaria",17,2],
-      [15,"Mihail Pavlov","CSKA","Bulgaria",17,2],
-      [16,"Detelin Yonchev","CSKA","Bulgaria",17,2],
-      [17,"Ζίζο Τιγκισβίλι","Salonica Armwrestling","Greece",17,2],
-      [18,"Mitko Staykov","CSKA","Bulgaria",15,3],
-      [19,"Αλέξανδρος Ζαφειρόπουλος","S.O.A.T","Greece",15,4],
-      [20,"Σωκράτης Κάνιος","Greek Armbenders","Greece",15,3],
-      [21,"Ηλίας Μπατσινίλας","Greek Armbenders","Greece",15,2],
-      [22,"Κωνσταντίνος Αντωνιάδης","Salonica Armwrestling","Greece",14,2],
-      [23,"Petar Ivanov","Lokomotive 96","Bulgaria",14,2],
-      [24,"Γεώργιος Αθανασιάδης","Let's Go","Greece",14,2],
-      [25,"Μάριος Παπαδόπουλος","Cyprus Armwrestling","Cyprus",14,2],
-      [26,"Εμμανουήλ Μακρίδης","","Greece",12,3],
-      [27,"Ισαάκ Καραμιχαηλίδης","Cyprus Armwrestling","Greece",12,2],
-      [28,"Δημήτρης Ναβάλ","Let's Go","Greece",12,2],
-      [29,"Mihaela Krumova","CSKA","Bulgaria",12,2],
-      [30,"Αλέξανδρος Πατούκας","S.O.A.T","Greece",11,4],
-      [31,"Παναγιώτης Φωτόπουλος","Salonica Armwrestling","Greece",10,2],
-      [32,"Χρυσόστομος Παπαγεωργίου","S.O.A.T","Greece",10,2],
-      [33,"Ελευθέριος Τσαγκαρίδης","Salonica Armwrestling","Greece",10,2],
-      [34,"Χρήστος Σινάνης","","Greece",10,2],
-      [35,"Κυριάκος Ευαγγελούδης","Salonica Armwrestling","Greece",10,2],
-      [36,"Χρήστος Ζαμπλαράς","Let's Go","Greece",10,1],
-      [37,"Βασίλης Πέτρου","Ασπρόπυργος","Greece",10,1],
-      [38,"Stefani Decheva","Lokomotive 96","Bulgaria",10,1],
-      [39,"Γεώργιος Ταξιάρχης","","Greece",10,2],
-      [40,"Ανδρέας Χατζηλουκάς","Cyprus Armwrestling","Cyprus",9,2],
-      [41,"Pradeep Nishantha Rajapaksha","Ασπρόπυργος","Sri Lanka",9,2],
-      [42,"Δέσποινα Κοντοπούλου","Salonica Armwrestling","Greece",9,2]
-    );
-    athletesData.push(
-      [43,"Χρήστος Ταξιάρχης","","Greece",8,4],
-      [44,"Κωνσταντίνος Τουμανίδης","Salonica Armwrestling","Greece",8,2],
-      [45,"Ευαγγέλου Κωνσταντίνος","Let's Go","Greece",8,2],
-      [46,"Δημήτριος Πιπερούδης","Salonica Armwrestling","Greece",8,2],
-      [47,"Αναστάσιος Μακρίδης","","Greece",7,1],
-      [48,"Νίκος Τσελέπης","","Greece",7,2],
-      [49,"Άγγελος Τούντας","","Greece",7,2],
-      [50,"Ευάγγελος Μισιάς","Salonica Armwrestling","Greece",7,2],
-      [51,"Χρήστος Μιχαηλίδης","Ασπρόπυργος","Greece",7,2],
-      [52,"Πιλάτος Κουνατίδης","Salonica Armwrestling","Greece",7,2],
-      [53,"Παναγιώτης Γραβάλης","Salonica Armwrestling","Greece",7,1],
-      [54,"Παναγιώτης Σακαρίδης","Salonica Armwrestling","Greece",7,1],
-      [55,"Σταύρος Ιακωβίδης","Salonica Armwrestling","Greece",7,1],
-      [56,"Γεώργιος Ταρασίδης","Salonica Armwrestling","Greece",7,1],
-      [57,"Παναγιώτης Τσακίρης","","Greece",6,2],
-      [58,"Σωτήρης Σακαντέμης","Greek Armbenders","Greece",6,2],
-      [59,"Δημήτριος Φωκάς","Let's Go","Greece",6,2],
-      [60,"Αλέξανδρος Διαμαντίδης","Let's Go","Greece",5,2],
-      [61,"Epifaneios Epifaneioy","Cyprus Armwrestling","Cyprus",5,4],
-      [62,"Χρήστος Δημητρίου","","Greece",5,2],
-      [63,"Νικόλαος Βόσσος","Let's Go","Greece",5,1],
-      [64,"Θεόδωρος Μιχαηλίδης","Ασπρόπυργος","Greece",5,1],
-      [65,"Αναστάσιος Γεωργιάδης","","Greece",4,2],
-      [66,"Αρκάδιος Τσιτσόνης","","Greece",4,2],
-      [67,"Κωνσταντίνος Σκαπουλάρος","","Cyprus",4,2],
-      [68,"Βαλέριος Ριζίδης","Salonica Armwrestling","Greece",4,1],
-      [69,"Κωνσταντίνος Κογκετσίδης","Salonica Armwrestling","Greece",4,1],
-      [70,"Αναστάσιος Στεφανίδης","Salonica Armwrestling","Greece",4,1],
-      [71,"Νίκος Αθανάσαρος","","Greece",4,1],
-      [72,"Παναγιώτης Πετκόγλου","","Greece",4,1],
-      [73,"Δημήτριος Τσακμακίδης","Salonica Armwrestling","Greece",3,2],
-      [74,"Milto Carciu","Salonica Armwrestling","Albania",3,2],
-      [75,"Σωκράτης Σούτογλου","","Greece",3,2],
-      [76,"Ιωάννης Βόσσος","Let's Go","Greece",3,2],
-      [77,"Στράτης Σπυρίδων Αιδονίδης","","Greece",3,1],
-      [78,"Ιωάννης Καραγιαννίδης","Salonica Armwrestling","Greece",2,2],
-      [79,"Γεώργιος Χρυσοβαλάντης Χατζηβαντσίδης","Salonica Armwrestling","Greece",2,2],
-      [80,"Γιώργος Νικηταράς","Salonica Armwrestling","Greece",2,2],
-      [81,"Κωνσταντίνος Φλώρος","","Greece",2,1],
-      [82,"Ιωάννης Τσαλουκίδης","","Greece",1,1],
-      [83,"Δημήτρης Νικοπολίδης","Salonica Armwrestling","Greece",1,1],
-      [84,"Ιωάννης Γατσέλης","","Greece",0,1],
-      [85,"Χαράλαμπος Κυμπρίκτσης","","Greece",0,1]
-    );
-
-    // [rank, team, athletes, totalPoints, gold, silver, bronze, participations]
-    const teamsData = [
-      [1,"Salonica Armwrestling",27,250,10,9,7,48],
-      [2,"CSKA",6,110,4,6,5,16],
-      [3,"Let's Go",9,83,3,3,2,18],
-      [4,"Ασπρόπυργος",5,63,3,2,3,10],
-      [5,"Lokomotive 96",4,61,5,1,0,7],
-      [6,"S.O.A.T",4,58,2,0,4,14],
-      [7,"Cyprus Armwrestling",5,57,1,1,3,15],
-      [8,"Greek Armbenders",4,55,1,3,2,11]
+      ["Αναστάσιος Μακρίδης", "", "Greece", "Junior U-18 Men Left -80 kg", "Junior U-18", "Left", "-80 kg", 1, 10],
+      ["Gabriel Stoev", "Lokomotive 96", "Bulgaria", "Junior U-18 Men Left -80 kg", "Junior U-18", "Left", "-80 kg", 2, 7],
+      ["Βασίλειος Φιλικίδης", "Ασπρόπυργος", "Greece", "Junior U-18 Men Left -80 kg", "Junior U-18", "Left", "-80 kg", 3, 5],
+      ["Εμμανουήλ Μακρίδης", "", "Greece", "Junior U-18 Men Left -80 kg", "Junior U-18", "Left", "-80 kg", 4, 4],
+      ["Χρήστος Ταξιάρχης", "", "Greece", "Junior U-18 Men Left -80 kg", "Junior U-18", "Left", "-80 kg", 5, 3],
+      ["Αναστάσιος Γεωργιάδης", "", "Greece", "Junior U-18 Men Left -80 kg", "Junior U-18", "Left", "-80 kg", 6, 2],
+      ["Αντώνης Παναγκασίδης", "Salonica Armwrestling", "Greece", "Junior U-18 Men Left +80 kg", "Junior U-18", "Left", "+80 kg", 1, 10],
+      ["Μιχαήλ Άγγελος Μελιανίδης", "", "Greece", "Junior U-18 Men Left +80 kg", "Junior U-18", "Left", "+80 kg", 2, 7],
+      ["Παναγιώτης Φωτόπουλος", "Salonica Armwrestling", "Greece", "Junior U-18 Men Left +80 kg", "Junior U-18", "Left", "+80 kg", 3, 5],
+      ["Πέτρος Καραΐσκος", "S.O.A.T", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -75 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-75 kg", 1, 10],
+      ["Νίκος Τσελέπης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -75 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-75 kg", 2, 7],
+      ["Χρυσόστομος Παπαγεωργίου", "S.O.A.T", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -75 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-75 kg", 3, 5],
+      ["Αρκάδιος Τσιτσόνης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -75 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-75 kg", 4, 4],
+      ["Δημήτριος Τσακμακίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -75 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-75 kg", 5, 3],
+      ["Ιωάννης Καραγιαννίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -75 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-75 kg", 6, 2],
+      ["Χρήστος Ταξιάρχης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -75 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-75 kg", 7, 1],
+      ["Αλέξανδρος Πατούκας", "S.O.A.T", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -75 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-75 kg", 8, 0],
+      ["Ελευθέριος Βόσσος", "Let's Go", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -75 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-75 kg", 9, 0],
+      ["Ανέστης Βασιλειάδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-95 kg", 1, 10],
+      ["Ελευθέριος Τσαγκαρίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-95 kg", 2, 7],
+      ["Άγγελος Τούντας", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-95 kg", 3, 5],
+      ["Φώτης Δημητρίου", "Cyprus Armwrestling", "Cyprus", "ΑΡΧΑΡΙΟΙ Men Left -95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-95 kg", 4, 4],
+      ["Μιχαήλ Άγγελος Μελιανίδης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Left -95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-95 kg", 5, 3],
+      ["Milto Carciu", "Salonica Armwrestling", "Albania", "ΑΡΧΑΡΙΟΙ Men Left -95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "-95 kg", 6, 2],
+      ["Θεόδωρος Κούρτογλου", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Left +95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "+95 kg", 1, 10],
+      ["Χρήστος Σινάνης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Left +95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "+95 kg", 2, 7],
+      ["Ισαάκ Καραμιχαηλίδης", "Cyprus Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Left +95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "+95 kg", 3, 5],
+      ["Κωνσταντίνος Τουμανίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Left +95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "+95 kg", 4, 4],
+      ["Κωνσταντίνος Σκαπουλάρος", "", "Cyprus", "ΑΡΧΑΡΙΟΙ Men Left +95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "+95 kg", 5, 3],
+      ["Γεώργιος Χρυσοβαλάντης Χατζηβαντσίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Left +95 kg", "ΑΡΧΑΡΙΟΙ", "Left", "+95 kg", 6, 2],
+      ["Zdravko Petrov", "CSKA", "Bulgaria", "Senior Men Left 63 kg", "Senior", "Left", "63 kg", 1, 10],
+      ["Zahari Zahariev", "Lokomotive 96", "Bulgaria", "Senior Men Left 63 kg", "Senior", "Left", "63 kg", 2, 7],
+      ["Mitko Staykov", "CSKA", "Bulgaria", "Senior Men Left 63 kg", "Senior", "Left", "63 kg", 3, 5],
+      ["Βαλέριος Ριζίδης", "Salonica Armwrestling", "Greece", "Senior Men Left 63 kg", "Senior", "Left", "63 kg", 4, 4],
+      ["Βασίλειος Φιλικίδης", "Ασπρόπυργος", "Greece", "Senior Men Left 70 kg", "Senior", "Left", "70 kg", 1, 10],
+      ["Zdravko Petrov", "CSKA", "Bulgaria", "Senior Men Left 70 kg", "Senior", "Left", "70 kg", 2, 7],
+      ["Δημήτρης Ναβάλ", "Let's Go", "Greece", "Senior Men Left 70 kg", "Senior", "Left", "70 kg", 3, 5],
+      ["Αλέξανδρος Πατούκας", "S.O.A.T", "Greece", "Senior Men Left 70 kg", "Senior", "Left", "70 kg", 4, 4],
+      ["Νίκος Μίντσης", "Salonica Armwrestling", "Greece", "Senior Men Left 78 kg", "Senior", "Left", "78 kg", 1, 10],
+      ["Κωνσταντίνος Αντωνιάδης", "Salonica Armwrestling", "Greece", "Senior Men Left 78 kg", "Senior", "Left", "78 kg", 2, 7],
+      ["Αλέξανδρος Ζαφειρόπουλος", "S.O.A.T", "Greece", "Senior Men Left 78 kg", "Senior", "Left", "78 kg", 3, 5],
+      ["Ευαγγέλου Κωνσταντίνος", "Let's Go", "Greece", "Senior Men Left 78 kg", "Senior", "Left", "78 kg", 4, 4],
+      ["Εμμανουήλ Μακρίδης", "", "Greece", "Senior Men Left 78 kg", "Senior", "Left", "78 kg", 5, 3],
+      ["Αλέξανδρος Διαμαντίδης", "Let's Go", "Greece", "Senior Men Left 78 kg", "Senior", "Left", "78 kg", 6, 2],
+      ["Γιώργος Νικητάρας", "Salonica Armwrestling", "Greece", "Senior Men Left 78 kg", "Senior", "Left", "78 kg", 7, 1],
+      ["Πέτρος Καραΐσκος", "S.O.A.T", "Greece", "Senior Men Left 78 kg", "Senior", "Left", "78 kg", 8, 0],
+      ["Αντώνης Παναγκασίδης", "Salonica Armwrestling", "Greece", "Senior Men Left 86 kg", "Senior", "Left", "86 kg", 1, 10],
+      ["Σωκράτης Κανιός", "Greek Armbenders", "Greece", "Senior Men Left 86 kg", "Senior", "Left", "86 kg", 2, 7],
+      ["Κυριάκος Ευαγγελούδης", "Salonica Armwrestling", "Greece", "Senior Men Left 86 kg", "Senior", "Left", "86 kg", 3, 5],
+      ["Φώτης Δημητρίου", "Cyprus Armwrestling", "Cyprus", "Senior Men Left 86 kg", "Senior", "Left", "86 kg", 4, 4],
+      ["Παναγιώτης Τσακίρης", "", "Greece", "Senior Men Left 86 kg", "Senior", "Left", "86 kg", 5, 3],
+      ["Σωκράτης Σούτογλου", "", "Greece", "Senior Men Left 86 kg", "Senior", "Left", "86 kg", 6, 2],
+      ["Αλέξανδρος Ζαφειρόπουλος", "S.O.A.T", "Greece", "Senior Men Left 86 kg", "Senior", "Left", "86 kg", 7, 1],
+      ["Χρήστος Ζαμπλαράς", "Let's Go", "Greece", "Senior Men Left 95 kg", "Senior", "Left", "95 kg", 1, 10],
+      ["Mihail Pavlov", "CSKA", "Bulgaria", "Senior Men Left 95 kg", "Senior", "Left", "95 kg", 2, 7],
+      ["Δημήτριος Πιπερούδης", "Salonica Armwrestling", "Greece", "Senior Men Left 95 kg", "Senior", "Left", "95 kg", 3, 5],
+      ["Ανδρέας Χατζηλουκάς", "Cyprus Armwrestling", "Cyprus", "Senior Men Left 95 kg", "Senior", "Left", "95 kg", 4, 4],
+      ["Ευάγγελος Μισιάς", "Salonica Armwrestling", "Greece", "Senior Men Left 95 kg", "Senior", "Left", "95 kg", 5, 3],
+      ["Επιφάνιος Επιφανίου", "Cyprus Armwrestling", "Cyprus", "Senior Men Left 95 kg", "Senior", "Left", "95 kg", 6, 2],
+      ["Ιωάννης Βόσσος", "Let's Go", "Greece", "Senior Men Left 95 kg", "Senior", "Left", "95 kg", 7, 1],
+      ["Petar Ivanov", "Lokomotive 96", "Bulgaria", "Senior Men Left 105 kg", "Senior", "Left", "105 kg", 1, 10],
+      ["Γεώργιος Αθανασιάδης", "Let's Go", "Greece", "Senior Men Left 105 kg", "Senior", "Left", "105 kg", 2, 7],
+      ["Ηλίας Μπατσινίλας", "Greek Armbenders", "Greece", "Senior Men Left 105 kg", "Senior", "Left", "105 kg", 3, 5],
+      ["Σπύρος Χαλαστάρας", "Greek Armbenders", "Greece", "Senior Men Left 105 kg", "Senior", "Left", "105 kg", 4, 4],
+      ["Emanuil Manasiev", "CSKA", "Bulgaria", "Senior Men Left 105 kg", "Senior", "Left", "105 kg", 5, 3],
+      ["Επιφάνιος Επιφανίου", "Cyprus Armwrestling", "Cyprus", "Senior Men Left 105 kg", "Senior", "Left", "105 kg", 6, 2],
+      ["Detelin Yonchev", "CSKA", "Bulgaria", "Senior Men Left +105 kg", "Senior", "Left", "+105 kg", 1, 10],
+      ["Χρήστος Μιχαηλίδης", "Ασπρόπυργος", "Greece", "Senior Men Left +105 kg", "Senior", "Left", "+105 kg", 2, 7],
+      ["Πιλάτος Κουνατίδης", "Salonica Armwrestling", "Greece", "Senior Men Left +105 kg", "Senior", "Left", "+105 kg", 3, 5],
+      ["Μάριος Παπαδόπουλος", "Cyprus Armwrestling", "Cyprus", "Senior Men Left +105 kg", "Senior", "Left", "+105 kg", 4, 4],
+      ["Σωτήρης Σακαντέμης", "Greek Armbenders", "Greece", "Senior Men Left +105 kg", "Senior", "Left", "+105 kg", 5, 3],
+      ["Δημήτριος Φωκάς", "Let's Go", "Greece", "Senior Men Left +105 kg", "Senior", "Left", "+105 kg", 6, 2],
+      ["Βασίλης Πέτρου", "Ασπρόπυργος", "Greece", "Masters Men Left Open", "Masters", "Left", "Open", 1, 10],
+      ["Emanuil Manasiev", "CSKA", "Bulgaria", "Masters Men Left Open", "Masters", "Left", "Open", 2, 7],
+      ["Σπύρος Χαλαστάρας", "Greek Armbenders", "Greece", "Masters Men Left Open", "Masters", "Left", "Open", 3, 5],
+      ["Pradeep Nishantha Rajapaksha", "Ασπρόπυργος", "Sri Lanka", "Masters Men Left Open", "Masters", "Left", "Open", 4, 4],
+      ["Gabriel Stoev", "Lokomotive 96", "Bulgaria", "Junior U-18 Men Right -80 kg", "Junior U-18", "Right", "-80 kg", 1, 10],
+      ["Βασίλειος Φιλικίδης", "Ασπρόπυργος", "Greece", "Junior U-18 Men Right -80 kg", "Junior U-18", "Right", "-80 kg", 2, 7],
+      ["Εμμανουήλ Μακρίδης", "", "Greece", "Junior U-18 Men Right -80 kg", "Junior U-18", "Right", "-80 kg", 3, 5],
+      ["Χρήστος Ταξιάρχης", "", "Greece", "Junior U-18 Men Right -80 kg", "Junior U-18", "Right", "-80 kg", 4, 4],
+      ["Χρήστος Δημητρίου", "", "Greece", "Junior U-18 Men Right -80 kg", "Junior U-18", "Right", "-80 kg", 5, 3],
+      ["Αναστάσιος Γεωργιάδης", "", "Greece", "Junior U-18 Men Right -80 kg", "Junior U-18", "Right", "-80 kg", 6, 2],
+      ["Αντώνης Παναγκασίδης", "Salonica Armwrestling", "Greece", "Junior U-18 Men Right +80 kg", "Junior U-18", "Right", "+80 kg", 1, 10],
+      ["Μιχαήλ Άγγελος Μελιανίδης", "", "Greece", "Junior U-18 Men Right +80 kg", "Junior U-18", "Right", "+80 kg", 2, 7],
+      ["Παναγιώτης Φωτόπουλος", "Salonica Armwrestling", "Greece", "Junior U-18 Men Right +80 kg", "Junior U-18", "Right", "+80 kg", 3, 5],
+      ["Πέτρος Καραΐσκος", "S.O.A.T", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 1, 10],
+      ["Παναγιώτης Γραβάλης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 2, 7],
+      ["Χρυσόστομος Παπαγεωργίου", "S.O.A.T", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 3, 5],
+      ["Αλέξανδρος Πατούκας", "S.O.A.T", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 4, 4],
+      ["Στράτης Σπυρίδων Αιδονίδης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 5, 3],
+      ["Χρήστος Δημητρίου", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 6, 2],
+      ["Ιωάννης Τσαλουκίδης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 7, 1],
+      ["Ιωάννης Γατσέλης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 8, 0],
+      ["Αρκάδιος Τσιτσόνης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 9, 0],
+      ["Ελευθέριος Βόσσος", "Let's Go", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 10, 0],
+      ["Νίκος Τσελέπης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 11, 0],
+      ["Δημήτριος Τσακμακίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 12, 0],
+      ["Χρήστος Ταξιάρχης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 13, 0],
+      ["Ιωάννης Καραγιαννίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right -75 kg", "ΑΡΧΑΡΙΟΙ", "Right", "-75 kg", 14, 0],
+      ["Μιχαήλ Άγγελος Μελιανίδης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right 95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "95 kg", 1, 10],
+      ["Ανέστης Βασιλειάδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right 95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "95 kg", 2, 7],
+      ["Φώτης Δημητρίου", "Cyprus Armwrestling", "Cyprus", "ΑΡΧΑΡΙΟΙ Men Right 95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "95 kg", 3, 5],
+      ["Κωνσταντίνος Κογκετσίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right 95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "95 kg", 4, 4],
+      ["Ελευθέριος Τσαγκαρίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right 95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "95 kg", 5, 3],
+      ["Άγγελος Τούντας", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right 95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "95 kg", 6, 2],
+      ["Milto Carciu", "Salonica Armwrestling", "Albania", "ΑΡΧΑΡΙΟΙ Men Right 95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "95 kg", 7, 1],
+      ["Χαράλαμπος Κυμπρίκτσης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right 95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "95 kg", 8, 0],
+      ["Θεόδωρος Κούρτογλου", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right +95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "+95 kg", 1, 10],
+      ["Ισαάκ Καραμιχαηλίδης", "Cyprus Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right +95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "+95 kg", 2, 7],
+      ["Νικόλαος Βόσσος", "Let's Go", "Greece", "ΑΡΧΑΡΙΟΙ Men Right +95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "+95 kg", 3, 5],
+      ["Κωνσταντίνος Τουμανίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right +95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "+95 kg", 4, 4],
+      ["Χρήστος Σινάνης", "", "Greece", "ΑΡΧΑΡΙΟΙ Men Right +95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "+95 kg", 5, 3],
+      ["Φώτης Δημητρίου", "Cyprus Armwrestling", "Cyprus", "ΑΡΧΑΡΙΟΙ Men Right +95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "+95 kg", 6, 2],
+      ["Κωνσταντίνος Σκαπουλάρος", "", "Cyprus", "ΑΡΧΑΡΙΟΙ Men Right +95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "+95 kg", 7, 1],
+      ["Γεώργιος Χρυσοβαλάντης Χατζηβαντσίδης", "Salonica Armwrestling", "Greece", "ΑΡΧΑΡΙΟΙ Men Right +95 kg", "ΑΡΧΑΡΙΟΙ", "Right", "+95 kg", 8, 0],
+      ["Zahari Zahariev", "Lokomotive 96", "Bulgaria", "Senior Men Right 63 kg", "Senior", "Right", "63 kg", 1, 10],
+      ["Zdravko Petrov", "CSKA", "Bulgaria", "Senior Men Right 63 kg", "Senior", "Right", "63 kg", 2, 7],
+      ["Mitko Staykov", "CSKA", "Bulgaria", "Senior Men Right 63 kg", "Senior", "Right", "63 kg", 3, 5],
+      ["Αναστάσιος Στεφανίδης", "Salonica Armwrestling", "Greece", "Senior Men Right 63 kg", "Senior", "Right", "63 kg", 4, 4],
+      ["Βασίλειος Φιλικίδης", "Ασπρόπυργος", "Greece", "Senior Men Right 70 kg", "Senior", "Right", "70 kg", 1, 10],
+      ["Δημήτρης Ναβάλ", "Let's Go", "Greece", "Senior Men Right 70 kg", "Senior", "Right", "70 kg", 2, 7],
+      ["Mitko Staykov", "CSKA", "Bulgaria", "Senior Men Right 70 kg", "Senior", "Right", "70 kg", 3, 5],
+      ["Νίκος Αθανάσαρος", "", "Greece", "Senior Men Right 70 kg", "Senior", "Right", "70 kg", 4, 4],
+      ["Αλέξανδρος Πατούκας", "S.O.A.T", "Greece", "Senior Men Right 70 kg", "Senior", "Right", "70 kg", 5, 3],
+      ["Νίκος Μίντσης", "Salonica Armwrestling", "Greece", "Senior Men Right 78 kg", "Senior", "Right", "78 kg", 1, 10],
+      ["Κωνσταντίνος Αντωνιάδης", "Salonica Armwrestling", "Greece", "Senior Men Right 78 kg", "Senior", "Right", "78 kg", 2, 7],
+      ["Αλέξανδρος Ζαφειρόπουλος", "S.O.A.T", "Greece", "Senior Men Right 78 kg", "Senior", "Right", "78 kg", 3, 5],
+      ["Ευαγγέλου Κωνσταντίνος", "Let's Go", "Greece", "Senior Men Right 78 kg", "Senior", "Right", "78 kg", 4, 4],
+      ["Αλέξανδρος Διαμαντίδης", "Let's Go", "Greece", "Senior Men Right 78 kg", "Senior", "Right", "78 kg", 5, 3],
+      ["Πέτρος Καραΐσκος", "S.O.A.T", "Greece", "Senior Men Right 78 kg", "Senior", "Right", "78 kg", 6, 2],
+      ["Γιώργος Νικητάρας", "Salonica Armwrestling", "Greece", "Senior Men Right 78 kg", "Senior", "Right", "78 kg", 7, 1],
+      ["Αντώνης Παναγκασίδης", "Salonica Armwrestling", "Greece", "Senior Men Right 86 kg", "Senior", "Right", "86 kg", 1, 10],
+      ["Σωκράτης Κανιός", "Greek Armbenders", "Greece", "Senior Men Right 86 kg", "Senior", "Right", "86 kg", 2, 7],
+      ["Κυριάκος Ευαγγελούδης", "Salonica Armwrestling", "Greece", "Senior Men Right 86 kg", "Senior", "Right", "86 kg", 3, 5],
+      ["Αλέξανδρος Ζαφειρόπουλος", "S.O.A.T", "Greece", "Senior Men Right 86 kg", "Senior", "Right", "86 kg", 4, 4],
+      ["Παναγιώτης Τσακίρης", "", "Greece", "Senior Men Right 86 kg", "Senior", "Right", "86 kg", 5, 3],
+      ["Φώτης Δημητρίου", "Cyprus Armwrestling", "Cyprus", "Senior Men Right 86 kg", "Senior", "Right", "86 kg", 6, 2],
+      ["Σωκράτης Σούτογλου", "", "Greece", "Senior Men Right 86 kg", "Senior", "Right", "86 kg", 7, 1],
+      ["Mihail Pavlov", "CSKA", "Bulgaria", "Senior Men Right 95 kg", "Senior", "Right", "95 kg", 1, 10],
+      ["Παναγιώτης Σακαρίδης", "Salonica Armwrestling", "Greece", "Senior Men Right 95 kg", "Senior", "Right", "95 kg", 2, 7],
+      ["Ανδρέας Χατζηλουκάς", "Cyprus Armwrestling", "Cyprus", "Senior Men Right 95 kg", "Senior", "Right", "95 kg", 3, 5],
+      ["Ευάγγελος Μισιάς", "Salonica Armwrestling", "Greece", "Senior Men Right 95 kg", "Senior", "Right", "95 kg", 4, 4],
+      ["Δημήτριος Πιπερούδης", "Salonica Armwrestling", "Greece", "Senior Men Right 95 kg", "Senior", "Right", "95 kg", 5, 3],
+      ["Ιωάννης Βόσσος", "Let's Go", "Greece", "Senior Men Right 95 kg", "Senior", "Right", "95 kg", 6, 2],
+      ["Επιφάνιος Επιφανίου", "Cyprus Armwrestling", "Cyprus", "Senior Men Right 95 kg", "Senior", "Right", "95 kg", 7, 1],
+      ["Ηλίας Μπατσινίλας", "Greek Armbenders", "Greece", "Senior Men Right 105 kg", "Senior", "Right", "105 kg", 1, 10],
+      ["Γεώργιος Αθανασιάδης", "Let's Go", "Greece", "Senior Men Right 105 kg", "Senior", "Right", "105 kg", 2, 7],
+      ["Emanuil Manasiev", "CSKA", "Bulgaria", "Senior Men Right 105 kg", "Senior", "Right", "105 kg", 3, 5],
+      ["Petar Ivanov", "Lokomotive 96", "Bulgaria", "Senior Men Right 105 kg", "Senior", "Right", "105 kg", 4, 4],
+      ["Σπύρος Χαλαστάρας", "Greek Armbenders", "Greece", "Senior Men Right 105 kg", "Senior", "Right", "105 kg", 5, 3],
+      ["Κωνσταντίνος Φλώρος", "", "Greece", "Senior Men Right 105 kg", "Senior", "Right", "105 kg", 6, 2],
+      ["Σωκράτης Κανιός", "Greek Armbenders", "Greece", "Senior Men Right 105 kg", "Senior", "Right", "105 kg", 7, 1],
+      ["Μάριος Παπαδόπουλος", "Cyprus Armwrestling", "Cyprus", "Senior Men Right +105 kg", "Senior", "Right", "+105 kg", 1, 10],
+      ["Detelin Yonchev", "CSKA", "Bulgaria", "Senior Men Right +105 kg", "Senior", "Right", "+105 kg", 2, 7],
+      ["Θεόδωρος Μιχαηλίδης", "Ασπρόπυργος", "Greece", "Senior Men Right +105 kg", "Senior", "Right", "+105 kg", 3, 5],
+      ["Δημήτριος Φωκάς", "Let's Go", "Greece", "Senior Men Right +105 kg", "Senior", "Right", "+105 kg", 4, 4],
+      ["Σωτήρης Σακαντέμης", "Greek Armbenders", "Greece", "Senior Men Right +105 kg", "Senior", "Right", "+105 kg", 5, 3],
+      ["Πιλάτος Κουνατίδης", "Salonica Armwrestling", "Greece", "Senior Men Right +105 kg", "Senior", "Right", "+105 kg", 6, 2],
+      ["Δημήτρης Νικοπολίδης", "Salonica Armwrestling", "Greece", "Senior Men Right +105 kg", "Senior", "Right", "+105 kg", 7, 1],
+      ["Χρήστος Μιχαηλίδης", "Ασπρόπυργος", "Greece", "Senior Men Right +105 kg", "Senior", "Right", "+105 kg", 8, 0],
+      ["Επιφάνιος Επιφανίου", "Cyprus Armwrestling", "Cyprus", "Senior Men Right +105 kg", "Senior", "Right", "+105 kg", 9, 0],
+      ["Emanuil Manasiev", "CSKA", "Bulgaria", "Masters Men Right Open", "Masters", "Right", "Open", 1, 10],
+      ["Σπύρος Χαλαστάρας", "Greek Armbenders", "Greece", "Masters Men Right Open", "Masters", "Right", "Open", 2, 7],
+      ["Pradeep Nishantha Rajapaksha", "Ασπρόπυργος", "Sri Lanka", "Masters Men Right Open", "Masters", "Right", "Open", 3, 5],
+      ["Ζίζο Τιγκισβίλι", "Salonica Armwrestling", "Greece", "Senior Women Right Open", "Senior", "Right", "Open", 1, 10],
+      ["Mihaela Krumova", "CSKA", "Bulgaria", "Senior Women Right Open", "Senior", "Right", "Open", 2, 7],
+      ["Δέσποινα Κοντοπούλου", "Salonica Armwrestling", "Greece", "Senior Women Right Open", "Senior", "Right", "Open", 3, 5],
+      ["Stefani Decheva", "Lokomotive 96", "Bulgaria", "Senior Women Left Open", "Senior", "Left", "Open", 1, 10],
+      ["Ζίζο Τιγκισβίλι", "Salonica Armwrestling", "Greece", "Senior Women Left Open", "Senior", "Left", "Open", 2, 7],
+      ["Mihaela Krumova", "CSKA", "Bulgaria", "Senior Women Left Open", "Senior", "Left", "Open", 3, 5],
+      ["Δέσποινα Κοντοπούλου", "Salonica Armwrestling", "Greece", "Senior Women Left Open", "Senior", "Left", "Open", 4, 4],
+      ["Ελευθέριος Βόσσος", "Let's Go", "Greece", "Junior Boys U-15 Left", "Junior U-15", "Left", "Open", 1, 10],
+      ["Σταύρος Ιακωβίδης", "Salonica Armwrestling", "Greece", "Junior Boys U-15 Left", "Junior U-15", "Left", "Open", 2, 7],
+      ["Γεώργιος Ταξιάρχης", "", "Greece", "Junior Boys U-15 Left", "Junior U-15", "Left", "Open", 3, 5],
+      ["Ελευθέριος Βόσσος", "Let's Go", "Greece", "Junior Boys U-15 Right", "Junior U-15", "Right", "Open", 1, 10],
+      ["Γεώργιος Ταρασίδης", "Salonica Armwrestling", "Greece", "Junior Boys U-15 Right", "Junior U-15", "Right", "Open", 2, 7],
+      ["Γεώργιος Ταξιάρχης", "", "Greece", "Junior Boys U-15 Right", "Junior U-15", "Right", "Open", 3, 5],
+      ["Παναγιώτης Πετκόγλου", "", "Greece", "Junior Boys U-15 Right", "Junior U-15", "Right", "Open", 4, 4],
     ];
 
-    // ── TRANSLATIONS ─────────────────────────────────────────────────────────
-    const translations = {
-      el: {
-        navOverview:"Πληροφορίες", navCategories:"Κατηγορίες", navResults:"Αποτελέσματα", navContact:"Επικοινωνία",
-        footerLinks:"Σύνδεσμοι", footerDesc:"Επίσημη σελίδα του Salonica Armwrestling Cup 2026. Προπονητική ημερίδα χειροπάλης από τον Αθλητικό Σύλλογο Μακεδόνων.",
-        footerClub:"Σύλλογος Μακεδόνων", footerEvent:"Facebook Event", footerInfo:"Πληροφορίες",
-        footerCategories:"Κατηγορίες", footerCopyright:"© 2026 Χειροπάλη Θεσσαλονίκης",
-        resultsTitle:"Αποτελέσματα Αγώνων",
-        tabResults:"Αποτελέσματα", tabAthletes:"Βαθμολογία Αθλητών", tabTeams:"Βαθμολογία Ομάδων",
-        filterByAgeGroup:"Ηλικιακή Ομάδα:", filterByHand:"Χέρι:",
-        filterAll:"Όλες", filterU15:"Παίδων (U-15)", filterU18:"Εφήβων (U-18)",
-        filterBeginners:"Αρχάριοι", filterSenior:"Senior", filterMasters:"Masters (40+)",
-        filterBothHands:"Αμφότερα", filterLeft:"Αριστερό", filterRight:"Δεξί", filterReset:"Επαναφορά",
-        noResults:"Δεν βρέθηκαν αποτελέσματα για τα επιλεγμένα φίλτρα.",
-        colPlace:"Θέση", colAthlete:"Αθλητής", colTeam:"Ομάδα", colCountry:"Χώρα", colPoints:"Πόντοι",
-        colRank:"#", colTotalPoints:"Σύν. Πόντοι", colCategories:"Κατηγ.", colAthletes:"Αθλητές",
-        colGold:"🥇", colSilver:"🥈", colBronze:"🥉", colParticipations:"Συμ.",
-        independent:"Ανεξάρτητος",
-        handLeft:"Αριστερό", handRight:"Δεξί",
+    const athleteStandingsData = [
+      {
+        rank: 1,
+        name: "Αντώνης Παναγκασίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 40,
+        categoriesCount: 4,
       },
-      en: {
-        navOverview:"Information", navCategories:"Categories", navResults:"Results", navContact:"Contact",
-        footerLinks:"Links", footerDesc:"Official page of Salonica Armwrestling Cup 2026. Armwrestling training event organized by Makedonon Athletic Club.",
-        footerClub:"Makedonon Club", footerEvent:"Facebook Event", footerInfo:"Information",
-        footerCategories:"Categories", footerCopyright:"© 2026 Thessaloniki Armwrestling",
-        resultsTitle:"Competition Results",
-        tabResults:"Results", tabAthletes:"Athletes Standings", tabTeams:"Team Standings",
-        filterByAgeGroup:"Age Group:", filterByHand:"Hand:",
-        filterAll:"All", filterU15:"Boys/Girls U-15", filterU18:"Juniors U-18",
-        filterBeginners:"Beginners", filterSenior:"Senior", filterMasters:"Masters (40+)",
-        filterBothHands:"Both Hands", filterLeft:"Left", filterRight:"Right", filterReset:"Reset",
-        noResults:"No results found for the selected filters.",
-        colPlace:"Place", colAthlete:"Athlete", colTeam:"Team", colCountry:"Country", colPoints:"Points",
-        colRank:"#", colTotalPoints:"Total Pts", colCategories:"Events", colAthletes:"Athletes",
-        colGold:"🥇", colSilver:"🥈", colBronze:"🥉", colParticipations:"Entries",
-        independent:"Independent",
-        handLeft:"Left", handRight:"Right",
-      }
-    };
+      {
+        rank: 2,
+        name: "Βασίλειος Φιλικίδης",
+        team: "Ασπρόπυργος",
+        country: "Greece",
+        totalPoints: 32,
+        categoriesCount: 4,
+      },
+      {
+        rank: 3,
+        name: "Μιχαήλ Άγγελος Μελιανίδης",
+        team: null,
+        country: "Greece",
+        totalPoints: 27,
+        categoriesCount: 4,
+      },
+      {
+        rank: 4,
+        name: "Emanuil Manasiev",
+        team: "CSKA",
+        country: "Bulgaria",
+        totalPoints: 25,
+        categoriesCount: 4,
+      },
+      {
+        rank: 5,
+        name: "Zdravko Petrov",
+        team: "CSKA",
+        country: "Bulgaria",
+        totalPoints: 24,
+        categoriesCount: 3,
+      },
+      {
+        rank: 6,
+        name: "Πέτρος Καραΐσκος",
+        team: "S.O.A.T",
+        country: "Greece",
+        totalPoints: 22,
+        categoriesCount: 4,
+      },
+      {
+        rank: 7,
+        name: "Gabriel Stoev",
+        team: "Lokomotive 96",
+        country: "Bulgaria",
+        totalPoints: 17,
+        categoriesCount: 2,
+      },
+      {
+        rank: 8,
+        name: "Ελευθέριος Βόσσος",
+        team: "Let's Go",
+        country: "Greece",
+        totalPoints: 20,
+        categoriesCount: 4,
+      },
+      {
+        rank: 9,
+        name: "Θεόδωρος Κούρτογλου",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 20,
+        categoriesCount: 2,
+      },
+      {
+        rank: 10,
+        name: "Νίκος Μίντσης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 20,
+        categoriesCount: 2,
+      },
+      {
+        rank: 11,
+        name: "Σπύρος Χαλαστάρας",
+        team: "Greek Armbenders",
+        country: "Greece",
+        totalPoints: 19,
+        categoriesCount: 4,
+      },
+      {
+        rank: 12,
+        name: "Ανέστης Βασιλειάδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 17,
+        categoriesCount: 2,
+      },
+      {
+        rank: 13,
+        name: "Φώτης Δημητρίου",
+        team: "Cyprus Armwrestling",
+        country: "Cyprus",
+        totalPoints: 17,
+        categoriesCount: 5,
+      },
+      {
+        rank: 14,
+        name: "Zahari Zahariev",
+        team: "Lokomotive 96",
+        country: "Bulgaria",
+        totalPoints: 17,
+        categoriesCount: 2,
+      },
+      {
+        rank: 15,
+        name: "Mihail Pavlov",
+        team: "CSKA",
+        country: "Bulgaria",
+        totalPoints: 17,
+        categoriesCount: 2,
+      },
+      {
+        rank: 16,
+        name: "Detelin Yonchev",
+        team: "CSKA",
+        country: "Bulgaria",
+        totalPoints: 17,
+        categoriesCount: 2,
+      },
+      {
+        rank: 17,
+        name: "Ζίζο Τιγκισβίλι",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 17,
+        categoriesCount: 2,
+      },
+      {
+        rank: 18,
+        name: "Mitko Staykov",
+        team: "CSKA",
+        country: "Bulgaria",
+        totalPoints: 15,
+        categoriesCount: 3,
+      },
+      {
+        rank: 19,
+        name: "Αλέξανδρος Ζαφειρόπουλος",
+        team: "S.O.A.T",
+        country: "Greece",
+        totalPoints: 15,
+        categoriesCount: 4,
+      },
+      {
+        rank: 20,
+        name: "Σωκράτης Κάνιος",
+        team: "Greek Armbenders",
+        country: "Greece",
+        totalPoints: 15,
+        categoriesCount: 3,
+      },
+      {
+        rank: 21,
+        name: "Ηλίας Μπατσινίλας",
+        team: "Greek Armbenders",
+        country: "Greece",
+        totalPoints: 15,
+        categoriesCount: 2,
+      },
+      {
+        rank: 22,
+        name: "Κωνσταντίνος Αντωνιάδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 14,
+        categoriesCount: 2,
+      },
+      {
+        rank: 23,
+        name: "Petar Ivanov",
+        team: "Lokomotive 96",
+        country: "Bulgaria",
+        totalPoints: 14,
+        categoriesCount: 2,
+      },
+      {
+        rank: 24,
+        name: "Γεώργιος Αθανασιάδης",
+        team: "Let's Go",
+        country: "Greece",
+        totalPoints: 14,
+        categoriesCount: 2,
+      },
+      {
+        rank: 25,
+        name: "Μάριος Παπαδόπουλος",
+        team: "Cyprus Armwrestling",
+        country: "Cyprus",
+        totalPoints: 14,
+        categoriesCount: 2,
+      },
+      {
+        rank: 26,
+        name: "Εμμανουήλ Μακρίδης",
+        team: null,
+        country: "Greece",
+        totalPoints: 12,
+        categoriesCount: 3,
+      },
+      {
+        rank: 27,
+        name: "Ισαάκ Καραμιχαηλίδης",
+        team: "Cyprus Armwrestling",
+        country: "Greece",
+        totalPoints: 12,
+        categoriesCount: 2,
+      },
+      {
+        rank: 28,
+        name: "Δημήτρης Ναβάλ",
+        team: "Let's Go",
+        country: "Greece",
+        totalPoints: 12,
+        categoriesCount: 2,
+      },
+      {
+        rank: 29,
+        name: "Mihaela Krumova",
+        team: "CSKA",
+        country: "Bulgaria",
+        totalPoints: 12,
+        categoriesCount: 2,
+      },
+      {
+        rank: 30,
+        name: "Αλέξανδρος Πατούκας",
+        team: "S.O.A.T",
+        country: "Greece",
+        totalPoints: 11,
+        categoriesCount: 4,
+      },
+      {
+        rank: 31,
+        name: "Παναγιώτης Φωτόπουλος",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 10,
+        categoriesCount: 2,
+      },
+      {
+        rank: 32,
+        name: "Χρυσόστομος Παπαγεωργίου",
+        team: "S.O.A.T",
+        country: "Greece",
+        totalPoints: 10,
+        categoriesCount: 2,
+      },
+      {
+        rank: 33,
+        name: "Ελευθέριος Τσαγκαρίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 10,
+        categoriesCount: 2,
+      },
+      {
+        rank: 34,
+        name: "Χρήστος Σινάνης",
+        team: null,
+        country: "Greece",
+        totalPoints: 10,
+        categoriesCount: 2,
+      },
+      {
+        rank: 35,
+        name: "Κυριάκος Ευαγγελούδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 10,
+        categoriesCount: 2,
+      },
+      {
+        rank: 36,
+        name: "Χρήστος Ζαμπλαράς",
+        team: "Let's Go",
+        country: "Greece",
+        totalPoints: 10,
+        categoriesCount: 1,
+      },
+      {
+        rank: 37,
+        name: "Βασίλης Πέτρου",
+        team: "Ασπρόπυργος",
+        country: "Greece",
+        totalPoints: 10,
+        categoriesCount: 1,
+      },
+      {
+        rank: 38,
+        name: "Stefani Decheva",
+        team: "Lokomotive 96",
+        country: "Bulgaria",
+        totalPoints: 10,
+        categoriesCount: 1,
+      },
+      {
+        rank: 39,
+        name: "Γεώργιος Ταξιάρχης",
+        team: null,
+        country: "Greece",
+        totalPoints: 10,
+        categoriesCount: 2,
+      },
+      {
+        rank: 40,
+        name: "Ανδρέας Χατζηλουκάς",
+        team: "Cyprus Armwrestling",
+        country: "Cyprus",
+        totalPoints: 9,
+        categoriesCount: 2,
+      },
+      {
+        rank: 41,
+        name: "Pradeep Nishantha Rajapaksha",
+        team: "Ασπρόπυργος",
+        country: "Sri Lanka",
+        totalPoints: 9,
+        categoriesCount: 2,
+      },
+      {
+        rank: 42,
+        name: "Δέσποινα Κοντοπούλου",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 9,
+        categoriesCount: 2,
+      },
+      {
+        rank: 43,
+        name: "Χρήστος Ταξιάρχης",
+        team: null,
+        country: "Greece",
+        totalPoints: 8,
+        categoriesCount: 4,
+      },
+      {
+        rank: 44,
+        name: "Κωνσταντίνος Τουμανίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 8,
+        categoriesCount: 2,
+      },
+      {
+        rank: 45,
+        name: "Ευαγγέλου Κωνσταντίνος",
+        team: "Let's Go",
+        country: "Greece",
+        totalPoints: 8,
+        categoriesCount: 2,
+      },
+      {
+        rank: 46,
+        name: "Δημήτριος Πιπερούδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 8,
+        categoriesCount: 2,
+      },
+      {
+        rank: 47,
+        name: "Αναστάσιος Μακρίδης",
+        team: null,
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 1,
+      },
+      {
+        rank: 48,
+        name: "Νίκος Τσελέπης",
+        team: null,
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 2,
+      },
+      {
+        rank: 49,
+        name: "Άγγελος Τούντας",
+        team: null,
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 2,
+      },
+      {
+        rank: 50,
+        name: "Ευάγγελος Μισιάς",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 2,
+      },
+      {
+        rank: 51,
+        name: "Χρήστος Μιχαηλίδης",
+        team: "Ασπρόπυργος",
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 2,
+      },
+      {
+        rank: 52,
+        name: "Πιλάτος Κουνατίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 2,
+      },
+      {
+        rank: 53,
+        name: "Παναγιώτης Γραβάλης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 1,
+      },
+      {
+        rank: 54,
+        name: "Παναγιώτης Σακαρίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 1,
+      },
+      {
+        rank: 55,
+        name: "Σταύρος Ιακωβίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 1,
+      },
+      {
+        rank: 56,
+        name: "Γεώργιος Ταρασίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 7,
+        categoriesCount: 1,
+      },
+      {
+        rank: 57,
+        name: "Παναγιώτης Τσακίρης",
+        team: null,
+        country: "Greece",
+        totalPoints: 6,
+        categoriesCount: 2,
+      },
+      {
+        rank: 58,
+        name: "Σωτήρης Σακαντέμης",
+        team: "Greek Armbenders",
+        country: "Greece",
+        totalPoints: 6,
+        categoriesCount: 2,
+      },
+      {
+        rank: 59,
+        name: "Δημήτριος Φωκάς",
+        team: "Let's Go",
+        country: "Greece",
+        totalPoints: 6,
+        categoriesCount: 2,
+      },
+      {
+        rank: 60,
+        name: "Αλέξανδρος Διαμαντίδης",
+        team: "Let's Go",
+        country: "Greece",
+        totalPoints: 5,
+        categoriesCount: 2,
+      },
+      {
+        rank: 61,
+        name: "Epifaneios Epifaneioy",
+        team: "Cyprus Armwrestling",
+        country: "Cyprus",
+        totalPoints: 5,
+        categoriesCount: 4,
+      },
+      {
+        rank: 62,
+        name: "Χρήστος Δημητρίου",
+        team: null,
+        country: "Greece",
+        totalPoints: 5,
+        categoriesCount: 2,
+      },
+      {
+        rank: 63,
+        name: "Νικόλαος Βόσσος",
+        team: "Let's Go",
+        country: "Greece",
+        totalPoints: 5,
+        categoriesCount: 1,
+      },
+      {
+        rank: 64,
+        name: "Θεόδωρος Μιχαηλίδης",
+        team: "Ασπρόπυργος",
+        country: "Greece",
+        totalPoints: 5,
+        categoriesCount: 1,
+      },
+      {
+        rank: 65,
+        name: "Αναστάσιος Γεωργιάδης",
+        team: null,
+        country: "Greece",
+        totalPoints: 4,
+        categoriesCount: 2,
+      },
+      {
+        rank: 66,
+        name: "Αρκάδιος Τσιτσόνης",
+        team: null,
+        country: "Greece",
+        totalPoints: 4,
+        categoriesCount: 2,
+      },
+      {
+        rank: 67,
+        name: "Κωνσταντίνος Σκαπουλάρος",
+        team: "Cyprus Armwrestling",
+        country: "Cyprus",
+        totalPoints: 4,
+        categoriesCount: 2,
+      },
+      {
+        rank: 68,
+        name: "Βαλέριος Ριζίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 4,
+        categoriesCount: 1,
+      },
+      {
+        rank: 69,
+        name: "Κωνσταντίνος Κογκετσίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 4,
+        categoriesCount: 1,
+      },
+      {
+        rank: 70,
+        name: "Αναστάσιος Στεφανίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 4,
+        categoriesCount: 1,
+      },
+      {
+        rank: 71,
+        name: "Νίκος Αθανάσαρος",
+        team: null,
+        country: "Greece",
+        totalPoints: 4,
+        categoriesCount: 1,
+      },
+      {
+        rank: 72,
+        name: "Παναγιώτης Πετκόγλου",
+        team: null,
+        country: "Greece",
+        totalPoints: 4,
+        categoriesCount: 1,
+      },
+      {
+        rank: 73,
+        name: "Δημήτριος Τσακμακίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 3,
+        categoriesCount: 2,
+      },
+      {
+        rank: 74,
+        name: "Milto Carciu",
+        team: "Salonica Armwrestling",
+        country: "Albania",
+        totalPoints: 3,
+        categoriesCount: 2,
+      },
+      {
+        rank: 75,
+        name: "Σωκράτης Σούτογλου",
+        team: null,
+        country: "Greece",
+        totalPoints: 3,
+        categoriesCount: 2,
+      },
+      {
+        rank: 76,
+        name: "Ιωάννης Βόσσος",
+        team: "Let's Go",
+        country: "Greece",
+        totalPoints: 3,
+        categoriesCount: 2,
+      },
+      {
+        rank: 77,
+        name: "Στράτης Σπυρίδων Αιδονίδης",
+        team: null,
+        country: "Greece",
+        totalPoints: 3,
+        categoriesCount: 1,
+      },
+      {
+        rank: 78,
+        name: "Ιωάννης Καραγιαννίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 2,
+        categoriesCount: 2,
+      },
+      {
+        rank: 79,
+        name: "Γεώργιος Χρυσοβαλάντης Χατζηβαντσίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 2,
+        categoriesCount: 2,
+      },
+      {
+        rank: 80,
+        name: "Γιώργος Νικηταράς",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 2,
+        categoriesCount: 2,
+      },
+      {
+        rank: 81,
+        name: "Κωνσταντίνος Φλώρος",
+        team: null,
+        country: "Greece",
+        totalPoints: 2,
+        categoriesCount: 1,
+      },
+      {
+        rank: 82,
+        name: "Ιωάννης Τσαλουκίδης",
+        team: null,
+        country: "Greece",
+        totalPoints: 1,
+        categoriesCount: 1,
+      },
+      {
+        rank: 83,
+        name: "Δημήτρης Νικοπολίδης",
+        team: "Salonica Armwrestling",
+        country: "Greece",
+        totalPoints: 1,
+        categoriesCount: 1,
+      },
+      {
+        rank: 84,
+        name: "Ιωάννης Γατσέλης",
+        team: null,
+        country: "Greece",
+        totalPoints: 0,
+        categoriesCount: 1,
+      },
+      {
+        rank: 85,
+        name: "Χαράλαμπος Κυμπρίκτσης",
+        team: null,
+        country: "Greece",
+        totalPoints: 0,
+        categoriesCount: 1,
+      },
+    ];
 
-    // ── HELPERS ──────────────────────────────────────────────────────────────
-    const flags = {Greece:"🇬🇷",Bulgaria:"🇧🇬",Cyprus:"🇨🇾",Albania:"🇦🇱","Sri Lanka":"🇱🇰"};
-    function flag(c) { return flags[c] || ""; }
-    function medal(p) { return p===1?"🥇":p===2?"🥈":p===3?"🥉":p; }
-    function medalRowClass(p) { return p===1?"medal-row-1":p===2?"medal-row-2":p===3?"medal-row-3":""; }
-    function esc(s) { return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
-    function teamDisplay(t) { return t || ('<em class="text-gray-400">'+t_(currentLang,"independent")+'</em>'); }
+    const teamStandingsData = [
+      {
+        rank: 1,
+        name: "Salonica Armwrestling",
+        athleteCount: 27,
+        totalPoints: 253,
+        goldMedals: 10,
+        silverMedals: 10,
+        bronzeMedals: 7,
+        participations: 48,
+      },
+      {
+        rank: 2,
+        name: "CSKA",
+        athleteCount: 6,
+        totalPoints: 110,
+        goldMedals: 4,
+        silverMedals: 6,
+        bronzeMedals: 5,
+        participations: 16,
+      },
+      {
+        rank: 3,
+        name: "Let's Go",
+        athleteCount: 9,
+        totalPoints: 83,
+        goldMedals: 3,
+        silverMedals: 3,
+        bronzeMedals: 2,
+        participations: 18,
+      },
+      {
+        rank: 4,
+        name: "Ασπρόπυργος",
+        athleteCount: 5,
+        totalPoints: 63,
+        goldMedals: 3,
+        silverMedals: 2,
+        bronzeMedals: 3,
+        participations: 10,
+      },
+      {
+        rank: 5,
+        name: "Lokomotive 96",
+        athleteCount: 4,
+        totalPoints: 58,
+        goldMedals: 5,
+        silverMedals: 1,
+        bronzeMedals: 0,
+        participations: 7,
+      },
+      {
+        rank: 7,
+        name: "Cyprus Armwrestling",
+        athleteCount: 5,
+        totalPoints: 57,
+        goldMedals: 1,
+        silverMedals: 1,
+        bronzeMedals: 3,
+        participations: 15,
+      },
+      {
+        rank: 6,
+        name: "S.O.A.T",
+        athleteCount: 4,
+        totalPoints: 58,
+        goldMedals: 2,
+        silverMedals: 0,
+        bronzeMedals: 4,
+        participations: 14,
+      },
+      {
+        rank: 8,
+        name: "Greek Armbenders",
+        athleteCount: 4,
+        totalPoints: 55,
+        goldMedals: 1,
+        silverMedals: 3,
+        bronzeMedals: 2,
+        participations: 11,
+      },
+    ];
 
-    // ── LANGUAGE ─────────────────────────────────────────────────────────────
-    let currentLang = localStorage.getItem("sac2026-lang") || "el";
-    function t_(lang, key) { return (translations[lang] && translations[lang][key]) || key; }
-
-    function setLanguage(lang) {
-      currentLang = lang;
-      localStorage.setItem("sac2026-lang", lang);
-      const gold = "w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-brand-gold text-brand-blueDark font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:scale-110";
-      const dim  = "w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/10 text-white font-bold text-xs sm:text-sm flex items-center justify-center transition-all hover:bg-white/20";
-      document.getElementById("lang-el").className = lang==="el" ? gold : dim;
-      document.getElementById("lang-en").className = lang==="en" ? gold : dim;
-      document.documentElement.lang = lang;
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        const k = el.getAttribute("data-i18n");
-        if (translations[lang][k]) el.textContent = translations[lang][k];
-      });
-      // re-render filter option labels that use data-i18n on <option>
-      document.querySelectorAll("option[data-i18n]").forEach(el => {
-        const k = el.getAttribute("data-i18n");
-        if (translations[lang][k]) el.textContent = translations[lang][k];
-      });
-      renderAll();
-    }
-
-    // ── TAB SWITCHING ─────────────────────────────────────────────────────────
-    function showTab(name) {
-      ["results","athletes","teams"].forEach(t => {
-        document.getElementById("tab-"+t).classList.toggle("hidden", t!==name);
-        document.getElementById("btn-tab-"+t).classList.toggle("active", t===name);
-      });
-    }
-
-    // ── RENDER RESULTS ────────────────────────────────────────────────────────
-    function applyFilters() {
-      const ageVal  = document.getElementById("filter-age").value;
-      const handVal = document.getElementById("filter-hand").value;
-      let visible = 0;
-      document.querySelectorAll(".category-card").forEach(card => {
-        const match = (!ageVal || card.dataset.ageGroup === ageVal) &&
-                      (!handVal || card.dataset.hand === handVal);
-        card.classList.toggle("hidden", !match);
-        if (match) visible++;
-      });
-      document.getElementById("no-results-msg").classList.toggle("hidden", visible > 0);
-    }
-
-    function renderResults() {
-      // Group by category preserving order of first appearance
-      const order = [], groups = {};
-      resultsData.forEach(r => {
-        const cat = r[3];
-        if (!groups[cat]) { groups[cat] = []; order.push(cat); }
-        groups[cat].push(r);
-      });
-      const t = translations[currentLang];
-      const container = document.getElementById("results-container");
-      container.innerHTML = order.map(cat => {
-        const rows = groups[cat];
-        const ageGroup = rows[0][4], hand = rows[0][5];
-        const handLabel = hand==="Left" ? t.handLeft : t.handRight;
-        const bodyRows = rows.map(r => {
-          const [athlete,,country,,,,,place,pts] = r;
-          const team = r[1];
-          return `<tr class="${medalRowClass(place)}">
-            <td class="px-3 py-2 text-center font-bold text-base">${medal(place)}</td>
-            <td class="px-3 py-2 font-medium">${esc(athlete)}</td>
-            <td class="px-3 py-2 text-gray-600 hidden sm:table-cell">${team ? esc(team) : '<span class="text-gray-300">—</span>'}</td>
-            <td class="px-3 py-2 text-center">${flag(country)}</td>
-            <td class="px-3 py-2 text-center font-semibold text-brand-blue">${pts}</td>
-          </tr>`;
-        }).join("");
-        return `<div class="category-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden"
-                     data-age-group="${esc(ageGroup)}" data-hand="${esc(hand)}">
-          <div class="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-brand-blue to-brand-blueLight">
-            <h3 class="text-sm sm:text-base font-heading font-bold text-white">${esc(cat)}</h3>
-            <span class="text-xs text-blue-200 font-medium">${esc(handLabel)}</span>
-          </div>
-          <div class="overflow-x-auto">
-            <table class="text-sm w-full">
-              <thead><tr>
-                <th class="px-3 py-2 text-center w-10">${t.colPlace}</th>
-                <th class="px-3 py-2 text-left">${t.colAthlete}</th>
-                <th class="px-3 py-2 text-left hidden sm:table-cell">${t.colTeam}</th>
-                <th class="px-3 py-2 text-center">${t.colCountry}</th>
-                <th class="px-3 py-2 text-center">${t.colPoints}</th>
-              </tr></thead>
-              <tbody>${bodyRows}</tbody>
-            </table>
-          </div>
-        </div>`;
-      }).join("");
-      applyFilters();
-    }
-
-    // ── RENDER ATHLETES ───────────────────────────────────────────────────────
-    function renderAthletes() {
-      const t = translations[currentLang];
-      document.getElementById("athletes-header").innerHTML =
-        `<th class="px-3 py-3 text-center w-10">${t.colRank}</th>
-         <th class="px-3 py-3 text-left">${t.colAthlete}</th>
-         <th class="px-3 py-3 text-left hidden sm:table-cell">${t.colTeam}</th>
-         <th class="px-3 py-3 text-center hidden md:table-cell">${t.colCountry}</th>
-         <th class="px-3 py-3 text-center">${t.colTotalPoints}</th>
-         <th class="px-3 py-3 text-center hidden sm:table-cell">${t.colCategories}</th>`;
-      document.getElementById("athletes-body").innerHTML = athletesData.map(r => {
-        const [rank,athlete,team,country,pts,cats] = r;
-        const rc = medalRowClass(rank);
-        return `<tr class="${rc}">
-          <td class="px-3 py-2 text-center font-bold">${medal(rank)}</td>
-          <td class="px-3 py-2 font-medium">${esc(athlete)}</td>
-          <td class="px-3 py-2 text-gray-600 hidden sm:table-cell">${team ? esc(team) : '<span class="text-gray-300">—</span>'}</td>
-          <td class="px-3 py-2 text-center hidden md:table-cell">${flag(country)}</td>
-          <td class="px-3 py-2 text-center font-bold text-brand-blue">${pts}</td>
-          <td class="px-3 py-2 text-center text-gray-500 hidden sm:table-cell">${cats}</td>
-        </tr>`;
-      }).join("");
-    }
-
-    // ── RENDER TEAMS ──────────────────────────────────────────────────────────
-    function renderTeams() {
-      const t = translations[currentLang];
-      document.getElementById("teams-header").innerHTML =
-        `<th class="px-3 py-3 text-center w-10">${t.colRank}</th>
-         <th class="px-3 py-3 text-left">${t.colTeam}</th>
-         <th class="px-3 py-3 text-center hidden sm:table-cell">${t.colAthletes}</th>
-         <th class="px-3 py-3 text-center">${t.colTotalPoints}</th>
-         <th class="px-3 py-3 text-center">${t.colGold}</th>
-         <th class="px-3 py-3 text-center hidden sm:table-cell">${t.colSilver}</th>
-         <th class="px-3 py-3 text-center hidden sm:table-cell">${t.colBronze}</th>
-         <th class="px-3 py-3 text-center hidden md:table-cell">${t.colParticipations}</th>`;
-      document.getElementById("teams-body").innerHTML = teamsData.map(r => {
-        const [rank,team,athletes,pts,gold,silver,bronze,entries] = r;
-        const rc = medalRowClass(rank);
-        return `<tr class="${rc}">
-          <td class="px-3 py-2 text-center font-bold">${medal(rank)}</td>
-          <td class="px-3 py-2 font-semibold">${esc(team)}</td>
-          <td class="px-3 py-2 text-center text-gray-600 hidden sm:table-cell">${athletes}</td>
-          <td class="px-3 py-2 text-center font-bold text-brand-blue">${pts}</td>
-          <td class="px-3 py-2 text-center font-semibold text-yellow-600">${gold}</td>
-          <td class="px-3 py-2 text-center text-gray-500 hidden sm:table-cell">${silver}</td>
-          <td class="px-3 py-2 text-center text-gray-500 hidden sm:table-cell">${bronze}</td>
-          <td class="px-3 py-2 text-center text-gray-400 hidden md:table-cell">${entries}</td>
-        </tr>`;
-      }).join("");
-    }
-
-    function renderAll() { renderResults(); renderAthletes(); renderTeams(); }
-
-    // ── MOBILE MENU ───────────────────────────────────────────────────────────
-    document.addEventListener("DOMContentLoaded", function() {
-      const btn = document.getElementById("mobile-menu-btn");
-      const closeBtn = document.getElementById("close-menu-btn");
-      const menu = document.getElementById("mobile-menu");
-      const overlay = document.getElementById("menu-overlay");
-      function openMenu()  { menu.classList.add("open"); overlay.classList.remove("hidden"); document.body.style.overflow="hidden"; }
-      function closeMenu() { menu.classList.remove("open"); overlay.classList.add("hidden"); document.body.style.overflow=""; }
-      btn.addEventListener("click", openMenu);
-      closeBtn.addEventListener("click", closeMenu);
-      overlay.addEventListener("click", closeMenu);
-      document.querySelectorAll(".mobile-link").forEach(l => l.addEventListener("click", closeMenu));
       setLanguage(currentLang);
     });
     </script>
